@@ -1,0 +1,276 @@
+Chapter 1 From zero to deploy
+1.1 Introduction
+1.1.1 Comments for various readers
+1.1.2 “Scaling” Rails
+1.1.3 Conventions in this book
+1.2 Up and running
+1.2.1 Development environments
+IDEs
+Text editors and command lines
+Browsers
+A note about tools
+1.2.2 Ruby, RubyGems, Rails, and Git
+Rails Installer (Windows)
+Install Git
+Install Ruby
+Install RubyGems
+Install Rails
+1.2.3 The first application
+1.2.4 Bundler
+1.2.5 rails server
+1.2.6 Model-view-controller (MVC)
+1.3 Version control with Git
+1.3.1 Installation and setup
+First-time system setup
+First-time repository setup
+1.3.2 Adding and committing
+1.3.3 What good does Git do you?
+1.3.4 GitHub
+1.3.5 Branch, edit, commit, merge
+Branch
+Edit
+Commit
+Merge
+Push
+1.4 Deploying
+1.4.1 Heroku setup
+1.4.2 Heroku deployment, step one
+1.4.3 Heroku deployment, step two
+1.4.4 Heroku commands
+1.5 Conclusion
+Chapter 2 A demo app
+2.1 Planning the application
+2.1.1 Modeling users
+2.1.2 Modeling microposts
+2.2 The Users resource
+2.2.1 A user tour
+2.2.2 MVC in action
+2.2.3 Weaknesses of this Users resource
+2.3 The Microposts resource
+2.3.1 A micropost microtour
+2.3.2 Putting the micro in microposts
+2.3.3 A user has_many microposts
+2.3.4 Inheritance hierarchies
+2.3.5 Deploying the demo app
+2.4 Conclusion
+Chapter 3 Mostly static pages
+3.1 Static pages
+3.1.1 Truly static pages
+3.1.2 Static pages with Rails
+3.2 Our first tests
+3.2.1 Testing tools
+Autotest
+3.2.2 TDD: Red, Green, Refactor
+Spork
+Red
+Green
+Refactor
+3.3 Slightly dynamic pages
+3.3.1 Testing a title change
+3.3.2 Passing title tests
+3.3.3 Instance variables and Embedded Ruby
+3.3.4 Eliminating duplication with layouts
+3.4 Conclusion
+3.5 Exercises
+Chapter 4 Rails-flavored Ruby
+4.1 Motivation
+4.1.1 A title helper
+4.1.2 Cascading Style Sheets
+4.2 Strings and methods
+4.2.1 Comments
+4.2.2 Strings
+Printing
+Single-quoted strings
+4.2.3 Objects and message passing
+4.2.4 Method definitions
+4.2.5 Back to the title helper
+4.3 Other data structures
+4.3.1 Arrays and ranges
+4.3.2 Blocks
+4.3.3 Hashes and symbols
+4.3.4 CSS revisited
+4.4 Ruby classes
+4.4.1 Constructors
+4.4.2 Class inheritance
+4.4.3 Modifying built-in classes
+4.4.4 A controller class
+4.4.5 A user class
+4.5 Exercises
+Chapter 5 Filling in the layout
+5.1 Adding some structure
+5.1.1 Site navigation
+5.1.2 Custom CSS
+5.1.3 Partials
+5.2 Layout links
+5.2.1 Integration tests
+5.2.2 Rails routes
+5.2.3 Named routes
+5.3 User signup: A first step
+5.3.1 Users controller
+5.3.2 Signup URL
+5.4 Conclusion
+5.5 Exercises
+Chapter 6 Modeling and viewing users, part I
+6.1 User model
+6.1.1 Database migrations
+6.1.2 The model file
+Model annotation
+Accessible attributes
+6.1.3 Creating user objects
+6.1.4 Finding user objects
+6.1.5 Updating user objects
+6.2 User validations
+6.2.1 Validating presence
+6.2.2 Length validation
+6.2.3 Format validation
+6.2.4 Uniqueness validation
+The uniqueness caveat
+6.3 Viewing users
+6.3.1 Debug and Rails environments
+6.3.2 User model, view, controller
+6.3.3 A Users resource
+params in debug
+6.4 Conclusion
+6.5 Exercises
+Chapter 7 Modeling and viewing users, part II
+7.1 Insecure passwords
+7.1.1 Password validations
+7.1.2 A password migration
+7.1.3 An Active Record callback
+7.2 Secure passwords
+7.2.1 A secure password test
+7.2.2 Some secure password theory
+7.2.3 Implementing has_password?
+7.2.4 An authenticate method
+7.3 Better user views
+7.3.1 Testing the user show page (with factories)
+7.3.2 A name and a Gravatar
+A Gravatar helper
+7.3.3 A user sidebar
+7.4 Conclusion
+7.4.1 Git commit
+7.4.2 Heroku deploy
+7.5 Exercises
+Chapter 8 Sign up
+8.1 Signup form
+8.1.1 Using form_for
+8.1.2 The form HTML
+8.2 Signup failure
+8.2.1 Testing failure
+8.2.2 A working form
+8.2.3 Signup error messages
+8.2.4 Filtering parameter logging
+8.3 Signup success
+8.3.1 Testing success
+8.3.2 The finished signup form
+8.3.3 The flash
+8.3.4 The first signup
+8.4 RSpec integration tests
+8.4.1 Integration tests with style
+8.4.2 Users signup failure should not make a new user
+8.4.3 Users signup success should make a new user
+8.5 Conclusion
+8.6 Exercises
+Chapter 9 Sign in, sign out
+9.1 Sessions
+9.1.1 Sessions controller
+9.1.2 Signin form
+9.2 Signin failure
+9.2.1 Reviewing form submission
+9.2.2 Failed signin (test and code)
+9.3 Signin success
+9.3.1 The completed create action
+9.3.2 Remember me
+9.3.3 Current user
+9.4 Signing out
+9.4.1 Destroying sessions
+9.4.2 Signin upon signup
+9.4.3 Changing the layout links
+9.4.4 Signin/out integration tests
+9.5 Conclusion
+9.6 Exercises
+Chapter 10 Updating, showing, and deleting users
+10.1 Updating users
+10.1.1 Edit form
+10.1.2 Enabling edits
+10.2 Protecting pages
+10.2.1 Requiring signed-in users
+10.2.2 Requiring the right user
+10.2.3 Friendly forwarding
+10.3 Showing users
+10.3.1 User index
+10.3.2 Sample users
+10.3.3 Pagination
+Testing pagination
+10.3.4 Partial refactoring
+10.4 Destroying users
+10.4.1 Administrative users
+Revisiting attr_accessible
+10.4.2 The destroy action
+10.5 Conclusion
+10.6 Exercises
+Chapter 11 User microposts
+11.1 A Micropost model
+11.1.1 The basic model
+Accessible attribute
+11.1.2 User/Micropost associations
+11.1.3 Micropost refinements
+Default scope
+Dependent: destroy
+11.1.4 Micropost validations
+11.2 Showing microposts
+11.2.1 Augmenting the user show page
+11.2.2 Sample microposts
+11.3 Manipulating microposts
+11.3.1 Access control
+11.3.2 Creating microposts
+11.3.3 A proto-feed
+11.3.4 Destroying microposts
+11.3.5 Testing the new home page
+11.4 Conclusion
+11.5 Exercises
+Chapter 12 Following users
+12.1 The Relationship model
+12.1.1 A problem with the data model (and a solution)
+12.1.2 User/relationship associations
+12.1.3 Validations
+12.1.4 Following
+12.1.5 Followers
+12.2 A web interface for following and followers
+12.2.1 Sample following data
+12.2.2 Stats and a follow form
+12.2.3 Following and followers pages
+12.2.4 A working follow button the standard way
+12.2.5 A working follow button with Ajax
+12.3 The status feed
+12.3.1 Motivation and strategy
+12.3.2 A first feed implementation
+12.3.3 Scopes, subselects, and a lambda
+12.3.4 The new status feed
+12.4 Conclusion
+12.4.1 Extensions to the sample application
+Replies
+Messaging
+Follower notifications
+Password reminders
+Signup confirmation
+RSS feed
+REST API
+Search
+12.4.2 Guide to further resources
+12.5 Exercises
+Chapter 13 Rails 3.1
+13.1 Upgrading the sample app
+13.1.1 Installing and configuring Rails 3.1
+13.1.2 Getting to Red
+13.1.3 Minor issues
+will_paginate
+Pagination spec
+13.1.4 Major differences
+Asset directories
+Prototype to jQuery
+13.2 New features in Rails 3.1
+13.2.1 Asset pipeline
+13.2.2 Reversible migrations
+13.2.3 Sass and CoffeeScript
+13.3 Exercises
