@@ -1,4 +1,6 @@
-Chapter 1 From zero to deploy
+h1. "Ruby on Rails Tutorial. Learn Rails by Example by Michael Hartl":http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
+
+h2. Chapter 1 From zero to deploy
 1.1 Introduction
 1.1.1 Comments for various readers
 1.1.2 “Scaling” Rails
@@ -38,7 +40,7 @@ Push
 1.4.3 Heroku deployment, step two
 1.4.4 Heroku commands
 1.5 Conclusion
-Chapter 2 A demo app
+h2. Chapter 2 A demo app
 2.1 Planning the application
 2.1.1 Modeling users
 2.1.2 Modeling microposts
@@ -53,7 +55,7 @@ Chapter 2 A demo app
 2.3.4 Inheritance hierarchies
 2.3.5 Deploying the demo app
 2.4 Conclusion
-Chapter 3 Mostly static pages
+h2. Chapter 3 Mostly static pages
 3.1 Static pages
 3.1.1 Truly static pages
 3.1.2 Static pages with Rails
@@ -72,7 +74,7 @@ Refactor
 3.3.4 Eliminating duplication with layouts
 3.4 Conclusion
 3.5 Exercises
-Chapter 4 Rails-flavored Ruby
+h2. Chapter 4 Rails-flavored Ruby
 4.1 Motivation
 4.1.1 A title helper
 4.1.2 Cascading Style Sheets
@@ -96,7 +98,7 @@ Single-quoted strings
 4.4.4 A controller class
 4.4.5 A user class
 4.5 Exercises
-Chapter 5 Filling in the layout
+h2. Chapter 5 Filling in the layout
 5.1 Adding some structure
 5.1.1 Site navigation
 5.1.2 Custom CSS
@@ -110,7 +112,7 @@ Chapter 5 Filling in the layout
 5.3.2 Signup URL
 5.4 Conclusion
 5.5 Exercises
-Chapter 6 Modeling and viewing users, part I
+h2. Chapter 6 Modeling and viewing users, part I
 6.1 User model
 6.1.1 Database migrations
 6.1.2 The model file
@@ -132,7 +134,7 @@ The uniqueness caveat
 params in debug
 6.4 Conclusion
 6.5 Exercises
-Chapter 7 Modeling and viewing users, part II
+h2. Chapter 7 Modeling and viewing users, part II
 7.1 Insecure passwords
 7.1.1 Password validations
 7.1.2 A password migration
@@ -151,7 +153,7 @@ A Gravatar helper
 7.4.1 Git commit
 7.4.2 Heroku deploy
 7.5 Exercises
-Chapter 8 Sign up
+h2. Chapter 8 Sign up
 8.1 Signup form
 8.1.1 Using form_for
 8.1.2 The form HTML
@@ -171,7 +173,7 @@ Chapter 8 Sign up
 8.4.3 Users signup success should make a new user
 8.5 Conclusion
 8.6 Exercises
-Chapter 9 Sign in, sign out
+h2. Chapter 9 Sign in, sign out
 9.1 Sessions
 9.1.1 Sessions controller
 9.1.2 Signin form
@@ -189,7 +191,7 @@ Chapter 9 Sign in, sign out
 9.4.4 Signin/out integration tests
 9.5 Conclusion
 9.6 Exercises
-Chapter 10 Updating, showing, and deleting users
+h2. Chapter 10 Updating, showing, and deleting users
 10.1 Updating users
 10.1.1 Edit form
 10.1.2 Enabling edits
@@ -209,7 +211,7 @@ Revisiting attr_accessible
 10.4.2 The destroy action
 10.5 Conclusion
 10.6 Exercises
-Chapter 11 User microposts
+h2. Chapter 11 User microposts
 11.1 A Micropost model
 11.1.1 The basic model
 Accessible attribute
@@ -229,7 +231,7 @@ Dependent: destroy
 11.3.5 Testing the new home page
 11.4 Conclusion
 11.5 Exercises
-Chapter 12 Following users
+h2. Chapter 12 Following users
 12.1 The Relationship model
 12.1.1 A problem with the data model (and a solution)
 12.1.2 User/relationship associations
@@ -259,7 +261,7 @@ REST API
 Search
 12.4.2 Guide to further resources
 12.5 Exercises
-Chapter 13 Rails 3.1
+h2. Chapter 13 Rails 3.1
 13.1 Upgrading the sample app
 13.1.1 Installing and configuring Rails 3.1
 13.1.2 Getting to Red
