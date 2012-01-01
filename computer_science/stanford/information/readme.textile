@@ -1,0 +1,3 @@
+h1. "Information Theory by Stanford University, Spring 2012":http://www.infotheory-class.org/
+
+

@@ -1,0 +1,3 @@
+h1. "Computer Security by Stanford University, Spring 2012":http://www.security-class.org/
+
+

@@ -1,0 +1,3 @@
+h1. "Introduction to Databases by Stanford University, Autumn 2011":http://www.db-class.org/
+
+

@@ -1,0 +1,3 @@
+h1. "Game Theory by Stanford University, Spring 2012":http://www.game-theory-class.org/
+
+

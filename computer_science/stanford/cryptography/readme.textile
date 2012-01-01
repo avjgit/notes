@@ -1,0 +1,3 @@
+h1. "Cryptography by Stanford University, Spring 2012":http://www.crypto-class.org/
+
+
