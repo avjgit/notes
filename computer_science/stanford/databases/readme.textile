@@ -1,23 +1,23 @@
 h1. "Introduction to Databases by Stanford University, Autumn 2011":http://www.db-class.org/
 
 h2. INTRODUCTION
-    =============
+
     Introduction to the course (14 min)
 h2. RELATIONAL DATABASES
-    =============
+
     The relational model (9 min)
     Querying relational databases (6 min)
 h2. XML DATA
-    =============
+
     Well-formed XML (13 min)
     DTDs, IDs & IDREFs (18 min)
     XML Schema (13 min)
 h2. RELATIONAL ALGEBRA
-    =============
+
     Select, project, join (18 min)
     Set operators, renaming, notation (20 min)
 h2. SQL
-    =============
+
     Introduction to SQL (5 min)
     Basic SELECT statement (10 min)
     Table variables and set operators (11 min)
@@ -27,28 +27,28 @@ h2. SQL
     NULL values (6 min)
     Data modification statements (15 min)
 h2. RELATIONAL DESIGN THEORY
-    =============
+
     Relational design overview (16 min)
     Functional dependencies (28 min)
     Boyce-Codd normal form (23 min)
     Multivalued dependencies, 4th normal form (24 min)
     Shortcomings of BCNF/4NF (12 min)
 h2. QUERYING XML
-    =============
+
     XPath introduction (10 min)
     XPath demo (22 min)
     XQuery introduction (5 min)
     XQuery demo (16 min)
     XSLT (23 min)
 h2. UNIFIED MODELING LANGUAGE (UML)
-    =============
+
     UML data modeling (25 min)
     UML to relations (28 min)
 h2. INDEXES
-    =============
+
     Indexes (14 min)
 h2. CONSTRAINTS AND TRIGGERS
-    =============
+
     Motivation and overview (13 min)
     Constraints of several types (26 min)
     Referential integrity (22 min)
@@ -56,7 +56,7 @@ h2. CONSTRAINTS AND TRIGGERS
     Triggers demo (part 1) (30 min)
     Triggers demo (part 2) (13 min)
 h2. TRANSACTIONS
-    =============
+
     Introduction to transactions (14 min)
     Transaction properties (13 min)
     Isolation levels (18 min)
@@ -71,15 +71,15 @@ h2. TRANSACTIONS
     Prerequisites: SQL, Views
     Authorization (11 min)
 h2. RECURSION IN SQL
-    =============
+
     Basic recursive WITH statement - introduction (12 min)
     Basic recursive WITH statement - demo (30 min)
     Nonlinear and mutual recursion (21 min)
 h2. ON-LINE ANALYTICAL PROCESSING (OLAP)
-    =============
+
     Introduction to OLAP (18 min)
     OLAP demo (27 min)
 h2. NOSQL SYSTEMS
-    =============
+
     NoSQL Motivation (20 min)
     NoSQL Overview (27 min)
