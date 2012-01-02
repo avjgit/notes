@@ -6,3 +6,5 @@ so, in weird database science
   domains are types
 
 I wonder, how many time (of explanation of concept) would be saved, if industry would use UNKNOWN instead of NULL
+
+"Compositional" - means, with ability to run queries against queries
