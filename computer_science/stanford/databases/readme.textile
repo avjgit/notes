@@ -6,7 +6,7 @@ Introduction to the course (14 min)
 
 h2. RELATIONAL DATABASES
 
-The relational model (9 min)
++ The relational model (9 min)
 Querying relational databases (6 min)
 
 h2. XML DATA
