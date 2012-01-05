@@ -10,7 +10,7 @@
 01: spam = 'shrubbery'; age = 37; pi = 3.1415
 02: spam = 'spam'
 03: count = 1
-04: 
+04: spam = 1000.0
 05: 
 06: 
 07: 
