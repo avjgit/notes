@@ -7,12 +7,8 @@
 09: quest = 'To seek the Holy Grail.'; airspeed = 43
 10: perfect = (4+3)
 ------------------------------ level 02 - 00/11 - Variables, keywords, and statements
-01: 
-spam = 'shrubbery'
-age = 37
-pi = 3.1415
-
-02: 
+01: spam = 'shrubbery'; age = 37; pi = 3.1415
+02: spam = 'spam'
 03: 
 04: 
 05: 
