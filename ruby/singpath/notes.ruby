@@ -25,7 +25,15 @@ seconds_in_a_year = days_in_a_year * hours_in_a_day * minutes_in_a_hour * second
 
 07: rice = 2**63
 08: 
+inches = 69.0
+foot_inches = 12
+feet = inches/ foot_inches
+
 09: 
+spam = 'spam'
+eggs = 'eggs'
+breakfast = spam + eggs
+
 10: 
 11: 
 ------------------------------ level 03 - 00/15 - Functions
