@@ -2,7 +2,7 @@
 03: oops=713
 04: age = 7
 05: spam = 'anxious'
-06: 
+06: name = 4.27; pigs = 'can fly'
 07: 
 08: 
 09: 
