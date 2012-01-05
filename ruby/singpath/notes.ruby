@@ -40,6 +40,12 @@ times = 57
 email = spam*times
 
 11: 
+#global = 5
+#slip@slide = 5
+dog_bone = 5
+pig8slop = 5
+#class = 5
+
 ------------------------------ level 03 - 00/15 - Functions
 01: 
 02: 
