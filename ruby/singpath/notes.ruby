@@ -1,8 +1,8 @@
 h3. "Singpath":http://www.singpath.com
 
 ------------------------------ level 01 - 00/10 - The way of SingPath
-> 3
-oops=317 => oops=713
+> 3 > oops=317 => oops=713
+> 4 > age = 7
 ------------------------------ level 02 - 00/11 - Variables, keywords, and statements
 ------------------------------ level 03 - 00/15 - Functions
 ------------------------------ level 04 - 00/17 - Conditionals
