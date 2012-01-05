@@ -23,7 +23,7 @@ minutes_in_a_hour = 60
 seconds_in_a_minute = 60
 seconds_in_a_year = days_in_a_year * hours_in_a_day * minutes_in_a_hour * seconds_in_a_minute
 
-07: 
+07: rice = 2**63
 08: 
 09: 
 10: 
