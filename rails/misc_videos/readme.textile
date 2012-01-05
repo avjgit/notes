@@ -1,14 +1,16 @@
 h3. Railsware Study | "presentations":http://railsware.com/study | "video":http://vimeo.com/channels/rwstudy
 
+<pre>
 + lecture #02, "design":http://vimeo.com/32440431
 + lecture #02, "frontend":http://vimeo.com/32440537
 + lecture #02, "backend":http://vimeo.com/32440503
 + lecture #02, "testing":http://vimeo.com/32440574
 + lecture #03, "design":http://vimeo.com/32518544
 + lecture #04, "frontend":http://vimeo.com/32733580
-lecture #05, "backend":http://vimeo.com/32748956
-lecture #06, "testing":http://vimeo.com/32751233
-lecture #07, "design":http://bit.ly/vjXaba
-lecture #08, "frontend":http://bit.ly/suC4qk
-lecture #09, "backend":http://bit.ly/rKTC5u
-lecture #10, "testing":http://bit.ly/vIZeGA
+  lecture #05, "backend":http://vimeo.com/32748956
+  lecture #06, "testing":http://vimeo.com/32751233
+  lecture #07, "design":http://bit.ly/vjXaba
+  lecture #08, "frontend":http://bit.ly/suC4qk
+  lecture #09, "backend":http://bit.ly/rKTC5u
+  lecture #10, "testing":http://bit.ly/vIZeGA
+</pre>

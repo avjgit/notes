@@ -1,0 +1,14 @@
+"Singpath":http://www.singpath.com
+<pre>
+  level 01 - The way of SingPath
+  level 02 - Variables, keywords, and statements
+  level 03 - Functions
+  level 04 - Conditionals
+  level 05 - Recursion
+  level 06 - Iteration
+  level 07 - Strings
+  level 08 - Arrays
+  level 09 - Hashes
+  level 10 - Tuples
+  level 11 - Classes & Objects
+</pre>
