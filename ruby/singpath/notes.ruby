@@ -3,7 +3,7 @@
 04: age = 7
 05: spam = 'anxious'
 06: name = 4.27; pigs = 'can fly'
-07: 
+07: alpha = 'abcdefghijklmnopqrstuvwxyz'; pi = 3.14159265 
 08: 
 09: 
 10: 
