@@ -35,6 +35,10 @@ eggs = 'eggs'
 breakfast = spam + eggs
 
 10: 
+spam = 'spam'
+times = 57
+email = spam*times
+
 11: 
 ------------------------------ level 03 - 00/15 - Functions
 01: 
