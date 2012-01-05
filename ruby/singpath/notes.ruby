@@ -6,7 +6,7 @@
 07: alpha = 'abcdefghijklmnopqrstuvwxyz'; pi = 3.14159265 
 08: quest = 'To seek the Holy Grail.'; airspeed = 43
 09: 
-10: 
+10: perfect =(4+3)
 ------------------------------ level 02 - 00/11 - Variables, keywords, and statements
 01: 
 02: 
