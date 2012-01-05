@@ -1,11 +1,10 @@
 ------------------------------ level 01 - 00/10 - The way of SingPath
-03: oops=713
-04: age = 7
-05: spam = 'anxious'
-06: name = 4.27; pigs = 'can fly'
-07: alpha = 'abcdefghijklmnopqrstuvwxyz'; pi = 3.14159265 
-08: quest = 'To seek the Holy Grail.'; airspeed = 43
-09: 
+04: oops=713
+05: age = 7
+06: spam = 'anxious'
+07: name = 4.27; pigs = 'can fly'
+08: alpha = 'abcdefghijklmnopqrstuvwxyz'; pi = 3.14159265 
+09: quest = 'To seek the Holy Grail.'; airspeed = 43
 10: perfect =(4+3)
 ------------------------------ level 02 - 00/11 - Variables, keywords, and statements
 01: 
