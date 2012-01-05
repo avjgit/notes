@@ -73,7 +73,9 @@ def double_word(word)
 end    
 
 06: 
-
+def repeat_word(word, times)
+    word*times
+end    
 
 07: 
 
