@@ -1,4 +1,5 @@
 h3. Railsware Study | "presentations":http://railsware.com/study | "video":http://vimeo.com/channels/rwstudy
+
 + lecture #02, "design":http://vimeo.com/32440431
 + lecture #02, "frontend":http://vimeo.com/32440537
 + lecture #02, "backend":http://vimeo.com/32440503
