@@ -9,7 +9,7 @@
 ------------------------------ level 02 - 00/11 - Variables, keywords, and statements
 01: spam = 'shrubbery'; age = 37; pi = 3.1415
 02: spam = 'spam'
-03: 
+03: count = 1
 04: 
 05: 
 06: 
