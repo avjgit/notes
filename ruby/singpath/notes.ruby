@@ -4,7 +4,7 @@
 05: spam = 'anxious'
 06: name = 4.27; pigs = 'can fly'
 07: alpha = 'abcdefghijklmnopqrstuvwxyz'; pi = 3.14159265 
-08: 
+08: quest = 'To seek the Holy Grail.'; airspeed = 43
 09: 
 10: 
 ------------------------------ level 02 - 00/11 - Variables, keywords, and statements
