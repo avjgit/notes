@@ -58,7 +58,9 @@ def increment (input)
 end    
 
 03: 
-
+def product(nr1, nr2)
+    nr1*nr2
+end
 
 04: 
 
