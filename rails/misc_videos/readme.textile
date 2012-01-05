@@ -1,1 +1,2 @@
-"Railsware Study":http://vimeo.com/channels/rwstudy
+h3. "Railsware Study":http://vimeo.com/channels/rwstudy
+"presentations":http://railsware.com/study
