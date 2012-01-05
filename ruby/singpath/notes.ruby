@@ -1,9 +1,7 @@
-h3. "Singpath":http://www.singpath.com
-
 ------------------------------ level 01 - 00/10 - The way of SingPath
 03: oops=713
 04: age = 7
-05: 
+05: spam = 'anxious'
 06: 
 07: 
 08: 
