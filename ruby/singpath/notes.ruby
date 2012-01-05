@@ -63,10 +63,14 @@ def product(nr1, nr2)
 end
 
 04: 
-
+def sum(a,b)
+    a+b
+end
 
 05: 
-
+def double_word(word)
+    word*2
+end    
 
 06: 
 
