@@ -78,7 +78,9 @@ def repeat_word(word, times)
 end    
 
 07: 
-
+def circle_area(radius)
+    Math::PI * radius**2
+end
 
 08: 
 
