@@ -152,7 +152,15 @@ def equal(a, b)
 end
 
 04: 
-
+def sign(x)
+  if x==0
+      return 0
+  elsif x > 0
+      return 1
+  else 
+      return -1
+  end
+end  
 
 05: 
 
