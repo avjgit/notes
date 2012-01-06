@@ -256,6 +256,19 @@ def divide_all(x,y,z)
 end
 
 14: 
+def lone_sum(a, b, c)
+    if a == b && b == c
+        return 0
+    elsif a == b
+        return c
+    elsif b == c
+        return a
+    elsif c == a
+        return b
+    else
+        return a + b + c
+    end 
+end
 
 
 15: 
