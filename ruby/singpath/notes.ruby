@@ -181,7 +181,17 @@ def is_triangle(a, b, c)
 end
 
 07: 
-
+def ticket(a, b, c)
+    if (a==b) && (b==c) && (c==2)
+        return 10
+    elsif (a==b) && (b== c)
+        return 5
+    elsif (a!=b) && (b!=c) && (c!=a)
+        return 1
+    else
+        return 0
+    end 
+end
 
 08: 
 
