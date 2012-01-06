@@ -228,7 +228,15 @@ def in1to10(number, outside)
 end
 
 10: 
-
+def date_fashion(you,date)
+    if you < 3 or date < 3
+        return 0
+    elsif you > 7 or date > 7
+        return 2
+    else
+        return 1
+    end
+end
 
 11: 
 
