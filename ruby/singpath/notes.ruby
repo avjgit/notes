@@ -250,7 +250,10 @@ def do_math(num)
 end
 
 13: 
-
+def divide_all(x,y,z)
+    d = (y/1.0)/z
+    return x/d
+end
 
 14: 
 
