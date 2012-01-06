@@ -163,7 +163,13 @@ def sign(x)
 end  
 
 05: 
-
+def love6(a, b)
+    if (a == 6) or (b == 6) or ((a + b) == 6) or ((a - b) == 6) or ((b - a) == 6)    
+        return true
+    else
+        return false
+    end
+end
 
 06: 
 
