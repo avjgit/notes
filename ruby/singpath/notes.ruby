@@ -83,10 +83,15 @@ def circle_area(radius)
 end
 
 08: 
-
+def radian(degrees)
+    degrees * Math::PI / 180.0
+end    
 
 09: 
-
+def cosine(degrees)
+    radians = degrees * Math::PI/180
+    Math::cos(radians)
+end    
 
 10: 
 
