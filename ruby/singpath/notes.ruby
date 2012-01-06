@@ -282,7 +282,9 @@ def make_bricks(small, big, goal)
 end
 
 16: 
-
+def is_odd(integer)
+    integer%2 > 0
+end
 
 17: 
 
