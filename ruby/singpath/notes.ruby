@@ -194,7 +194,21 @@ def ticket(a, b, c)
 end
 
 08: 
-
+def alarmClock(day, vacation)
+    if day == 0 or day == 6
+        if vacation 
+            return "off"
+        else
+            return "10:00"
+        end
+    else
+        if vacation
+            return "10:00"
+        else
+            return "7:00"
+        end
+    end
+end
 
 09: 
 
