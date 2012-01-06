@@ -109,7 +109,11 @@ def repeat(word)
 end
 
 13: 
-
+def right_justify(s)
+    length = 40
+    add_spaces = length - s.length()
+    ' ' * add_spaces + s
+end
 
 14: 
 
