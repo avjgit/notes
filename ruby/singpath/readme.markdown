@@ -2,7 +2,7 @@
 
 + level 01 - 10/10 - The way of SingPath  
 + level 02 - 11/11 - Variables, keywords, and statements  
-+  level 03 - 00/15 - Functions  
++ level 03 - 00/15 - Functions  
   level 04 - 00/17 - Conditionals  
   level 05 - 00/11 - Recursion  
   level 06 - 00/18 - Iteration  

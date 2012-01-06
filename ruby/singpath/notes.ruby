@@ -137,7 +137,9 @@ end
 
 ------------------------------ level 04 - 00/17 - Conditionals
 01: 
-
+def quotient(a, b)
+    a/b
+end
 
 02: 
 
