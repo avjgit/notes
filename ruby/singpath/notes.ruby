@@ -332,7 +332,9 @@ def is_divisible(a, b)
 end
 
 03: 
-
+def is_between(a, b, c)
+    a <= b && b <= c
+end
 
 04: 
 
