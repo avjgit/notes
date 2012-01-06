@@ -147,7 +147,9 @@ def remainder(a, b)
 end
 
 03: 
-
+def equal(a, b)
+    a == b        
+end
 
 04: 
 
