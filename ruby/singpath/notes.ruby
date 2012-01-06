@@ -239,7 +239,9 @@ def date_fashion(you,date)
 end
 
 11: 
-
+def near_ten(number)
+    number%10 <= 2 or number%10 >=8
+end
 
 12: 
 
