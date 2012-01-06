@@ -270,9 +270,16 @@ def lone_sum(a, b, c)
     end 
 end
 
-
 15: 
-
+def make_bricks(small, big, goal)
+    # we'll use enought 1-sizes brickes to fill the gap
+    # to find out, how big the gap is:
+    if (big*5) > goal        
+        (goal%5) <= small
+    else
+        (goal - big*5) <= small
+    end     
+end
 
 16: 
 
