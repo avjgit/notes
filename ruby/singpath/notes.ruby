@@ -99,10 +99,14 @@ def add_one(num)
 end
 
 11: 
-
+def difference(x,y)
+    x - y
+end    
 
 12: 
-
+def repeat(word)
+    word * word.length()
+end
 
 13: 
 
