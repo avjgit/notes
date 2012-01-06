@@ -142,7 +142,9 @@ def quotient(a, b)
 end
 
 02: 
-
+def remainder(a, b)
+    a%b
+end
 
 03: 
 
