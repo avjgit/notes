@@ -271,6 +271,11 @@ def lone_sum(a, b, c)
 end
 
 15: 
+/*
+return if it's possible to make GOAL long wall
+of BIG many big bricks, 5 inches long, 
+and SMALL many small ones, 1 inche long 
+*/
 def make_bricks(small, big, goal)
     # we'll use enought 1-sizes brickes to fill the gap
     # to find out, how big the gap is:
@@ -287,7 +292,27 @@ def is_odd(integer)
 end
 
 17: 
-
+/*
+You are the programmer for an elevator installation company. 
+You need to create a program that will select the best elevator to be used 
+when someone calls the elevator to their floor. 
+For this program you will be worried only about sending the closest elevator. 
+You don't need to worry about whether the elevator is already moving or not.
+Create a function elevator that takes three parameters: alevel, blevel, and button. 
+You should return the string 'a', 'b', or 'either'
+ to represent which lift is closer to the button press.
+*/
+def elevator(alevel, blevel, button)
+    adist = (alevel - button).abs
+    bdist = (blevel - button).abs
+    if adist < bdist
+        return 'a'
+    elsif bdist < adist
+        return 'b'
+    else
+        return 'either'
+    end 
+end
 
 ------------------------------ level 05 - 00/11 - Recursion
 01: 
