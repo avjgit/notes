@@ -337,12 +337,19 @@ def is_between(a, b, c)
 end
 
 04: 
+# distance between 2 points
 def distance(x1, y1, x2, y2)
     Math.sqrt((x2-x1)**2 + (y2-y1)**2)
 end
 
 05: 
-
+def factorial(x)
+    if x > 0
+        x * factorial(x-1)
+    else
+        1
+    end
+end
 
 06: 
 
