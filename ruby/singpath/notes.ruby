@@ -244,7 +244,10 @@ def near_ten(number)
 end
 
 12: 
-
+def do_math(num)
+    x = num + 2
+    return x + 1
+end
 
 13: 
 
