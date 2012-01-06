@@ -316,7 +316,15 @@ end
 
 ------------------------------ level 05 - 00/11 - Recursion
 01: 
-
+def compare(x, y)
+    if x > y
+        return 1
+    elsif x < y
+        return -1
+    else
+        return 0
+    end
+end
 
 02: 
 
