@@ -172,7 +172,13 @@ def love6(a, b)
 end
 
 06: 
-
+def is_triangle(a, b, c)
+    if ((a+b) > c) or ((b+c) > a) or ((c+a) > b)
+        return true
+    else
+        return false
+    end
+end
 
 07: 
 
