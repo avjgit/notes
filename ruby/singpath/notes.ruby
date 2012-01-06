@@ -211,7 +211,21 @@ def alarmClock(day, vacation)
 end
 
 09: 
-
+def in1to10(number, outside)
+    if outside
+        if number <= 1 or number >= 10
+            return true
+        else
+            return false
+        end
+    else
+        if number >= 1 and number <= 10
+            return true
+        else
+            return false
+        end
+    end
+end
 
 10: 
 
