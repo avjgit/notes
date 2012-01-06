@@ -327,7 +327,9 @@ def compare(x, y)
 end
 
 02: 
-
+def is_divisible(a, b)
+    a%b == 0
+end
 
 03: 
 
