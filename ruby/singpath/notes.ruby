@@ -116,10 +116,24 @@ def right_justify(s)
 end
 
 14: 
+Function Caller
+In many ways functions can be treated in the same way as variables. They can even be passed as arguments into another function. 
+For this problem, you need to create a function called double_result() which takes two arguments. The first argument is a function and the second is a value. Your function needs to call the function that is passed to it, passing the value as an argument. Double the result and return that value.
+In Ruby, you execute a passed in function by sending other parameters to it. 
 
+def double_result(f,x)
+  #send(f,x)*2 #didn't worked
+  send(f,x) + send(f,x)
+end
+
+def repeat_word(input)
+    input*2
+end
 
 15: 
-
+def last(num)
+    num%10
+end
 
 ------------------------------ level 04 - 00/17 - Conditionals
 01: 
