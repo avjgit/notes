@@ -352,7 +352,14 @@ def factorial(x)
 end
 
 06: 
-
+def fibonacci(order)
+  if (order <= 2)
+    return 1
+  else
+    fibonacci(order-1) + 
+    fibonacci(order-2)    
+  end
+end
 
 07: 
 
