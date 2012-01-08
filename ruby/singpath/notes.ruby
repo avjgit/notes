@@ -409,9 +409,16 @@ def is_palindrome(word)
     
 end
 
-
 10: 
-
+# Greatest Common Factor
+# The greatest common divisor (GCD) of a and b is the largest number that divides both of them with no remainder.
+# One way to find the GCD of two numbers is Euclid’s algorithm, which is based on the observation that if r is the remainder when a is divided by b, then gcd(a,b) = gcd(b, r). As a base case, we can consider gcd(a,0) = a.
+def gcd(a, b)
+    if a%b == 0 or b== 0
+      return b
+    end
+    gcd(b, a%b)
+end
 
 11: 
 
