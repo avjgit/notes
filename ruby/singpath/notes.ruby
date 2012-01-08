@@ -362,6 +362,23 @@ def fibonacci(order)
 end
 
 07: 
+def doublefactorial(x)
+    if (x.is_a? String) or 
+       (x.is_a? Float)
+        return 'TypeError: unsupported type'
+    end  
+    # this check didn't worked    
+    # if (x < 0)
+        # return 'OverflowError: math range error'
+    # end   
+    if x > 1
+        x * doublefactorial(x-2)
+    elsif x >= 0 
+        1
+    else
+        return 'OverflowError: math range error'
+    end
+end
 
 
 08: 
