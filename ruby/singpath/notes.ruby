@@ -399,6 +399,15 @@ def ack(m, n)
 end
 
 09: 
+def is_palindrome(word)
+  
+  if word.length < 2
+    return true
+  end
+  
+  return (word[0] == word[word.length-1]) && is_palindrome(word[1..word.length-2])
+    
+end
 
 
 10: 
