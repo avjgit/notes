@@ -420,8 +420,16 @@ def gcd(a, b)
     gcd(b, a%b)
 end
 
-11: 
-
+11:
+# A number, a, is a positive integer power of b if it is divisible by b and a/b is a power of b. 
+# Write a function called is_power that takes parameters a and b and returns True if a is a positive integer power of b. 
+def is_power(a, b)
+    if (a == b)
+      return true
+    else
+      return a%b==0 && is_power(a/b, b)
+    end
+end
 
 ------------------------------ level 06 - 00/18 - Iteration
 01: 
