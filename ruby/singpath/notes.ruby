@@ -437,10 +437,10 @@ def sum(n)
   total = 0
   i = 1
   while i<= n
-    total += 1
+    total += i
     i += 1
   end
-  return i
+  return total
 end
 
 02: 
