@@ -444,7 +444,14 @@ def sum(n)
 end
 
 02: 
-
+def factorial(n)
+    total = 1
+    while n > 1
+        total = total * n
+        n -= 1
+    end
+    total
+end
 
 03: 
 
