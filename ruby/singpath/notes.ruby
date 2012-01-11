@@ -433,7 +433,15 @@ end
 
 ------------------------------ level 06 - 00/18 - Iteration
 01: 
-
+def sum(n)
+  total = 0
+  i = 1
+  while i<= n
+    total += 1
+    i += 1
+  end
+  return i
+end
 
 02: 
 
