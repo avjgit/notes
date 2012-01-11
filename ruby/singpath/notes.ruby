@@ -508,10 +508,22 @@ def sum_cubes(a, b)
 end
 
 08: 
-
+def sum_powers(a, b, power)
+    total = 0
+    for i in (a..b)
+        total += i**power
+    end
+    return total
+end
 
 09: 
-
+def product(a, b, step)
+    total = 1
+    (a..b).step(step) do |n|
+        total *= n
+    end
+    return total
+end
 
 10: 
 
