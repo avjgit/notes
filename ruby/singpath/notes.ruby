@@ -463,8 +463,22 @@ def sum(a, b)
     return total
 end
 
-04: 
-
+04:
+# step doesn't work with floats
+# def sum(a, b, step)
+    # (a..b).step(step) do |n|
+        # total += n
+    # end
+    # return total
+# end 
+def sum(a, b, step)
+    total = 0
+    while a <= b
+        total += a
+        a += step
+    end
+    return total
+end
 
 05: 
 
