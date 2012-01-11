@@ -499,7 +499,13 @@ def sum_roots(n)
 end
 
 07: 
-
+def sum_cubes(a, b)
+    total = 0
+    for i in (a..b)
+        total += i**3
+    end
+    return total
+end
 
 08: 
 
