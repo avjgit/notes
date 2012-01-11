@@ -481,7 +481,13 @@ def sum(a, b, step)
 end
 
 05: 
-
+def sum_squares(n)
+    total = 0
+    for i in (1..n)
+        total += i**2
+    end
+    return total
+end
 
 06: 
 
