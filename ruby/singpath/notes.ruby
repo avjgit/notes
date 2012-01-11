@@ -454,7 +454,14 @@ def factorial(n)
 end
 
 03: 
-
+def sum(a, b)
+    total = 0
+    while a <= b
+        total += a
+        a += 1
+    end
+    return total
+end
 
 04: 
 
