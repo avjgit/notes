@@ -490,7 +490,13 @@ def sum_squares(n)
 end
 
 06: 
-
+def sum_roots(n)
+    total = 0
+    for i in (1..n)
+        total += Math.sqrt(i)
+    end
+    return total
+end
 
 07: 
 
