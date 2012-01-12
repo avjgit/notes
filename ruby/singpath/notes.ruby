@@ -526,10 +526,23 @@ def product(a, b, step)
 end
 
 10: 
-
+def sum_squares(numbers)
+  total = 0
+  for i in numbers do
+    total += i**2
+  end
+  total
+end
 
 11: 
-
+def count_evens(numbers)
+    count = 0
+    for number in numbers
+        if number%2 == 0
+            count += 1
+        end
+    end
+end
 
 12: 
 
