@@ -542,10 +542,36 @@ def count_evens(numbers)
             count += 1
         end
     end
+    count
 end
 
 12: 
+# Return the sum of the numbers in a list, 
+# except ignore sections of numbers starting with a 6 and extending to the next 7 
+# (every 6 will be followed by at least one 7). 
+# Return 0 for an empty list.
 
+# I assume sections from 6 to nearest 7
+def sum67(numbers)
+  total = 0
+  add = true
+  for n in numbers
+    
+    if n == 6
+      add = false
+    end
+    
+    if add
+      total += n
+    end
+    
+    if n == 7
+      add = true
+    end
+    
+  end
+  total
+end
 
 13: 
 
