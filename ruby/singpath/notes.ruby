@@ -590,6 +590,27 @@ def is_prime(nr)
 end
 
 14: 
+# A perfect number is a number whose factors sum to itself.
+# For example, the factors of 6 are 1, 2, and 3. 1+2+3=6.
+# The factors of 28 are 1+2+4+7+14=28.
+def is_perfect(nr)
+  factors = Array.new
+  for i in 1..nr-1 do
+    if nr%i ==0 
+      # puts 'factor is ' + i.to_s
+      factors << i
+    end
+  end
+  sum = 0  
+  factors.each do |i|
+    # print 'sum ' + sum.to_s + ' + ' + i.to_s
+    sum += i
+    # puts ' = ' + sum.to_s
+  end
+  sum
+  return sum == nr ? true : false
+end
+ 
 
 
 15: 
