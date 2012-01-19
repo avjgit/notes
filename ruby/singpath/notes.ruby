@@ -591,6 +591,13 @@ end
 18: 
 
 
+# a problem
+# Switch values between two variables, without introducing third one, and return the second.
+def switch(a, b)
+    a = a + b
+    b = a - b
+    return b
+end
 ------------------------------ level 07 - 00/21 - Strings
 01: 
 
