@@ -574,7 +574,20 @@ def sum67(numbers)
 end
 
 13: 
-
+def is_prime(nr)
+  prime = true
+  #ok, for positive inegers only
+  if nr > 1 
+    for x in 2..nr-1 do
+      if (nr%x == 0)
+        prime = false 
+      end
+    end
+  else
+    prime = false
+  end  
+  prime
+end
 
 14: 
 
