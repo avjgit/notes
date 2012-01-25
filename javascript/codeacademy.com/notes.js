@@ -124,3 +124,16 @@ while (i<2 ) {
   console.log( "hello" );
   i++;
 };
+
+var times = 0;
+while (times > 0 && times < 3) {
+  console.log("the loop ran");
+  times++;
+}
+
+var i = 0;
+do {
+  console.log("This is iteration " + (i + 1) + ".");
+  i++;
+}
+while(i<4 );
