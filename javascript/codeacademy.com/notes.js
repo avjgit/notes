@@ -88,3 +88,26 @@ var response = prompt("Do you like me?");
 if (response === "yes") {
   console.log("I like you too!");
 }
+
+// lesson 7
+var i = 0;
+i++;
+i++;
+console.log( "i is equal to " + i );
+
+var i = 2;
+i--;
+i--;
+console.log( "i is equal to " + i );
+
+var i;
+for (i = 0; i < 2; i++) {
+  console.log("i is now equal to " + i);
+}
+console.log("i is now equal to " + i);
+
+var i;
+for ( i = 2 ; i > 0; i-- ) {
+  console.log( "i is now equal to " + i );
+};
+console.log( "i is now equal to " + i );
