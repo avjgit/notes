@@ -111,3 +111,16 @@ for ( i = 2 ; i > 0; i-- ) {
   console.log( "i is now equal to " + i );
 };
 console.log( "i is now equal to " + i );
+
+// lesson 8
+var i = 0;
+while ( i < 2 ) {
+  console.log( "i is now " + i );
+  i++;
+}
+
+var i = 0;
+while (i<2 ) {
+  console.log( "hello" );
+  i++;
+};
