@@ -83,3 +83,8 @@ else if ( number > 5 ) {
 else if ( number < 5 ) {
   console.log( "your number is less than 5" );
 }
+
+var response = prompt("Do you like me?");
+if (response === "yes") {
+  console.log("I like you too!");
+}
