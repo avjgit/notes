@@ -67,3 +67,8 @@ if(number === "7") {
 } else {
   console.log("You were way off! Sorry...");
 }
+
+var word = "that";
+if( word === "that" ) {
+  console.log( "word is equal to 'that'" );
+}
