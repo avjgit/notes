@@ -1247,3 +1247,21 @@ bob.getYearOfBirth = function () {
 // here we set bob's age to 40
 bob.setAge(20);
 // bob's feeling old.  Use our method to set bob's age to 20
+
+
+
+
+
+//this acts as a placeholder, and will refer to whichever object calls that method when the method is actually used.
+// here we define our method using "this", before we even introduce bob
+function setAge (newAge) {
+  this.age = newAge;
+};
+// now we make bob
+var bob = new Object();
+bob.age = 30;
+// and down here we just use the method we already made
+bob.setAge = setAge;
+  
+// change bob's age to 50 here
+bob.setAge(50);
