@@ -467,9 +467,16 @@ console.log(power(2, 1) === 2);
 
 
 
-var taxiFare = function (milesTraveled) {
+var taxiFare = function (milesTraveled, hourOfDay) {
   var baseFare = 2.50;
   var costPerMile = 2.00;
-  var cost = baseFare + milesTraveled * costPerMile; 
+  var nightSurcharge = 0.50; // 8pm to 6am, every night
+
+  var cost = baseFare + (costPerMile * milesTraveled);
+  
+  if (hourOfDay >= 20 || hourOfDay < 6){
+      cost += nightSurcharge;
+  }
+ 
   return cost;
 };
