@@ -718,3 +718,24 @@ switch (jacketColor) {
   default:
     result = "This color does not match my eyes!";
 }
+
+
+
+
+var myCar = "Toyota" ;
+var result;
+
+switch (myCar) {
+    
+  case "Ford":
+    result = "American brand";
+  break;
+  
+  case "Toyota":
+    result  = "Japanese brand";
+  break;
+    
+  default:
+    result = "I'm not sure what country that car is from";
+  break;  
+}
