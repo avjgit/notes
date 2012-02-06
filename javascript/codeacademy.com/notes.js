@@ -1134,3 +1134,12 @@ var getReview = function (movie) {
 
 
 var bob = {};
+var Spencer = {
+  age: 22,
+  country: "United States"
+};
+
+var Me = {
+    age: 29,
+    country: "Latvia"
+}
