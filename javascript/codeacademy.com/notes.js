@@ -271,5 +271,4 @@ var greet = function(){
     console.log(greeting);
 }
 greet(); // put Hello
-
-
+console.log(greeting); // put Ahoy
