@@ -517,6 +517,7 @@ volume(2, 3, 4);
 
 // Change the argument name from x to n
 var cube = function (n) {
+  if (typeof(x) != 'number') return 0;
   return n * n * n;
 }
 
