@@ -792,3 +792,11 @@ else {
 
 // rewrite the code above using a ternary operator
 answer = myAge > 18 ? "adult" : "non-adult";
+
+
+
+
+var name = prompt("What's your name?")
+
+//Rewrite the above code using the ternary operator
+result = name === "Nick" ? true : false;
