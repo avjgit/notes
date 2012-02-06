@@ -739,3 +739,19 @@ switch (myCar) {
     result = "I'm not sure what country that car is from";
   break;  
 }
+
+
+
+
+var born = prompt("What country were you born in?")
+var result = "";
+
+switch (born) {
+    case "USA":
+        result = "Born in the USA";
+    break;
+    
+    default:
+        result = "Born outside the USA";
+    break;   
+}
