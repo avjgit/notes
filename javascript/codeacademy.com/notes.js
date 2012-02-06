@@ -1019,3 +1019,17 @@ console.log(score);
 var score = 7.352;
 score = Math.floor(score);
 console.log(score);
+
+
+
+
+// Write your full name
+var myName = "AJ"
+
+// And your age
+var myAge = 29
+
+// Are you a human? Be honest.
+var iAmHuman = true; 
+
+console.log("My name is " + myName + " and I am " + myAge + " years old.");
