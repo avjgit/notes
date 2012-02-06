@@ -1,5 +1,5 @@
 ### [Codecademy](http://www.codecademy.com)
 + Introduction  
-  Functions  
++ Functions  
   Conditionals  
   Review  

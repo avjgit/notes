@@ -838,3 +838,21 @@ if (cost > 100) {
 else {
   result = "reject cheap product";
 }
+
+
+
+
+var topThree = "true";
+var winner = "true";
+var result;
+
+if (topThree === "false") {
+  result = "Sorry, empty handed";
+}
+else {
+  if (winner === "true") {
+    result = "Gold!!!";
+  } else {
+    result = "Not bad! Got a medal!";
+  }
+}
