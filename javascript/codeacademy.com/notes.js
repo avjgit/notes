@@ -303,3 +303,11 @@ greet();
 // This will produce a `ReferenceError` since we are out
 // of the `myName` variable scope.
 console.log(myName);
+
+
+
+
+var identity = function (x) {
+  return x;
+};
+identity();
