@@ -525,3 +525,15 @@ var cube = function (n) {
 // should still return the same result.
 cube(5);
 console.log(cube("test"));
+
+
+
+
+var w = 15;
+
+var volume = function (w, l, h) {
+   return w * l * h;
+}
+
+volume(2, 3, 4);
+console.log(w);
