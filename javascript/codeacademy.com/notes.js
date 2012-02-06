@@ -417,3 +417,10 @@ var isOdd = function(x){
 var isEven = function(x){
     return !isOdd(x);
 };
+
+
+
+
+var area = function (w, l) {
+  return w*l;
+};
