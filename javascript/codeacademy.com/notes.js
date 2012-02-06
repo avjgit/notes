@@ -606,3 +606,12 @@ isQualified(liu);
 isQualified(timothy);
 
 // Call the function isQualified on liu and timothy
+
+
+
+
+//Review on finding the length of strings and variables
+
+var name = "Leng Lee";
+var number = name.length;
+console.log(number);
