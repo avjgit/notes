@@ -895,9 +895,14 @@ console.log("You rolled a "+die1+" and a "+die2+" for a score of "+score);
 
 
 
-var calculateTotalCosts = function(salary, numWorkers){
+var calculateTotalCosts = function(salary, numWorkers, city){
     var fixedCosts = 5000;
     var variableCosts = salary * numWorkers;
-    return fixedCosts + variableCosts;
+    if(city === "NYC"){
+        return fixedCosts + variableCosts + 30000;
+    }else{
+        return fixedCosts + variableCosts;
+    }
+    
 }
-calculateTotalCosts(25000, 5);
+calculateTotalCosts(30000, 7, "NYC");
