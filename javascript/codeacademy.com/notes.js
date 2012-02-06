@@ -615,3 +615,12 @@ isQualified(timothy);
 var name = "Leng Lee";
 var number = name.length;
 console.log(number);
+
+
+
+
+var i = 0;
+while (i === 0) {
+  console.log("Hello");
+  i++;
+}
