@@ -401,3 +401,19 @@ var isMultipleOfThree = function (x) {
 var isNotMultipleOfThree = function (x) {
   return !isMultipleOfThree(x);
 };
+
+
+
+
+
+var isOdd = function(x){
+    if(x%2 === 0){
+        return false;
+    } else {
+        return true;
+    }    
+};
+
+var isEven = function(x){
+    return !isOdd(x);
+};
