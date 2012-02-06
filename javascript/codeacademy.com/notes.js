@@ -954,3 +954,4 @@ console.log( 0 === 0); // is equal to.
 console.log( 1 <= 1 ); // is less than or equal to.
 console.log( "Hi" !== "hi" ); // is not equal to.
 console.log( 0 < 1 ); // is less than.
+true && !false;
