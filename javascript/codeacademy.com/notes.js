@@ -264,10 +264,12 @@ console.log("And your full name is:" + fullName);
 var greeting = "Ahoy";
 
 
+//variables do not have to be declared before the function is defined, just before the function is called!
 var greeting = "Ahoy";
 var greet = function(){
+    var greeting = "Hello";
     console.log(greeting);
 }
-greet();
+greet(); // put Hello
 
 
