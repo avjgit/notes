@@ -645,3 +645,18 @@ if ( yourName.length > 0) {
 } else {
    result = "What is your name?"
 };
+
+
+
+
+var yourName = "AJ";
+var gender = "male";
+var result;
+
+if (gender === "male") {
+  result = "His name is "+yourName;
+} else if (gender === "female") {
+  result = "Her name is "+yourName;
+} else {
+  result = "Hi "+yourName;
+}
