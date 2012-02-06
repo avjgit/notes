@@ -467,7 +467,9 @@ console.log(power(2, 1) === 2);
 
 
 
-var taxiFare = function () {
-    var baseFare = 2.50;
-    return baseFare;
+var taxiFare = function (milesTraveled) {
+  var baseFare = 2.50;
+  var costPerMile = 2.00;
+  var cost = baseFare + milesTraveled * costPerMile; 
+  return cost;
 };
