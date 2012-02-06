@@ -664,12 +664,17 @@ if (gender === "male") {
 
 
 
-var yourName = "AJ";
-var gender = "male";
-var result;
-
-if (yourName.length > 0 && gender.length > 0) {
-  result = "Thanks";
-} else {
-  result = "Please make sure both yourName and gender are filled in.";
-}
+var checkNameGender = function (yourName,gender) {
+//All the code below was used in exercise 1.6
+  
+    if (gender.length > 0 && yourName.length > 0) {
+      if (gender === 'male' || gender === 'female') {
+            return true;
+      } else {
+            return false;
+      }
+    } else {
+      return false;
+    }
+};
+checkNameGender("AJ", "male");
