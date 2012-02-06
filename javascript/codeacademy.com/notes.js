@@ -891,3 +891,8 @@ if(die1 === 1 || die2 === 1){
 }
 
 console.log("You rolled a "+die1+" and a "+die2+" for a score of "+score);
+
+
+
+
+var fixedCosts = 5000;
