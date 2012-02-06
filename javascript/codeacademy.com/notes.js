@@ -467,4 +467,7 @@ console.log(power(2, 1) === 2);
 
 
 
-var baseFare = 2.50;
+var taxiFare = function () {
+    var baseFare = 2.50;
+    return baseFare;
+};
