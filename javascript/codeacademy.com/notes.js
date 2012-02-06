@@ -678,3 +678,12 @@ var checkNameGender = function (yourName,gender) {
     }
 };
 checkNameGender("AJ", "male");
+
+
+
+
+var legalDrivingAge = 18;
+var canIDrive = function(myAge){
+    return myAge >= legalDrivingAge;
+}
+canIDrive(29);
