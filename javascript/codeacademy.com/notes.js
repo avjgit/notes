@@ -639,6 +639,9 @@ familyIncome(100000, 100000);
 
 var yourName = "";
 var result = "";
-if (yourName.length === 0) {
-  result = "What is your name?";
+// use the > symbol to check the length of yourName
+if ( yourName.length > 0) {
+   result = "Hi "+ yourName;
+} else {
+   result = "What is your name?"
 };
