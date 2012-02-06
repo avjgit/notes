@@ -780,15 +780,15 @@ switch(born){
 
 
 
-var x = 10
-var y = 9
+var myAge = prompt("What's your age?");
 
-if (x > y) {
-  result = "good job";
+// a simple if else statement
+if (myAge >= 18) {
+ answer = "";
 }
 else {
-  result = 20;
+ answer = "non-adult" ;
 }
 
-//Below is the above code written using the ternary operator
-result = x > y ? "good job" : 20;
+// rewrite the code above using a ternary operator
+answer = myAge > 18 ? "adult" : "non-adult";
