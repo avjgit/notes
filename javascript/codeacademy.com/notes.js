@@ -537,3 +537,15 @@ var volume = function (w, l, h) {
 
 volume(2, 3, 4);
 console.log(w);
+
+
+
+
+var volume = function (w, l, h) {
+  var area = w * l;
+  return area * h;
+}
+
+var area = 36;
+console.log(volume(2, 3, 4));
+console.log(area);
