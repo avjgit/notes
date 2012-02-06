@@ -390,3 +390,14 @@ var square = function (x) {
 var cube = function (x) {
   return square(x) * x;
 };
+
+
+
+
+var isMultipleOfThree = function (x) {
+  return x % 3 === 0;
+};
+
+var isNotMultipleOfThree = function (x) {
+  return !isMultipleOfThree(x);
+};
