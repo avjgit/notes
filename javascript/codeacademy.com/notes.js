@@ -956,3 +956,13 @@ console.log( "Hi" !== "hi" ); // is not equal to.
 console.log( 0 < 1 ); // is less than.
 true && !false;
 false || ( 5 === 2 + 4 );
+
+
+
+
+var x = 1;
+var y = 2;
+
+if (y>x ) {
+  console.log('y is larger than x');
+}
