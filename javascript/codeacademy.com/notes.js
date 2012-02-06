@@ -1143,3 +1143,16 @@ var Me = {
     age: 29,
     country: "Latvia"
 }
+// Our bob object again, but made using a constructor this time 
+var bob = new Object();
+bob.name = "Bob Smith";
+bob.age = 30;
+// Here is susan again, in literal notation
+var susan1 = {
+  name: "Susan Jordan",
+  age: 24
+};
+// Make a new susan2 object, using a constructor instead
+var susan2 = new Object();
+susan2.name = "Susan Jordan";
+susan2.age = 24;
