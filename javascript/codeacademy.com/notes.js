@@ -664,12 +664,12 @@ if (gender === "male") {
 
 
 
-var yourName = "AJ" ;
+var yourName = "AJ";
 var gender = "male";
+var result;
 
-// don't forget to use the || operator 
-if (gender === "male" || gender === "female"  ) {
-  result = true;
+if (yourName.length > 0 && gender.length > 0) {
+  result = "Thanks";
 } else {
-  result = false;
+  result = "Please make sure both yourName and gender are filled in.";
 }
