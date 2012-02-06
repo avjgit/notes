@@ -800,3 +800,11 @@ var name = prompt("What's your name?")
 
 //Rewrite the above code using the ternary operator
 result = name === "Nick" ? true : false;
+
+
+
+
+var food = prompt("Which food?");
+
+//Re-write the above code using a ternary operator
+foodType = food === "taco" ? "Mexican" : "other";
