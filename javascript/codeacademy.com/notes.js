@@ -540,12 +540,14 @@ console.log(w);
 
 
 
-
+var area = 36;
 var volume = function (w, l, h) {
+  // global var can be modified
+  // area = w * l;
   var area = w * l;
   return area * h;
 }
 
-var area = 36;
+
 console.log(volume(2, 3, 4));
 console.log(area);
