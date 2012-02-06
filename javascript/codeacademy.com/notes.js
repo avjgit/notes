@@ -220,3 +220,13 @@ for (i=1; i<=upper_limit; i++) {
     console.log(i);
   }
 }
+
+// Functions
+// Defining - Intro
+var hello = function () {
+  // Print hello on the console.
+  console.log("i am saying hello");
+};
+
+hello();
+hello();
