@@ -1007,3 +1007,9 @@ var multiplesOfFive = [5,10,15,22,25,30];
 // Test to see if a number from the array is NOT a true
 // multiple of five. Real multiples will return false.
 multiplesOfFive[3] % 5 !== 0;
+
+
+
+
+
+var score = Math.floor(Math.random()*20 + 1);
