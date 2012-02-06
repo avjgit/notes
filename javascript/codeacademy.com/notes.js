@@ -577,8 +577,9 @@ var averageTime = totalTime/ raceTimes.length;
 
 
 // runner times
+// Runner times
 var carlos = [9.6,10.6,11.2,10.3,11.5];
-var sarah = [10.6,11.2,9.4,12.3,10.1];
+var liu = [10.6,11.2,9.4,12.3,10.1];
 var timothy = [12.2,11.8,12.5,10.9,11.1];
 
 var calculateAverage = function (raceTimes) {
@@ -589,18 +590,19 @@ var calculateAverage = function (raceTimes) {
   return averageTime;
 };
 
-console.log(calculateAverage(timothy));
+var isQualified = function (runner) {
+  var averageTime = calculateAverage(runner);
+    
+  if ( averageTime >= 11.5 ) { 
+    // Times greater than or equal to 11.5 are too slow
+	console.log("Close, but you didn't make the cut.");
+  } else if ( averageTime < 11.5 ) {
+	// An average time of less than 11.5 can join the team
+	console.log("Welcome to the team, speedy!");
+  }
+};
 
+isQualified(liu);
+isQualified(timothy);
 
-
-
-var isQualified = function(averageTime){
-    if(averageTime >= 11.5){
-        console.log("Close, but you didn't make the cut.");
-    }else{
-        console.log("Welcome to the team, speedy!")
-    }
-}
-
-isQualified(11.3);
-isQualified(12.1);
+// Call the function isQualified on liu and timothy
