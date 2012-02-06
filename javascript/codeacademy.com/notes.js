@@ -424,3 +424,14 @@ var isEven = function(x){
 var area = function (w, l) {
   return w*l;
 };
+
+
+
+
+var isDivisible = function (x, y) {
+    if (x%y === 0){
+        return true;
+    }else {
+        return false;
+    }
+};
