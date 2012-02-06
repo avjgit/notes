@@ -881,11 +881,12 @@ var die1 = Math.floor(Math.random()*6 + 1);
 var die2 = Math.floor(Math.random()*6 + 1);
 var score;
 
-// this time if either dice roll is 1 then score should be 0
-// Otherwise, score should be the sum of the two dice
-if (die1 === 1 || die2 === 1){
+// This time if either die roll is 1 then score should be 0 
+if(die1 === 1 || die2 === 1){
     score = 0;
-}else{
+} else if (die1 === die2){
+    score = (die1+die2)*2;
+} else {
     score = die1 + die2;
 }
 
