@@ -624,3 +624,12 @@ while (i === 0) {
   console.log("Hello");
   i++;
 }
+
+
+
+
+var familyIncome = function(mumIncome, dadIncome) {
+  return mumIncome + dadIncome;
+};
+
+familyIncome(100000, 100000);
