@@ -808,3 +808,15 @@ var food = prompt("Which food?");
 
 //Re-write the above code using a ternary operator
 foodType = food === "taco" ? "Mexican" : "other";
+
+
+
+
+var gender = "male";
+
+if (gender === "female") {
+  result = "true";
+}
+else {
+  result = "false"
+}
