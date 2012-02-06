@@ -1076,3 +1076,27 @@ var multiplesOfEight = [8,16,24,32,40,58];
 // Test to see if a number from the array is NOT a true
 // multiple of five. Real multiples will return false.
 var answer = multiplesOfEight[5] % 8 !== 0;
+
+
+
+
+for (i=1; i<=20; i++) { 
+  
+  
+  // if the number is divisible by 3, write "Fizz"
+  if ( i % 3 === 0 ) { 
+    if (i%5===0){
+      console.log("FizzBuzz");
+    }else{
+        console.log("Fizz");
+    }
+  } else if(i%5===0)
+  // if the number is divisible by 5, write "Buzz"
+  {
+      console.log("Buzz");
+  }  
+  // otherwise, write just the number
+  else {
+    console.log(i);
+  }
+}
