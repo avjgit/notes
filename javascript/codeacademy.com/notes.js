@@ -947,3 +947,4 @@ console.log("No semi-colons in loops or conditionals!");
 "can"+"can"
 var number = 10;
 console.log("I think I am 10 out of " + number);
+"Hi" === "hi"
