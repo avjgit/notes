@@ -633,3 +633,12 @@ var familyIncome = function(mumIncome, dadIncome) {
 };
 
 familyIncome(100000, 100000);
+
+
+
+
+var yourName = "";
+var result = "";
+if (yourName.length === 0) {
+  result = "What is your name?";
+};
