@@ -448,3 +448,10 @@ var power = function (base, exponent) {
 };
 
 power(2, 2);
+
+
+
+
+var power = function(base, exponent){
+    
+}
