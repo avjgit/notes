@@ -523,3 +523,4 @@ var cube = function (n) {
 // When you call cube with the new argument name, it
 // should still return the same result.
 cube(5);
+console.log(cube("test"));
