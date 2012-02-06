@@ -895,7 +895,9 @@ console.log("You rolled a "+die1+" and a "+die2+" for a score of "+score);
 
 
 
-var calculateTotalCosts = function(){
+var calculateTotalCosts = function(salary, numWorkers){
     var fixedCosts = 5000;
-    return fixedCosts;
+    var variableCosts = salary * numWorkers;
+    return fixedCosts + variableCosts;
 }
+calculateTotalCosts(25000, 5);
