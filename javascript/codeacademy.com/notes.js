@@ -311,3 +311,12 @@ var square = function (x) {
   return x*x;
 };
 square();
+
+
+
+
+var identity = function (x) {
+  
+  return x;
+};
+identity();
