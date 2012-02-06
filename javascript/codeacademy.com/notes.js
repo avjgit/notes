@@ -480,3 +480,4 @@ var taxiFare = function (milesTraveled, hourOfDay) {
  
   return cost;
 };
+var tripCost =  taxiFare(5, 2);
