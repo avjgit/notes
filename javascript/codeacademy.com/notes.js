@@ -358,3 +358,16 @@ if ( isLost(12) ) {
 if ( isLost(16) ) {
   console.log('16 is a lost number');
 }
+
+
+
+
+var quarter = function(n){
+    return n/4;
+}
+
+if (quarter(4) === 1) {
+  console.log("The statement is true.");
+} else {
+  console.log("The statement is false.");
+}
