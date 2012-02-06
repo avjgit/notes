@@ -371,3 +371,11 @@ if (quarter(4) === 1) {
 } else {
   console.log("The statement is false.");
 }
+
+
+
+
+var cube = function(x){
+    return x*x*x;
+}
+cube(3);
