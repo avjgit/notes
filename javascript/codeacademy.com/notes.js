@@ -660,3 +660,16 @@ if (gender === "male") {
 } else {
   result = "Hi "+yourName;
 }
+
+
+
+
+var yourName = "AJ" ;
+var gender = "male";
+
+// don't forget to use the || operator 
+if (gender === "male" || gender === "female"  ) {
+  result = true;
+} else {
+  result = false;
+}
