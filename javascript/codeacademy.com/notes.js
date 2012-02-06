@@ -259,3 +259,6 @@ fixName();
 name = prompt("Enter your second name (all in lower case):");
 fixName();
 console.log("And your full name is:" + fullName);
+
+// Lesson 2 Variables
+var greeting = "Ahoy";
