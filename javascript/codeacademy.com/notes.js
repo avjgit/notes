@@ -1045,3 +1045,24 @@ var someThing = manyThings[4];
 
 // And see what data type it is!
 console.log(typeof someThing);
+
+
+
+
+var primitive = "chocolate";
+
+if ( primitive === "chocolate" ) {
+    console.log("Mmm... chocolate.");
+}
+
+var primitive = 4
+
+if ( primitive < 5 ) {
+	console.log("That is a nice low number.");
+}
+
+var primitive = false
+
+if ( !primitive === true ) {
+	console.log("I am not not telling the truth.");
+}
