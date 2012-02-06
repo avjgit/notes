@@ -1066,3 +1066,13 @@ var primitive = false
 if ( !primitive === true ) {
 	console.log("I am not not telling the truth.");
 }
+
+
+
+
+// Here is an array of multiples of 8. But is it correct?
+var multiplesOfEight = [8,16,24,32,40,58];
+
+// Test to see if a number from the array is NOT a true
+// multiple of five. Real multiples will return false.
+var answer = multiplesOfEight[5] % 8 !== 0;
