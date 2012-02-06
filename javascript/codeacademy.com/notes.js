@@ -262,3 +262,12 @@ console.log("And your full name is:" + fullName);
 
 // Lesson 2 Variables
 var greeting = "Ahoy";
+
+
+var greeting = "Ahoy";
+var greet = function(){
+    console.log(greeting);
+}
+greet();
+
+
