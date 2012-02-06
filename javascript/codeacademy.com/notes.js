@@ -878,5 +878,9 @@ if ( x > y){
 
 // pick a random number between 1 and 6 for our roll of the die
 var die = Math.floor(Math.random()*6 + 1);
+var score;
 
-console.log("You rolled a "+die);
+// set score here equal to die
+var score = die;
+
+console.log("You rolled a "+die+" for a score of "+score);
