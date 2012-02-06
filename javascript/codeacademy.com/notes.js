@@ -222,7 +222,7 @@ for (i=1; i<=upper_limit; i++) {
 }
 
 // Functions
-// Defining - Intro
+// 1-1
 var hello = function () {
   // Print hello on the console.
   console.log("i am saying hello");
@@ -230,3 +230,10 @@ var hello = function () {
 
 hello();
 hello();
+
+//1-2
+var hi =function () {
+  console.log("hi");
+};
+
+hi();
