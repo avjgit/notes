@@ -940,3 +940,8 @@ console.log("Parentheses for conditions, curly for code.");
 console.log("Function code goes between curly brackets.");
 console.log("Use semi-colons in 3 situations.");
 console.log("No semi-colons in loops or conditionals!");
+
+
+
+
+"can"+"can"
