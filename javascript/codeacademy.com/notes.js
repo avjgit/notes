@@ -272,3 +272,10 @@ var greet = function(){
 }
 greet(); // put Hello
 console.log(greeting); // put Ahoy
+
+
+var sayHelloTo = function (name) {
+  console.log("Hello " + name);
+};
+
+sayHelloTo("AJ");
