@@ -1013,3 +1013,9 @@ multiplesOfFive[3] % 5 !== 0;
 
 
 var score = Math.floor(Math.random()*20 + 1);
+var score = Math.random();
+console.log(score);
+
+var score = 7.352;
+score = Math.floor(score);
+console.log(score);
