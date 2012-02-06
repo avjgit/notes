@@ -682,8 +682,15 @@ checkNameGender("AJ", "male");
 
 
 
-var legalDrivingAge = 18;
-var canIDrive = function(myAge){
+var canIDrive = function(myAge, legalDrivingAge){
     return myAge >= legalDrivingAge;
+};
+var myAge = prompt("How old are you?");
+var legalDrivingAge = 18;
+
+if (canIDrive(myAge, legalDrivingAge)) {
+  console.log("You can legally drive!");
 }
-canIDrive(29);
+else {
+  console.log("You'll have to wait a few more years!");
+}
