@@ -307,7 +307,7 @@ console.log(myName);
 
 
 
-var identity = function (x) {
-  return x;
+var square = function (x) {
+  return x*x;
 };
-identity();
+square();
