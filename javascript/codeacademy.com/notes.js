@@ -1033,3 +1033,15 @@ var myAge = 29
 var iAmHuman = true; 
 
 console.log("My name is " + myName + " and I am " + myAge + " years old.");
+
+
+
+
+// This array has lots of different data types in it
+var manyThings = ["peanut butter", 1972, "Teletubby", 13.2, true];
+
+// Pick one item
+var someThing = manyThings[4];
+
+// And see what data type it is!
+console.log(typeof someThing);
