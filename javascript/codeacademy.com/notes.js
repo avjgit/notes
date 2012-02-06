@@ -994,3 +994,10 @@ for ( i=1; i<=20; i++) {
 
 
 var numbers = [1, 2, 3];
+var animals = ["cat", "dog", "monkey"];
+
+
+// Then we'll print them out one by one
+console.log(animals[0]);
+console.log(animals[1]);
+console.log(animals[2]);
