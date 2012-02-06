@@ -1241,6 +1241,9 @@ bob.age = 30;
 bob.setAge = function (newAge){
   bob.age = newAge;
 };
+bob.getYearOfBirth = function () {
+  return 2012 - bob.age;
+};
 // here we set bob's age to 40
 bob.setAge(20);
 // bob's feeling old.  Use our method to set bob's age to 20
