@@ -237,3 +237,10 @@ var hi =function () {
 };
 
 hi();
+
+//1-3
+var myFirstFunction =function(){
+    console.log("yourName");
+}
+
+myFirstFunction();
