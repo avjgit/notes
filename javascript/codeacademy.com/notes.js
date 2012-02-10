@@ -1402,8 +1402,8 @@ console.log(rabbit3.describeMyself);
 
 
 
-// Our person constructor
-function Person (name, age) {
+// Our Person constructor
+function Person(name, age){
     this.name = name;
     this.age = age;
 }
@@ -1412,5 +1412,8 @@ var family = new Array();
 family[0] = new Person("alice", 40);
 family[1] = new Person("bob", 42);
 family[2] = new Person("michelle", 8);
-// add the last family member, "timmy", who is 6 years old
 family[3] = new Person("timmy", 6);
+// loop through our new array
+for(i = 0;i<family.length; i++){
+    console.log(family[i].name);
+}
