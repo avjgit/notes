@@ -1502,3 +1502,18 @@ function Book (length, author) {
 
 // Use our new constructor to make the_hobbit in one line
 var the_hobbit = new Book(320, "J.R.R. Tolkien")
+
+
+
+
+var bob = {
+    firstName: "Bob",
+    lastName: "Jones",
+    
+    phoneNumber: "(650) 777 - 777",
+    email: "bob.jones@example.com"
+};
+
+console.log(bob.firstName);
+console.log(bob.lastName);
+console.log(bob.email);
