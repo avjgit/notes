@@ -1548,3 +1548,13 @@ function list(){
     }
 }
 list();
+
+function search(lastName){
+    var length = contacts.length;
+    for(i = 0; i < length; i++){
+        if (contacts[i].lastName === lastName){
+            printPerson(contacts[i]);
+        }
+    }
+}
+search("Jones");
