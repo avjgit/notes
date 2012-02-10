@@ -1541,3 +1541,10 @@ var printPerson = function(person){
 }
 printPerson(contacts[0]);
 printPerson(contacts[1]);
+function list(){
+    var length = contacts.length;
+    for(i = 0; i < length; i++){
+        printPerson(contacts[i]);
+    }
+}
+list();
