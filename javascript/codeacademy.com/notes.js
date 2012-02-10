@@ -1558,3 +1558,29 @@ function search(lastName){
     }
 }
 search("Jones");
+function add(
+    firstName,
+    lastName,
+    email,
+    telephone
+    ){
+    var new_contact = {
+        firstName: firstName,
+        lastName: lastName,    
+        phoneNumber: telephone,
+        email: email
+    };
+    var i = contacts.length;
+    contacts[i] = new_contact;
+    console.log(contacts[i].email);
+}
+firstName = prompt("?");
+lastName = prompt("?");
+email = prompt("?");
+telephone = prompt("?");
+add(    
+    firstName,
+    lastName,
+    email,
+    telephone
+);
