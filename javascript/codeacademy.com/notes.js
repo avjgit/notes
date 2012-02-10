@@ -1299,14 +1299,23 @@ rectangle.setWidth(8);
 
 
 var square = new Object();
-square.sidelength = 6;
+square.sideLength = 6;
 square.calcPerimeter = function() {
-  return this.sidelength * 4;
+  return this.sideLength * 4;
 };
 // help us define an area method here
 square.calcArea = function(){
-    return this.sidelength * this.sidelength;
+    return this.sideLength * this.sideLength;
 }
 
 var p = square.calcPerimeter();
 var a = square.calcArea();
+
+
+
+
+// here we make bob using the Object constructor
+var bob = new Object();
+bob.name = "Bob Smith";
+// add bob's age here and set it equal to 20
+bob.age = 20;
