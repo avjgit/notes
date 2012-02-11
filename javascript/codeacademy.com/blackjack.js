@@ -11,7 +11,7 @@ var card2 = deal();
 // Make a getValue function here, which should convert a card to
 // the value that card is worth
 var getValue = function(card){
-    return card;
+    return card%13;
 }
 
 // Our score function converts our cards to a score
