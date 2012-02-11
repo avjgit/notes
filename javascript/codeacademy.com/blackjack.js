@@ -18,3 +18,5 @@ if (deal%2 === 0){
 } else {
   outcome = "odd";
 }
+
+confirm("Are you ready to move on?");
