@@ -1,24 +1,11 @@
-﻿var twoRandomScores = function(){
-    var score1 =  Math.floor(Math.random() * 10 + 1);
-    var score2 =  Math.floor(Math.random() * 10 + 1);
-    return score1 + score2;
-}
-var randomScore = Math.floor(Math.random() * 52 + 1);
-console.log("I got the score " + randomScore);
-
-var deal = Math.floor(Math.random() * 52 + 1);
-var final = deal % 13;
-console.log(final);
-
-var outcome;
-var deal = Math.floor(Math.random() * 40 + 1);
-
-if (deal%2 === 0){
-  outcome = "even";
-} else {
-  outcome = "odd";
+﻿// Define a function called deal
+// It should return a random number between 1 and 52
+var deal = function(){
+    var card = Math.floor(Math.random() * 52 + 1);
+    return card;
 }
 
-confirm("Are you ready to move on?");
-
-var card = Math.floor(Math.random() * 52 + 1);
+// Declare two variables 
+// For both variables, assign values gotten by calling the function
+var card1 = deal();
+var card2 = deal();
