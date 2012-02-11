@@ -8,8 +8,8 @@
 * Using Models to Decide, Strategize, and Design  
 
 ## Segregation and Peer Effects  
-Sorting and Peer Effects Introduction  
-Schelling's Segregation Model  
+* Sorting and Peer Effects Introduction  
+* Schelling's Segregation Model  
 Measuring Segregation  
 Peer Effects  
 The Standing Ovation Model  
