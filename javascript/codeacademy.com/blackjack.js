@@ -20,3 +20,5 @@ if (deal%2 === 0){
 }
 
 confirm("Are you ready to move on?");
+
+var card = Math.floor(Math.random() * 52 + 1);
