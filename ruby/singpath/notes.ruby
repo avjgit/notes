@@ -614,7 +614,28 @@ end
 
 
 15: 
-
+=begin
+Determinant
+Create a function that calculates the determinant of a given square matrix.
+In this problem, we use nested lists to represent matrices, such as
+[[6,3],
+[4,3]]
+or
+[[ 2,2,-3],
+[-1,1, 3],
+[ 2,0,-1]]
+To calculate the determinant, there is two properties that might be useful:
+1. If a matrix is obtained from another matrix by adding a multiple of a row to another, then they have the same determinant.
+2. The determinant of an upper triangular matrix is the product of its diagonal entries, like
+Determinant(
+[[a,b,c],
+[0,d,e],
+[0,0, f]])
+==a*d*f
+More about determinant:
+http://www.wikipedia.org/wiki/Determinant
+http://mathworld.wolfram.com/Determinant.html
+=end
 
 16: 
 

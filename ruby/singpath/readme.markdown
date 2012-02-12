@@ -4,7 +4,7 @@
 + level 02 - 11/11 - Variables, keywords, and statements  
 + level 03 - 00/15 - Functions  
 + level 04 - 00/17 - Conditionals  
-+  level 05 - 00/11 - Recursion  
++ level 05 - 00/11 - Recursion  
   level 06 - 00/18 - Iteration  
   level 07 - 00/21 - Strings  
   level 08 - 00/13 - Arrays  
