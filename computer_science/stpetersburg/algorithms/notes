@@ -1,5 +1,18 @@
-------------------- 01
+http://www.lektorium.tv/course/?id=22823
 
+------------------- 01
+fibonacci
+
+def fibonacci(n)
+    if (n <=1 )
+        return n
+    else
+        return fibonacci(n-1) +
+               fibonacci(n-2)
+    end
+end
+
+grows expenentially, which is bad
 
 ------------------- 02
 
