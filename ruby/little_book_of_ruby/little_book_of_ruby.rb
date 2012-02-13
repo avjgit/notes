@@ -31,9 +31,37 @@ if (subtotal < 0.0)
 end
 tax = subtotal * taxrate
 puts "and tax on #{subtotal} is #{tax}, so all together is #{subtotal+tax}"
-=end
+
 # Chapter Two 
 ### Instances and Instance Variables 
+class MyClass
+end
+ob = MyClass.new
+puts ob.class
+
+class Dog
+  def set_name name
+    # @ means "instance variable"
+    @myname =name
+  end
+  def get_name 
+    @myname
+  end
+  def talk
+    'woof!'
+  end
+end
+
+dog1 = Dog.new
+dog2 = Dog.new
+
+dog1.set_name 'fido'
+dog2.set_name 'bido'
+
+puts dog1.get_name
+puts dog1.talk
+=end
+
 ### Constructors – new and initialize 
 ### Inspecting Objects 
 # Chapter Three
