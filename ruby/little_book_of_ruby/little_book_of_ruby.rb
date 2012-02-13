@@ -1,19 +1,26 @@
-﻿# Chapter One 
-=begin
+﻿=begin
+# Chapter One 
 print 'enter your name: '
 name = gets
 puts ('hello there, ' + name).upcase
-=end
 ### Strings and Embedded Evaluation 
-=begin
 puts "hello again #{name}"
 def showname
   'fred'
 end
 puts "hello again #{showname}"
-=end
 puts "\n\t#{(1+2)*3}"
 ### Methods 
+def return_name (first, last)
+  puts "hi #{first} #{last}"
+end
+def return_name2 first, last
+  puts "hi #{first} #{last}"
+end
+return_name('a', 'j')
+return_name2 'b', 'c'
+# return_name2 ('b', 'c') - doesn't work!
+=end
 ### Numbers 
 ### Testing a Condition: if < then 
 # Chapter Two 
