@@ -1,4 +1,7 @@
 ﻿# Chapter One 
+print 'enter your name: '
+name = gets
+puts ('hello there, ' + name).upcase
 ### Strings and Embedded Evaluation 
 ### Methods 
 ### Numbers 
