@@ -10,7 +10,7 @@
 ## Segregation and Peer Effects  
 * Sorting and Peer Effects Introduction  
 * Schelling's Segregation Model  
-Measuring Segregation  
-Peer Effects  
+* Measuring Segregation  
+* Peer Effects  
 The Standing Ovation Model  
 The Identification Problem  
