@@ -63,6 +63,13 @@ puts dog1.talk
 =end
 
 ### Constructors – new and initialize 
+class Dog
+  # default constructor
+  def initialize (name, description)
+    @name = name
+    @description = description
+  end
+end
 ### Inspecting Objects 
 # Chapter Three
 ### Superclasses and Subclasses 
