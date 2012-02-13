@@ -22,17 +22,16 @@ return_name2 'b', 'c'
 # return_name2 ('b', 'c') - doesn't work!
 ### Numbers
 subtotal = 100.0
+### Testing a Condition: if < then 
 taxrate = 0.175
-tax = subtotal * taxrate
-puts "tax on #{subtotal} is #{tax}" 
 print "enter another price: "
-subtotal = gets
-subtotal = subtotal.to_f
-
+subtotal = gets.to_f
+if (subtotal < 0.0) 
+  subtotal = 0
+end
 tax = subtotal * taxrate
 puts "and tax on #{subtotal} is #{tax}, so all together is #{subtotal+tax}"
 =end
-### Testing a Condition: if < then 
 # Chapter Two 
 ### Instances and Instance Variables 
 ### Constructors – new and initialize 
