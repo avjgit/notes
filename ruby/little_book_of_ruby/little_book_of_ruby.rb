@@ -1,8 +1,18 @@
 ﻿# Chapter One 
+=begin
 print 'enter your name: '
 name = gets
 puts ('hello there, ' + name).upcase
+=end
 ### Strings and Embedded Evaluation 
+=begin
+puts "hello again #{name}"
+def showname
+  'fred'
+end
+puts "hello again #{showname}"
+=end
+puts "\n\t#{(1+2)*3}"
 ### Methods 
 ### Numbers 
 ### Testing a Condition: if < then 
