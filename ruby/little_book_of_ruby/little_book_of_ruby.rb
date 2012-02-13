@@ -20,8 +20,18 @@ end
 return_name('a', 'j')
 return_name2 'b', 'c'
 # return_name2 ('b', 'c') - doesn't work!
+### Numbers
+subtotal = 100.0
+taxrate = 0.175
+tax = subtotal * taxrate
+puts "tax on #{subtotal} is #{tax}" 
+print "enter another price: "
+subtotal = gets
+subtotal = subtotal.to_f
+
+tax = subtotal * taxrate
+puts "and tax on #{subtotal} is #{tax}, so all together is #{subtotal+tax}"
 =end
-### Numbers 
 ### Testing a Condition: if < then 
 # Chapter Two 
 ### Instances and Instance Variables 
