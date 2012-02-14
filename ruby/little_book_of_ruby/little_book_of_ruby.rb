@@ -60,7 +60,6 @@ dog2.set_name 'bido'
 
 puts dog1.get_name
 puts dog1.talk
-=end
 
 ### Constructors – new and initialize 
 class Dog
@@ -73,6 +72,9 @@ class Dog
 end
 mydog = Dog.new('Doggy', 'brown')
 puts mydog.to_s
+puts mydog.inspect 
+#inspect & display
+p(mydog)
 class Dog
   # overriding default to_s
   def to_s
@@ -80,7 +82,10 @@ class Dog
   end
 end
 puts mydog.to_s
-### Inspecting Objects 
+### Inspecting Objects
+puts mydog.inspect 
+p(mydog)
+=end
 # Chapter Three
 ### Superclasses and Subclasses 
 # Chapter Four 
