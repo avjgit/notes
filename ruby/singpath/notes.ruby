@@ -636,6 +636,31 @@ More about determinant:
 http://www.wikipedia.org/wiki/Determinant
 http://mathworld.wolfram.com/Determinant.html
 =end
+def Determinant(m)
+  if m.length == 1
+  # do as [[m]]
+    m
+  elsif m.length == 2
+    m[0][0] * m[1][1] -
+    m[0][1] * m[1][0]
+  else
+    determinant = 0
+    size = m.length-1
+    for minor in 0..size do
+      submatrix = Array.new
+      for j in 1..size do      
+        submatrix[j-1] = Array.new
+        for k in 0..size do
+          if k != minor
+            submatrix[j-1] << m[j][k]
+          end
+        end
+      end
+      determinant += (-1)**minor * m[0][minor] * Determinant(submatrix)
+    end
+    determinant
+  end
+end
 
 16: 
 
