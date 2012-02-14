@@ -69,7 +69,17 @@ class Dog
     @name = name
     @description = description
   end
+  
 end
+mydog = Dog.new('Doggy', 'brown')
+puts mydog.to_s
+class Dog
+  # overriding default to_s
+  def to_s
+    "The dog's name is " + @name + ", and it is " + @description
+  end
+end
+puts mydog.to_s
 ### Inspecting Objects 
 # Chapter Three
 ### Superclasses and Subclasses 
