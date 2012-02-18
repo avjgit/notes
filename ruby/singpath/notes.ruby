@@ -700,7 +700,10 @@ def middle(string)
 end
 
 04: 
-
+def search(string, char)
+    result = string.index(char)
+    result.nil? ? -1 : result
+end
 
 05: 
 
