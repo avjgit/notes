@@ -709,7 +709,9 @@ end
 
 
 06: 
-
+def upper_case(string)
+    string.upcase!
+end
 
 07: 
 
