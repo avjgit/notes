@@ -705,7 +705,7 @@ def search(string, char)
     result.nil? ? -1 : result
 end
 
-05: 
+05: = 04
 
 
 06: 
