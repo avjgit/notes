@@ -724,7 +724,9 @@ def reverse(string)
 end
 
 09: 
-
+def is_reverse(str1, str2)
+    str1.reverse == str2
+end
 
 10: 
 
