@@ -661,14 +661,20 @@ def Determinant(m)
   end
 end
 
-16: 
-
-
-17: 
+16: == 15
+17: == 15
 
 
 18: 
-
+def every_second(input)
+    result = ''
+    for i in 0..input.length do
+        if i%2 == 1
+            result += input[i].chr
+        end
+    end
+    result
+end
 
 # a problem
 # Switch values between two variables, without introducing third one, and return the second.
