@@ -714,7 +714,9 @@ def upper_case(string)
 end
 
 07: 
-
+def change(string)
+    string.swapcase
+end
 
 08: 
 
