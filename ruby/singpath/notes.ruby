@@ -638,8 +638,7 @@ http://mathworld.wolfram.com/Determinant.html
 =end
 def Determinant(m)
   if m.length == 1
-  # do as [[m]]
-    m
+    m[0][0]
   elsif m.length == 2
     m[0][0] * m[1][1] -
     m[0][1] * m[1][0]
