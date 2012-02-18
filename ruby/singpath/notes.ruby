@@ -719,7 +719,9 @@ def change(string)
 end
 
 08: 
-
+def reverse(string)
+    string.reverse
+end
 
 09: 
 
