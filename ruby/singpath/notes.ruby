@@ -729,7 +729,9 @@ def is_reverse(str1, str2)
 end
 
 10: 
-
+def make_tag(tag, text)
+    "<" + tag + ">" + text + "</" + tag + ">"
+end
 
 11: 
 
