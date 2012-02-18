@@ -690,7 +690,9 @@ def character(string, nth)
 end
 
 02: 
-
+def hello(name)
+    'Hello ' + name + '!'
+end
 
 03: 
 
