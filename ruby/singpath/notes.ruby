@@ -695,7 +695,9 @@ def hello(name)
 end
 
 03: 
-
+def middle(string)
+    string[1..(string.length-2)]
+end
 
 04: 
 
