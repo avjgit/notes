@@ -685,7 +685,9 @@ def switch(a, b)
 end
 ------------------------------ level 07 - 00/21 - Strings
 01: 
-
+def character(string, nth)
+    string[nth].chr
+end
 
 02: 
 
