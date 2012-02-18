@@ -734,7 +734,11 @@ def make_tag(tag, text)
 end
 
 11: 
-
+# cool, shouldn't use "upcase!"
+def end_other(str1, str2)
+    str1.upcase.end_with?(str2.upcase) or 
+    str2.upcase.end_with?(str1.upcase)
+end
 
 12: 
 
