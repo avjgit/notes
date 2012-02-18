@@ -741,7 +741,9 @@ def end_other(str1, str2)
 end
 
 12: 
-
+def concatenate(list, delimeter = ' ')
+    list * delimeter # cool method
+end
 
 13: 
 
