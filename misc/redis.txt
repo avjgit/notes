@@ -1,3 +1,4 @@
+http://antirez.com/post/redis-manifesto.html
 ========================== http://try.redis-db.com/
 ========================== commands:
 
@@ -31,24 +32,6 @@ LRANGE friends 0 1
 LRANGE friends 0 -1
 
 SADD, SREM, SISMEMBER, SMEMBERS and SUNION
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ========================== q?
 - are redis commands case sensitive? SET not set?
@@ -201,73 +184,52 @@ In these examples, the scores are years of birth and the values are the names of
 
     ZRANGE hackers 2 4 => ["Alan Kay","Richard Stallman","Yukihiro Matsumoto"]
     
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-==========================     
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-==========================     
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
-========================== 
+========================== http://antirez.com/post/take-advantage-of-redis-adding-it-to-your-stack.html
+
+good to receive "latest something"
+as this - SELECT * FROM foo WHERE ... ORDER BY time DESC LIMIT 10
+is too slow
+
+FUNCTION get_latest_comments(start,num_items):
+    -- first, we are trying to get values from redis
+    id_list = redis.lrange("latest.comments",start,start+num_items-1)
+    
+    --- if there is too few of them, then we'll go to db
+    IF id_list.length < num_items
+        id_list = SQL_DB("SELECT ... ORDER BY time LIMIT ...")
+    END
+    RETURN id_list
+END
+ZADD leaderboard <score> <username>
+
+
+==========================
+http://antirez.com/post/autocomplete-with-redis.html
+For every word, like "bar", we add all the prefixes: "b", "ba", "bar"
+For every word we finally add the word itself but with a trailing "*" character,
+
+redis> zrange zset 0 -1
+1. "b"
+2. "ba"
+3. "bar"
+4. "bar*"
+5. "f"
+6. "fo"
+7. "foo"
+8. "foo*"
+9. "foob"
+10. "fooba"
+11. "foobar"
+12. "foobar*"
+
+If the user is writing "fo" we do the following:
+redis> zrank zset fo
+(integer) 5
+redis> zrange zset 6 -1
+1. "foo"
+2. "foo*"
+3. "foob"
+4. "fooba"
+5. "foobar"
+6. "foobar*"
+We just need to get all the items marked with the trailing "*', so we'll be able to show "foo" and "foobar" as possible completions
