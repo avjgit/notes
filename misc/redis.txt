@@ -274,3 +274,14 @@ if ($realpassword != $password)
 $authsecret = $r->get("uid:$userid:auth");
 setcookie("auth",$authsecret,time()+3600*24*365);
 header("Location: index.php");
+
+
+check if logged in:
+* Get the "auth" cookie from the user. If there is no cookie, the user is not logged in, of course. Let's call the value of this cookie <authcookie> * Check if auth:<authcookie> exists, and what the value (the user id) is (1000 in the example). * In order to be sure check that uid:1000:auth matches. * OK the user is authenticated, and we loaded a bit of information in the $User global variable.
+
+INCR global:nextPostId => 10343
+SET post:10343 "$owner_id|$time|I'm having fun with Retwis"
+
+
+
+SADD uid:1000:following 1001 SADD uid:1001:followers 1000
