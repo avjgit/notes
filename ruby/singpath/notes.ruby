@@ -746,7 +746,14 @@ def concatenate(list, delimeter = ' ')
 end
 
 13: 
-
+def xyz_there(string)
+    # 2 rows below doesn't work (returns false for trueful '.xyzxyz')
+    # string.include? "xyz" and not 
+    # string.include? ".xyz"
+    
+    string.delete '.xyz'    # remove ".xyz", but "." as char, not regex
+    string.include? 'xyz'
+end
 
 14: 
 
