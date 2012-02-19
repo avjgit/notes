@@ -233,3 +233,44 @@ redis> zrange zset 6 -1
 5. "foobar"
 6. "foobar*"
 We just need to get all the items marked with the trailing "*', so we'll be able to show "foo" and "foobar" as possible completions
+
+
+
+
+
+
+http://redis.io/topics/twitter-clone
+
+INCR global:nextUserId => 1000
+SET uid:1000:username antirez
+SET uid:1000:password p1pp0
+
+uid:1000:followers => Set of uids of all the followers users
+uid:1000:following => Set of uids of all the following users
+
+SET uid:1000:auth fea5e81ac8ca77622bed1c2132a021f9
+SET auth:fea5e81ac8ca77622bed1c2132a021f9 1000
+
+* Get the username and password via the login form * Check if the username:<username>:uid key actually exists * If it exists we have the user id, (i.e. 1000) * Check if uid:1000:password matches, if not, error message * Ok authenticated! Set "fea5e81ac8ca77622bed1c2132a021f9" (the value of uid:1000:auth) as "auth" cookie
+
+include("retwis.php");
+
+# Form sanity checks
+if (!gt("username") || !gt("password"))
+    goback("You need to enter both username and password to login.");
+
+# The form is OK, check if the username is available
+$username = gt("username");
+$password = gt("password");
+$r = redisLink();
+$userid = $r->get("username:$username:id");
+if (!$userid)
+    goback("Wrong username or password");
+$realpassword = $r->get("uid:$userid:password");
+if ($realpassword != $password)
+    goback("Wrong useranme or password");
+
+# Username / password OK, set the cookie and redirect to index.php
+$authsecret = $r->get("uid:$userid:auth");
+setcookie("auth",$authsecret,time()+3600*24*365);
+header("Location: index.php");
