@@ -17,4 +17,6 @@
 * [Algorithms](http://www.lektorium.tv/course/?id=22823) by St.Petersburg University: ..
 
 
-# Puzzles
+# Puzzles  
+# Miscellaneous  
+* [Redis (key-value store)](http://redis.io/)  
