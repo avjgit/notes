@@ -1587,12 +1587,16 @@ add(
 
 
 
-
 var james = {
-    // add properties to this object!
-    job:"programmer",
-    married:false
+    job: "programmer",
+    married: false,
+    speak: function(text  ) {
+        console.log("Hello, I am feeling " + text)
+    }
 };
+
+james.speak("great");
+james.speak("just okay");
 
 function Person(job, married) {
     this.job = job;
