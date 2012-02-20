@@ -1,0 +1,4 @@
+comparisons:
+http://blog.teksol.info/2009/07/15/mongodb-or-redis-the-choice-is-yours
+http://masonoise.wordpress.com/2010/01/30/comparing-mongodb-and-redis-part-1/
+http://masonoise.wordpress.com/2010/02/02/comparing-mongodb-and-redis-part-2/
