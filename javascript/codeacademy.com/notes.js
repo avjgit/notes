@@ -1586,14 +1586,23 @@ add(
 );
 
 
-
 var james = {
     job: "programmer",
     married: false,
-    speak: function(text  ) {
-        console.log("Hello, I am feeling " + text)
+    sayJob: function() {
+        // complete this method
+        console.log("Hi, I work as a " + this.job)        
     }
 };
+
+// james' first job
+james.sayJob();
+
+// change james' job to "super programmer" here
+james.job = "super programmer";
+
+// james' second job
+james.sayJob();
 
 james.speak("great");
 james.speak("just okay");
