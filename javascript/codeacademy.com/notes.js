@@ -1637,3 +1637,14 @@ var aString = "I'm a string!";
 console.log(typeof anObj  ); // should print "object"
 console.log(typeof aNumber  ); // should print "number"
 console.log(typeof aString  ); // should print "string"
+
+
+
+
+var myObj = {
+    // finish myObj
+    name: 'asdf'    
+};
+
+console.log( myObj.hasOwnProperty('name') ); // should print true
+console.log( myObj.hasOwnProperty('nickname') ); // should print false
