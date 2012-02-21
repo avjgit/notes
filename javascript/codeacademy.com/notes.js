@@ -1731,6 +1731,14 @@ snoopy.bark();
 
 
 
+Dog.prototype.bark = function() {
+  console.log("Woof");
+};
+var dog3 = new Dog("bulldog");
+console.log(dog3.bark()); //this time it works!
+
+
+
 
 function Person(name,age) {
   this.name = name;
