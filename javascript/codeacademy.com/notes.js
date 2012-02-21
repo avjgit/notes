@@ -1648,3 +1648,20 @@ var myObj = {
 
 console.log( myObj.hasOwnProperty('name') ); // should print true
 console.log( myObj.hasOwnProperty('nickname') ); // should print false
+
+
+
+
+var suitcase = {
+    shirt: "Hawaiian"
+};
+
+console.log(suitcase.shorts) // leads to error!
+
+if(suitcase.hasOwnProperty("shorts")){
+    console.log(suitcase.shorts);    
+}
+else {
+    suitcase.shorts = "hacky";
+    console.log(suitcase.shorts);
+}
