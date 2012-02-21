@@ -1803,3 +1803,15 @@ Penguin.prototype = new Animal();
 
 var penguin = new Penguin("asdf");
 penguin.sayName();
+
+
+// create your Emperor class here and make it inherit from Penguin
+function Emperor(name){
+    this.name = name;
+}
+
+Emperor.prototype = new Penguin();
+
+// create an "emperor" object and print the number of legs it has
+var emperor = new Emperor("Big Emperor");
+console.log(emperor.numLegs);
