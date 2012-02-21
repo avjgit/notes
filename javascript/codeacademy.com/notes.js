@@ -1843,3 +1843,19 @@ var myEmperor = new Emperor("Jules");
 console.log( myEmperor.saying ); // should print "Waddle waddle"
 console.log( myEmperor.numLegs ); // should print 2
 console.log( myEmperor.isAlive ); // should print true
+
+
+
+
+function Person(first,last,age) {
+   this.firstName = first;
+   this.lastName = last;
+   this.age = age;
+}
+
+var john = new Person('John','Smith',30);
+var myFirst = john.firstName;
+var myLast = john.lastName;
+
+//declare variable myAge set to the age of the john object.
+var myAge = john.age;
