@@ -1853,10 +1853,20 @@ function Person(first,last,age) {
    this.age = age;
    var bankBalance = 7500;
   
-   this.getBalance = function() {
-      // your code should return the bankBalance
+   // this.getBalance = function() {
+      your code should return the bankBalance
+      // return bankBalance;
+   // };
+   
+   
+   var returnBalance = function() {
       return bankBalance;
    };
+       
+   // create the new function here
+   this.askTeller = function(){
+       return returnBalance();
+   };   
 }
 
 var john = new Person('John','Smith',30);
@@ -1864,4 +1874,11 @@ console.log(john.bankBalance);
 
 // create a new variable myBalance that calls getBalance()
 var myBalance = john.getBalance();
+console.log(myBalance);
+
+
+
+console.log(john.returnBalance);
+var myBalanceMethod = john.askTeller;
+var myBalance = myBalanceMethod();
 console.log(myBalance);
