@@ -1851,6 +1851,7 @@ function Person(first,last,age) {
    this.firstName = first;
    this.lastName = last;
    this.age = age;
+   var bankBalance = 7500;
 }
 
 var john = new Person('John','Smith',30);
@@ -1859,3 +1860,7 @@ var myLast = john.lastName;
 
 //declare variable myAge set to the age of the john object.
 var myAge = john.age;
+
+
+// try to print his bankBalance
+console.log(john.bankBalance);
