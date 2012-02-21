@@ -1799,3 +1799,7 @@ function Penguin(name){
 
 // set its prototype to be a new instance of Animal
 Penguin.prototype = new Animal();
+
+
+var penguin = new Penguin("asdf");
+penguin.sayName();
