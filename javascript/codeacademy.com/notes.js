@@ -1864,9 +1864,10 @@ function Person(first,last,age) {
    };
        
    // create the new function here
-   this.askTeller = function(){
-       return returnBalance();
-   };   
+   this.askTeller = function(pass) {
+     if (pass == 1234) return bankBalance;
+     else return "Wrong password.";
+   };  
 }
 
 var john = new Person('John','Smith',30);
@@ -1882,3 +1883,8 @@ console.log(john.returnBalance);
 var myBalanceMethod = john.askTeller;
 var myBalance = myBalanceMethod();
 console.log(myBalance);
+
+
+/* the variable myBalance should access askTeller()
+   with a password as an argument  */
+var myBalance = john.askTeller(1234); 
