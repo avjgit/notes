@@ -1848,19 +1848,20 @@ console.log( myEmperor.isAlive ); // should print true
 
 
 function Person(first,last,age) {
-   this.firstName = first;
-   this.lastName = last;
+   this.firstname = first;
+   this.lastname = last;
    this.age = age;
    var bankBalance = 7500;
+  
+   this.getBalance = function() {
+      // your code should return the bankBalance
+      return bankBalance;
+   };
 }
 
 var john = new Person('John','Smith',30);
-var myFirst = john.firstName;
-var myLast = john.lastName;
-
-//declare variable myAge set to the age of the john object.
-var myAge = john.age;
-
-
-// try to print his bankBalance
 console.log(john.bankBalance);
+
+// create a new variable myBalance that calls getBalance()
+var myBalance = john.getBalance();
+console.log(myBalance);
