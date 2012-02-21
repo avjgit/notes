@@ -1735,7 +1735,7 @@ Dog.prototype.bark = function() {
   console.log("Woof");
 };
 var dog3 = new Dog("bulldog");
-console.log(dog3.bark()); //this time it works!
+dog3.bark(); //this time it works!
 
 
 
@@ -1756,3 +1756,26 @@ printPersonName(bob);
 // then use printPersonName to print your name
 var me = new Person("A J", 30);
 printPersonName(me);
+
+
+
+
+function Cat(name, breed) {
+    this.name = name;
+    this.breed = breed;
+}
+
+// let's make some cats!
+var cheshire = new Cat("Cheshire Cat", "British Shorthair");
+var gary = new Cat("Gary", "Domestic Shorthair");
+
+// add a method "meow" to the Cat class that will allow
+// all cats to print "Meow!" to the console
+Cat.prototype.meow = function(){
+    console.log("Meow!");
+}
+
+// add code here to make the cats meow!
+cheshire.meow();
+gary.meow();
+
