@@ -1888,3 +1888,132 @@ console.log(myBalance);
 /* the variable myBalance should access askTeller()
    with a password as an argument  */
 var myBalance = john.askTeller(1234); 
+
+
+
+var languages = {
+    english: "Hello!",
+    french: "Bonjour!",
+    notALanguage: 4,
+    spanish: "Hola!"
+};
+
+// print hello in the 3 different languages
+for(var property in languages){
+    if (typeof languages[property] === "string"){
+        console.log(languages[property]);
+    }
+}
+
+
+
+
+function Dog (breed) {
+    this.breed = breed;
+};
+
+// add the sayHello method to the Dog class 
+// so all dogs now can say hello
+Dog.prototype.sayHello = function(){
+    console.log("Hello this is a " + this.breed + " dog");
+}
+
+
+var yourDog = new Dog("golden retriever");
+yourDog.sayHello();
+
+var myDog = new Dog("dachshund");
+myDog.sayHello();
+
+
+
+
+// what is this "Object.prototype" anyway...?
+var prototypeType = typeof Object.prototype;
+console.log(prototypeType);
+
+// now let's examine it!
+var hasOwn = Object.prototype.hasOwnProperty('hasOwnProperty');
+console.log(hasOwn);
+
+
+
+
+
+function StudentReport() {
+    var grade1 = 4;
+    var grade2 = 2;
+    var grade3 = 1;
+    this.getGPA = function() {
+        return (grade1 + grade2 + grade3) / 3;
+    };
+}
+
+var myStudentReport = new StudentReport();
+
+for(var property in myStudentReport) {
+    if(typeof myStudentReport[property] !== "function") {
+        console.log("Muahaha! "+myStudentReport[property]);
+    }
+}
+
+console.log("Your overall GPA is " + myStudentReport.getGPA());
+
+
+
+
+
+
+
+function StaffMember(name,discountPercent){
+    this.name = name;
+    this.discountPercent = discountPercent;
+}
+
+var sally = new StaffMember("Sally",5);
+var bob = new StaffMember("Bob",10);
+
+// Create yourself again as 'me' with a staff discount of 20%
+var me = new StaffMember("me", 20);
+
+var cashRegister = {
+    total:0,
+    lastTransactionAmount: 0,
+    add: function(itemCost){
+        this.total += (itemCost || 0);
+        this.lastTransactionAmount = itemCost;
+    },
+    scan: function(item,quantity){
+        switch (item){
+        case "eggs": this.add(0.98 * quantity); break;
+        case "milk": this.add(1.23 * quantity); break;
+        case "magazine": this.add(4.99 * quantity); break;
+        case "chocolate": this.add(0.45 * quantity); break;
+        }
+        return true;
+    },
+    voidLastTranscation : function(){
+        this.total -= this.lastTransactionAmount;
+        this.lastTransactionAmount = 0;
+    },
+    // Create a new method applyStaffDiscount here
+    applyStaffDiscount: function(employee){
+        this.total *= (1 - employee.discountPercent/100);
+    }   
+};
+
+cashRegister.scan('eggs',1);
+cashRegister.scan('milk',1);
+cashRegister.scan('magazine',3);
+// Apply your staff discount by passing the 'me' object 
+// to applyStaffDiscount
+cashRegister.applyStaffDiscount(me);
+
+
+// Show the total bill
+console.log('Your bill is '+cashRegister.total.toFixed(2));
+
+
+
+
+
