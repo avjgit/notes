@@ -15,6 +15,7 @@
 * [Introduction to Databases](http://www.db-class.org/) by Stanford University, Autumn 2011": ..
 * [Model Thinking](http://www.modelthinker-class.org/) by Stanford University, Spring 2012": ..
 * [Algorithms](http://www.lektorium.tv/course/?id=22823) by St.Petersburg University: ..
+* [CS 101: Building a Search Engine](http://www.udacity.com/overview/Course/cs101) by Udacity.com
 
 
 # Puzzles  
