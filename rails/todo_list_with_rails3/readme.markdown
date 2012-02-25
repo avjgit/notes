@@ -1,1 +1,0 @@
-﻿[Building A Todo List With Rails 3](http://ontwik.com/rails/building-a-todo-list-with-rails-3/)

@@ -1,13 +1,30 @@
 ﻿# CS373: Programming a Robotic Car  
-Description:   
+Description: This class, taught by one of the foremost experts in AI, will teach you basic methods in Artificial Intelligence, including: probabilistic inference, computer vision, machine learning, and planning, all with a focus on robotics. Extensive programming examples and assignments will apply these methods in the context of building self-driving cars. You will get a chance to visit, via video, the leading research labs in the field, and meet the scientists and engineers who are building self-driving cars at Stanford and Google.  
+Prerequisites: The instructor will assume solid knowledge of programming, all programming will be in Python. Knowledge of probability and linear algebra will be helpful.  
+
+### WEEK 1:Basics of probability
+Car localization with particle filters
+### WEEK 2:Gaussians and continuous probability
+Tracking other cars with Kalman filters
+### WEEK 3:Image Processing and Machine Learning
+Finding objects in sensor data
+### WEEK 4:Planning and search
+Determining where to drive with A* search
+Finding optimal routes with dynamic programming
+### WEEK 5:Controls
+Controlling steering and speeds with PID
+### WEEK 6:Putting it all together
+Programming a self-driving car
+### WEEK 7:Final Exam
+Exam testing your knowledge
   
 ### UNIT1  
-Introduction  
-Localization  
-Total Probability  
-Uniform Probability Quiz - Question  
-Uniform Distribution - Question  
-Generalized Uniform Distribution - Question  
+* Introduction  
+* Localization  
+* Total Probability  
+* Uniform Probability Quiz - Question  
+* Uniform Distribution - Question  
+* Generalized Uniform Distribution - Question  
 Probability After Sense - Question  
 Compute Sum - Question  
 Normalize Distribution - Question  
