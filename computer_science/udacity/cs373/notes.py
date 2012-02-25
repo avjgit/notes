@@ -192,9 +192,9 @@ def sense(p, Z):
     return q
 
 def move(p, U):
-    #
-    #ADD CODE HERE
-    #
+    q = []
+    for i in range(len(p)):
+        q.append(p[i+U])    
     return q
 
 print move(p, 1)
