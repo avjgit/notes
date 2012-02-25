@@ -285,17 +285,24 @@ def move(p, U):
         q.append(s)
     return q
 
-for i in range(1000):
-p = move(p,1)
 
+# Move 1000 - Question  
+# for i in range(1000):
+# p = move(p,1)
+
+# Sense And Move - Question  
+for i in range(len(measurements)):
+    p = sense(p, measurements[i])
+    p = move(p, motions[i])
+    
 print p
 
 
 
-# Move 1000 - Question  
 
 
-# Sense And Move - Question  
+
+
 
 
 # Sense And Move 2 - Question  
