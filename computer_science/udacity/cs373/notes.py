@@ -175,11 +175,18 @@ print p
 #q, shifted to the right by U units. If U=0, q should 
 #be the same as p.
 
+#Modify the move function to accommodate the added 
+#probabilities of overshooting or undershooting 
+#the intended destination.
+
 p=[0, 1, 0, 0, 0]
 world=['green', 'red', 'red', 'green', 'green']
 measurements = ['red', 'green']
 pHit = 0.6
 pMiss = 0.2
+pExact = 0.8
+pOvershoot = 0.1
+pUndershoot = 0.1
 
 def sense(p, Z):
     q=[]
@@ -193,11 +200,11 @@ def sense(p, Z):
 
 def move(p, U):
     q = []
-    world_length = len(p)
     for i in range(len(p)):
-        position = (i-U) % world_length
-        q.append(p[position])
-    return q    
+        q.append(p[(i-U)%len(p)])
+    return q
+    
+
 print move(p, 1)
 
 
