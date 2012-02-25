@@ -39,13 +39,17 @@ p = [0.2, 0.2, 0.2, 0.2, 0.2]
 
     print p
 # Probability After Sense - Question  
-
+# multily by .6 or .2
+# change of the beliefs after measurement
+# why sum is not 1 anymore?
+.04 .12 .12 .04 .04
 
 # Compute Sum - Question  
-
+.36
 
 # Normalize Distribution - Question  
-
+ok
+1/9 1/3 1/3 1/9 /9
 
 # Phit And Pmiss - Question  
 
