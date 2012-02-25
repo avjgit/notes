@@ -224,7 +224,13 @@ result of probability2 =            .4 .05 0   0  .05
 result total=                       .4 .05 .05 .04 .1 = 1
 
 # Inexact Motion 3 - Question  
-
+init .2  .2  .2  .2  .2
+1        .02 .16 .02
+2            .02 .16 .02
+3    .02         .02 .16 
+4    .16 .02         .02
+5    .02 .16 .02
+sum  .2  .2  .2   .2 .2  :)
 
 # Inexact Move Function - Question  
 
