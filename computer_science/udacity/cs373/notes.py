@@ -203,7 +203,13 @@ print move(p, 1)
 
 
 # Inexact Motion 1 - Question  
+initial = 0 1 0 0 0
+movement U = 2
+p(x[i+2] | x[i]) = .8
+p(x[i+1] | x[i]) = .1
+p(x[i+3] | x[i]) = .1
 
+after movement = 0 0 .1 .8 .1
 
 # Inexact Motion 2 - Question  
 
