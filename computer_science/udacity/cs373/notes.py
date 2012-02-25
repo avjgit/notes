@@ -94,6 +94,13 @@ def sense(p, Z):
     #
     #ADD YOUR CODE HERE
 	#
+    q = []
+    for i in range(len(world)):
+        if world[i] == Z:
+            q.append(pHit * p[i])
+        else:
+            q.append(pMiss * p[i])
+    
     return q
 
 print sense(p,Z)
