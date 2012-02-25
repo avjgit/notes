@@ -164,7 +164,11 @@ print p
 
 
 # Exact Motion - Question  
+# if P was (1/..)
+# /9 /3 /3 /9 /9
 
+# then, after movement, it is
+# /9 /9 /3 /3 /9 !
 
 # Move Function - Question  
 
