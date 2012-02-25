@@ -284,11 +284,10 @@ def move(p, U):
         s = s + pUndershoot * p[(i-U+1) % len(p)]
         q.append(s)
     return q
-#
-# ADD CODE HERE
-#
+
+for i in range(1000):
 p = move(p,1)
-p = move(p,1)
+
 print p
 
 
