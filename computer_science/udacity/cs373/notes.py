@@ -212,7 +212,16 @@ p(x[i+3] | x[i]) = .1
 after movement = 0 0 .1 .8 .1
 
 # Inexact Motion 2 - Question  
+initial = 0 .5 0 .5 0
+after movement, with certain move = .5  0  0   .5  0
 
+probability1 of movement =                 .1  .8  .1
+probability2 of movement =          .8 .1  0   0   .1
+
+result of probability1 =             0  0  .05 .4 .05
+result of probability2 =            .4 .05 0   0  .05
+
+result total=                       .4 .05 .05 .04 .1 = 1
 
 # Inexact Motion 3 - Question  
 
