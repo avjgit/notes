@@ -287,7 +287,10 @@ def move(p, U):
 #
 # ADD CODE HERE
 #
-print move(p,2)
+p = move(p,1)
+p = move(p,1)
+print p
+
 
 
 # Move 1000 - Question  
