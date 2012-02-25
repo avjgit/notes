@@ -61,6 +61,7 @@ ok
 p=[0.2,0.2,0.2,0.2,0.2]
 pHit = 0.6
 pMiss = 0.2
+sump = 0
 
 #Enter code here
 hitCells = [1, 2]
@@ -71,8 +72,9 @@ for i in range(len(p)):
         multiplier = pMiss
         
     p[i] = p[i] * multiplier
-
-print p
+    sump += p[i]
+    
+print sump
 
 # Sum Of Probabilities - Question  
 
