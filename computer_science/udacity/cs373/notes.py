@@ -193,10 +193,11 @@ def sense(p, Z):
 
 def move(p, U):
     q = []
+    world_length = len(p)
     for i in range(len(p)):
-        q.append(p[i+U])    
-    return q
-
+        position = (i-U) % world_length
+        q.append(p[position])
+    return q    
 print move(p, 1)
 
 
