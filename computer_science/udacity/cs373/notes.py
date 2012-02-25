@@ -156,7 +156,11 @@ def sense(p, Z):
 #
 #ADD YOUR CODE HERE
 #
+for m in measurements:
+    p = sense(p, m)
+    
 print p
+
 
 
 # Exact Motion - Question  
