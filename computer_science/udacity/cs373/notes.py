@@ -324,7 +324,20 @@ print p
 
 
 # Cancer Test - Question  
+p(c) = 0.001
+p(>c)= 0.999
 
+p(positive/ C) = .8
+p(positive/>C) = .1
+
+p(C/ positive)?
+
+ok, if test was positive, then could be
+.8 of .001 real cancer = .0008, or
+.1 of .999 healthy     = .0999
+that means, of .1079,
+.0008 is  7%
+.0999 is 93%
 
 # Theorem Of Total Probability  
 
