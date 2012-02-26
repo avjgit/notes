@@ -421,7 +421,10 @@ P(rS | rM) = P(rM | rS) * P (rS) / P (rM)
 * Therefore, the total probability of it having rained on Sunday, given that it rained on Monday,
  is the chance of it raining on Sunday multiplied by the chance of it raining on Monday, given that it rained on Sunday, 
  divided by the total chance of it having rained on Monday.
+ 
 
+ 
+ 
 
 # Conclusion  
 
