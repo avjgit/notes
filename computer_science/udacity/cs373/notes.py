@@ -397,6 +397,32 @@ P(B)   - полноая вероятность наступления событ
 = 27/ 184
 = 14.67%
 
+
+http://simple.wikipedia.org/wiki/Bayes%27_theorem
+
+There is a 40% chance of it raining on Sunday. 
+If it rains on Sunday, there is a 10% chance it will rain on Monday. 
+If it didn't rain on Sunday, there's an 80% chance it will rain on Monday.
+It rained on Monday. What is the probability it rained on Sunday?
+
+
+P(rained on Sunday? | it rained on Monday) = 
+P(rS | rM) = P(rM | rS) * P (rS) / P (rM)
+ = .1 * .4 / (.4*.1 + .6*.8)
+ = .04 / (.04 + .48)
+ = .04 / .52
+ = 4/52 = 2/26 = 1/13
+
+ Intuitive Explanation
+* We know that it rained on Monday. Therefore, the total probability is P(B).
+* The probability is rained on Sunday is P(A).
+* The probability it rained on Monday, given that it rained on Sunday is P(B|A).
+* The probability of raining on Sunday AND raining Monday is P(A)*P(B|A).
+* Therefore, the total probability of it having rained on Sunday, given that it rained on Monday,
+ is the chance of it raining on Sunday multiplied by the chance of it raining on Monday, given that it rained on Sunday, 
+ divided by the total chance of it having rained on Monday.
+
+
 # Conclusion  
 
 
