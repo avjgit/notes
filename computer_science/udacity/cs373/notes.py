@@ -423,8 +423,36 @@ P(rS | rM) = P(rM | rS) * P (rS) / P (rM)
  divided by the total chance of it having rained on Monday.
  
 
+http://en.wikipedia.org/wiki/Bayes'_theorem
+
+An entomologist spots what might be a rare subspecies of beetle, due to the pattern on its back. 
+In the rare subspecies, 98% have the pattern. 
+In the common subspecies, 5% have the pattern. 
+The rare subspecies accounts for only 0.1% of the population. 
+How likely is the beetle to be rare?
  
- 
+P(rare | pattern) 
+= P(pattern | rare) * P (rare) / P (pattern) 
+= P(pattern | rare) * P (rare) / (98% * .1%  + 5% * 99.9%)
+= 98% * .1%                    / (98% * .1%  + 5% * 99.9%)
+= .98 * .001                   / (.98 * .001 + .05 * .999)
+= .00098                       / (.00098     + .05 * .999)
+= 1.9%
+
+
+
+Suppose a drug test is 99% sensitive and 99% specific. 
+That is, the test will produce 99% true positive and 99% true negative results. 
+Suppose that 0.5% of people are users of the drug. 
+If an individual tests positive, what is the probability they are a user?
+
+P(user | +) 
+= P(+ | user) * P(user) / P(+)
+= .99         * .005    / (.99*.005 + .01*995)
+= .495% / 1.49% = 33%
+
+
+
 
 # Conclusion  
 
