@@ -50,7 +50,7 @@ so, area 1 = pi18*18 = 324pi
 so, answer is = 16/324 ~5%
 
 ### Independent Events 1    
-
+dependent: pulling winner out of bag, then pulling 2nd one
 
 ### Independent Events 2    
 
