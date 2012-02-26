@@ -458,3 +458,24 @@ P(user | +)
 
 
 # HOMEWORK 1
+1
+p(x) = 0.2
+p(x')?
+
+
+p(x) = 0.2
+p(y) = 0.2
+x and y are independent
+p(x, y)?
+
+p(x) = .2
+p(y|x)  = .6
+p(y|x') = .6
+p(y)?
+
+
+2
+
+3
+
+4
