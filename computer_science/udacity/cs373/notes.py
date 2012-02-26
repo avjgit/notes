@@ -346,7 +346,12 @@ that means, of .1079,
 
 
 # Two Coin Quiz - Question  
+fair coin has P(heads) = .5
+loaded coin's P(heads) = .1
 
+heads observed
+
+P(fair)? = 0.5*0.5 - 0.5*0.1 = 0.5*(.05-0.1) = .5*.4 = .2
 
 # Conclusion  
 
