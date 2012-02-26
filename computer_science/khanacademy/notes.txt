@@ -65,7 +65,15 @@ even number three times = 1/2 ^ 3?
 exactly two heads = 3/8
 
 ### Getting At Least One Heads    
+"at least one head" - means, not getting all tails
+not getting all tails - means, 1 - P(getting all tails)
+so, 7/8
 
+P(at least 1 H in 10 flips)
+= 1 - P(all T in 10 flips)
+= 1 - 1/2 ^ 10 
+= 1 - 1/1024 
+= 1023/1024
 
 ### Frequency Probability and Unfair Coins    
 
