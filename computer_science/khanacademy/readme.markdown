@@ -1,7 +1,7 @@
 ﻿## [Probability](http://www.khanacademy.org/#probability)  
 by KhanAcademy.org  
   
-Basic Probability  
+* Basic Probability  
 Simple Probability  
 Probability with Playing Cards and Venn Diagrams  
 Addition Rule for Probability  
