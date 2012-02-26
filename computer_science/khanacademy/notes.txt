@@ -37,9 +37,19 @@ P(H H) = 1/4
 P(THT) = P(T) * P(H) * P(T) = 1/8
 
 ### Probability 1 Module Examples    
+9R, 2B, 3G
+P(nonB) = (9+3)/14
 
+... 12/17
 
-### U12_L2_T2_we1 Independent Events 1    
+circles:
+1) circumference = 36pi
+2) area 16pi
+what's 1'st area? 2R = 36, so, R = 18
+so, area 1 = pi18*18 = 324pi
+so, answer is = 16/324 ~5%
+
+### Independent Events 1    
 
 
 ### Independent Events 2    
