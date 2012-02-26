@@ -480,7 +480,15 @@ p(y)?
 = .6
 
 2
+roll pitch yaw
 
 3
+p(fire) = .001
+B = neighbor say "fire"
+p(neighbor lies) = .1
+non-normalized p(f |b)?
+non-normalized p(f'|b)?
+    normalized p(f |b)?
+    normalized p(f |b)?
 
 4
