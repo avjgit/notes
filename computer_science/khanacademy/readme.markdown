@@ -1,4 +1,4 @@
-﻿#Probability(http://www.khanacademy.org/#probability)    
+﻿# Probability(http://www.khanacademy.org/#probability)
 by KhanAcademy.org  
   
 Basic Probability  
