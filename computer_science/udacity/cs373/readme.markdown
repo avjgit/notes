@@ -1,4 +1,4 @@
-﻿# CS373: Programming a Robotic Car
+﻿## CS373: Programming a Robotic Car  
 Description: This class, taught by one of the foremost experts in AI, will teach you basic methods in Artificial Intelligence, including: probabilistic inference, computer vision, machine learning, and planning, all with a focus on robotics. Extensive programming examples and assignments will apply these methods in the context of building self-driving cars. You will get a chance to visit, via video, the leading research labs in the field, and meet the scientists and engineers who are building self-driving cars at Stanford and Google.  
 Prerequisites: The instructor will assume solid knowledge of programming, all programming will be in Python. Knowledge of probability and linear algebra will be helpful.  
 
