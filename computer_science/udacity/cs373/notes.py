@@ -486,9 +486,14 @@ roll pitch yaw
 p(fire) = .001
 B = neighbor say "fire"
 p(neighbor lies) = .1
-non-normalized p(f |b)?
+non-normalized p(f |b)? = 
+    = .9 * .001 
 non-normalized p(f'|b)?
-    normalized p(f |b)?
-    normalized p(f |b)?
-
+    = .1 * .999 
+    normalized p(f |b)? 
+        = p(b|f) * p(f) / p(b)
+        = .9 * .001 / ((.9 * .001) + (.1 * .999))
+        = .0089
+    normalized p(f'|b)?
+        = 1 - .0089
 4
