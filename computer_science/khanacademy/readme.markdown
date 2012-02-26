@@ -2,15 +2,15 @@
 by KhanAcademy.org  
   
 * Basic Probability  
-Simple Probability  
-Probability with Playing Cards and Venn Diagrams  
-Addition Rule for Probability  
-Compound Probability of Independent Events  
-Probability 1 Module Examples  
-U12_L2_T2_we1 Independent Events 1  
-Independent Events 2  
-Independent Events 3  
-Coin Flipping Example  
+* Simple Probability  
+* Probability with Playing Cards and Venn Diagrams  
+* Addition Rule for Probability  
+* Compound Probability of Independent Events  
+* Probability 1 Module Examples  
+* Independent Events 1  
+* Independent Events 2  
+* Independent Events 3  
+* Coin Flipping Example  
 Getting At Least One Heads  
 Frequency Probability and Unfair Coins  
 Probability of Dependent Events  
