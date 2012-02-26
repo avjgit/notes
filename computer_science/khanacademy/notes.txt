@@ -32,7 +32,9 @@ P(A or B) = P(A) + P(B) - P(A & B)
 true also for mutually exclusive cases
 
 ### Compound Probability of Independent Events    
-
+P(H H) = 1/4
+  2x2
+P(THT) = P(T) * P(H) * P(T) = 1/8
 
 ### Probability 1 Module Examples    
 
