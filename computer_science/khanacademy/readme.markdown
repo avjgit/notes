@@ -12,7 +12,7 @@ by KhanAcademy.org
 * Independent Events 3  
 * Coin Flipping Example  
 * Getting At Least One Heads  
-Frequency Probability and Unfair Coins  
+* Frequency Probability and Unfair Coins  
 Probability of Dependent Events  
 Probability of Dependent Events 2  
 Getting Exactly Two Heads (Combinatorics)  

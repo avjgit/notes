@@ -76,7 +76,11 @@ P(at least 1 H in 10 flips)
 = 1023/1024
 
 ### Frequency Probability and Unfair Coins    
+P(H) = .6
 
+P(HH) = .6 * .6
+
+P(THT) = .4 * .6 * .4 = .096
 
 ### Probability of Dependent Events    
 
