@@ -17,6 +17,7 @@
 * [Algorithms](http://www.lektorium.tv/course/?id=22823) by St.Petersburg University: ..
 * [CS 101: Building a Search Engine](http://www.udacity.com/overview/Course/cs101) by Udacity.com
 * [CS 373: Programming a Robotic Car](http://www.udacity.com/overview/Course/cs373) by Udacity.com
+* [Probability](http://www.khanacademy.org/#probability) by KhanAcademy.org
 
 # Puzzles  
 # Miscellaneous  
