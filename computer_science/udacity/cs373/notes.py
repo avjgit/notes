@@ -482,6 +482,7 @@ p(y)?
 2
 roll pitch yaw
 
+
 3
 p(fire) = .001
 B = neighbor say "fire"
@@ -497,3 +498,93 @@ non-normalized p(f'|b)?
     normalized p(f'|b)?
         = 1 - .0089
 4
+colors = [['red', 'green', 'green', 'red' , 'red'],
+          ['red', 'red', 'green', 'red', 'red'],
+          ['red', 'red', 'green', 'green', 'red'],
+          ['red', 'red', 'red', 'red', 'red']]
+
+measurements = ['green', 'green', 'green' ,'green', 'green']
+
+
+motions = [[0,0],[0,1],[1,0],[1,0],[0,1]]
+
+sensor_right = 0.7
+
+p_move = 0.8
+
+def show(p):
+    for i in range(len(p)):
+        print p[i]
+
+#DO NOT USE IMPORT
+#ENTER CODE BELOW HERE
+#ANY CODE ABOVE WILL CAUSE
+#HOMEWORK TO BE GRADED
+#INCORRECT
+
+p = []
+
+def init(p):
+    i = 0
+    for row in colors:
+        for column in row:
+            i += 1
+    
+    p_init = 1./ i
+    
+    for row in colors:
+        p_row = []
+        for i in range(len(row)):            
+            p_row.append(p_init)
+        p.append(p_row)
+        
+def init_test(p):
+    p.append([0, 1, 0, 0, 0]);
+    p.append([0, 0, 0, 0, 0]);
+    p.append([0, 0, 0, 0, 0]);
+    p.append([0, 0, 0, 0, 0]);
+
+def move(p, U):
+    q = []
+    for r in range(len(p)):
+        q_row = []
+        for i in range(len(p[r])):
+            s = p_move * p[(r-U[0]) % len(p)][(i-U[1]) % len(p[r])]
+            s += (1-p_move) * p[r][i]
+            q_row.append(s)
+        q.append(q_row)
+    return q       
+
+def sense(p, Z):
+    q=[]
+    for r in range(len(p)):
+        q_row = []
+        for i in range(len(p[r])):
+            hit = (Z == colors[r][i])
+            q_row.append(p[r][i] * (hit * sensor_right + (1-hit) * (1-sensor_right)))
+        q.append(q_row)
+    
+    s = 0
+    for r in range(len(q)):
+        s += sum(q[r])
+
+    for r in range(len(q)):
+        for i in range(len(q[r])):
+            q[r][i] = q[r][i] / s
+        
+    return q
+    
+# main program
+init(p)
+#init_test(p)
+
+for k in range(len(motions)):
+    p = move(p, motions[k])
+    p = sense(p, measurements[k])
+
+
+
+#Your probability array must be printed 
+#with the following code.
+
+show(p)
