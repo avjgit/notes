@@ -163,7 +163,10 @@
 
 
 ###2.5 - Model-View-Controller Architecture  
-
+  alternatives:
+    page controller (Sinatra)
+    front controller (J2EE)
+    template view (PHP)
 
 
 ###2.6 - Models, Databases and ActiveRecord  
