@@ -50,10 +50,21 @@ levels:
   
   "With testing, you can't prove there are no bugs, you can prove only that there are"
 
+
 # Productivity (§1.5)  
+  techniques:
+    clarity via conciseness
+      syntax ("a.should be > 7" better than "assert.greater_or_equal(a, 7)")
+      abstraction level (higher level languages)
+    synthesis
+    reuse
+      procedures
+      libraries
+      OOP
+      design patterns
+    automation and tools
 
-
-
+    DRY
 
 # Software as a Service (§1.6)  
 
