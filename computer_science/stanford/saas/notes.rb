@@ -269,8 +269,42 @@
  
  
 ###3.2, 3.3 - Ruby Objects and Methods  
+  all is a object - so, "57.methods" works
+  my_str.length => my_str.send(:length)
+  1 + 2         => 1.send(:+, 2)
+  my_array[4]   => my_array.send(:[], 4)
+  
+  a.b
+    calling method b on object a
+    b is not an instance variable a
+    a is not data structure, that has b as a member
+    a is receiver to which I send method call, assuming a will respond
 
-
+    
+  instance members, not language operators
+  so,
+    5 + 3
+    "a" + "b"
+    [a,b] + [c] all are different methods named '+'
+    
+  
+  a.should(be.send(:>=, 7))
+  a.should(be() >= 7)
+  a.should be >= 7
+  
+  
+  def foo(arg, hash1, hash2)
+  ...
+  end
+  Which is NOT a legal call to foo()?
+    foo a, {:x => 1, :y => 2}, :z => 3
+     
+    foo(a, :x => 1, :y =>2, :z => 3)
+     
+    foo(a, {:x => 1, :y => 2}, {:z => 3})
+     
+    foo(a, {:x => 1}, {:y =>2, :z => 3})
+   
 
 ###3.4 - Object Oriented Programming in Ruby  
 
