@@ -390,5 +390,18 @@
   
   
 ###3.6 - Ruby Blocks, Iterators, Functional Idioms   
-
+  x = ['apple', 'cherry', 'apple', 'banana']
+  x.sort
+  x.uniq.reverse
+  x.reverse!
+  
+  x.map do |fruit|
+    fruit.reverse
+  end.sort
+  
+  x.collect { |f| f.include? ("e") }
+  x.any? { |f| f.length > 5 }
+  
+  
+  Mechanize - Ruby lib, scriptable browser
 
