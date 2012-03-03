@@ -66,8 +66,22 @@ levels:
 
     DRY
 
+    
+    
 # Software as a Service (§1.6)  
-
+  traditional: on client device
+  saas: through internet
+    no installation worries
+    no data loss worries
+    simple upgrades for devs
+    simple upgrades for users
+  ruby
+    scripting
+    oop
+    functional
+    dynamic types
+    mixins (for reuse)
+    metaprogramming
 
 
 
