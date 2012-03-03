@@ -27,14 +27,28 @@
     responding to change over plan  
     
     items on the right still have value
+    
+    uses written requirements too (user stories)
 
 
 
 
 # Assurance (§1.4)  
+verification: is thing built right? (according to specs)
+validation:   is right thing built? (are specs correct?)
 
-
-
+levels:
+  unittest (single method)
+  module/ or functional: single unit
+  integration: interfaces between units
+  system/ acceptance: whole system
+  
+  coverage
+  regression testing
+  continuous integration
+  tdd (tests before)
+  
+  "With testing, you can't prove there are no bugs, you can prove only that there are"
 
 # Productivity (§1.5)  
 

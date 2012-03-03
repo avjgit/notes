@@ -1,8 +1,8 @@
 ## Course outline
 
 ### Week One:  
-* Engineering SW is Different from HW (§1.1-§1.2)  
-* Development Processes: Waterfall vs. Agile (§1.3)  
+Engineering SW is Different from HW (§1.1-§1.2)  
+Development Processes: Waterfall vs. Agile (§1.3)  
 Assurance (§1.4)  
 Productivity (§1.5)  
 Software as a Service (§1.6)  
@@ -62,8 +62,8 @@ Homework 5: In this homework you will add more advanced features to a SaaS app, 
 ## Videolectures
 
 ### Chapter One - Engineering Software is Different from Engineering Hardware
-1.1, 1.2 - Introduction - Engineering Software is Different from Engineering Hardware  
-1.3 - Development Processes: Waterfall vs. Agile  
+* 1.1, 1.2 - Introduction - Engineering Software is Different from Engineering Hardware  
+* 1.3 - Development Processes: Waterfall vs. Agile  
 1.4 - Assurance  
 1.5 - Productivity  
 1.6 - Software as a Service  
