@@ -183,9 +183,18 @@
 
 
 ###2.7 - Controllers, Routes and RESTfulness  
-
-
-
+  route 
+    maps HTTP method + URI to controller action
+      GET  /movies/3    - show movie 3
+      POST /movies      - create new
+      PUT  /movies/5    - update movie
+      DELETE /movies/5
+      
+  Representational State Transfer
+  If you can see an URI and say, what''s is going to do
+  Amazon antipattern
+  
+  
 ###2.8 - Templates, Views and HAML  
 
 
