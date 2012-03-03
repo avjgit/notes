@@ -170,7 +170,16 @@
 
 
 ###2.6 - Models, Databases and ActiveRecord  
-
+  marshal = serialize
+  Active records = every model knows how to CRUD itself
+  each model gets it''s own db table
+  column is attribute
+  Rails add ID
+  Schema: collection of all tables
+  
+  RDBMS is hard to scale
+  
+  alternative: DataMapper, used by Google
 
 
 ###2.7 - Controllers, Routes and RESTfulness  
