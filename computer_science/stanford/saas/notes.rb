@@ -154,7 +154,12 @@
 
 
 ###2.4 - 3-tiered Shared-Nothing Architecture and Scaling  
-
+  Load Balancer could be used between each tier
+    presentation
+    logic
+    persistence
+  
+  Sharding vs Replication
 
 
 ###2.5 - Model-View-Controller Architecture  
