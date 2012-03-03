@@ -196,8 +196,18 @@
   
   
 ###2.8 - Templates, Views and HAML  
+  HAML - highly specified HTML. HTML on a diet
+    %h1.pagename All Movies
+    %table#movies
+      %thead
+        %th Movie Title
+        %th Release DAte
+        %th More Info
+      %tbody
+  RJS - remote Javascript
 
-
+  Helper methods
+  
 
 ###Summary and Reflections: SaaS Architecture  
 
