@@ -307,7 +307,32 @@
    
 
 ###3.4 - Object Oriented Programming in Ruby  
-
+  class SavingsAccount < Account #inheritance
+  #constructor
+  def initialize(starting_balance = 0)
+    @balance = starting_balance
+  end
+  def balance #setter
+    @balance
+  end
+  def balance=(new_amount) #setter
+    @balance = new_amount
+  end
+  
+  # or
+  attr_accessor :balance #getter, setter
+  
+  def deposit(amount)
+    @balance += amount
+  end
+  
+  @@bank_name = "MyBank.com" #static variable
+  def self.bank_name
+  
+  end
+  
+  
+  no multiple inheritence
 
 
 ###3.5 - Ruby Metaprogramming  
