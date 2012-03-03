@@ -99,8 +99,36 @@
 
 
 ###2.1, 2.2 - The Web as a Client-Server System; TCP/IP Introduction  
-
-
+  web: client-server arch.
+  request-reply oriented
+  DNS (Domain Name system) in the middle - maps names to addresses
+  IP (Internet protocol) address, four octets - 128.32.244.172
+  127.0.0.1 - "this computer"
+  TCP - Transmission Control protocol
+  HTTP
+    requests
+      GET
+      POSt
+      URI (=URL)
+      header
+    responses
+      protocol version
+      status code
+      header
+      body
+    status codes
+      2xx - ok
+      3xx - resource m.
+      4xx - access problems
+      5xx - server errors
+  
+  NetCat
+  
+  HTTP is stateless
+  
+  Cookies
+  
+  
 
 ###2.3 - HTML and CSS  
 
