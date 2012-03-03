@@ -131,7 +131,26 @@
   
 
 ###2.3 - HTML and CSS  
-
+  IBM GML 60-ies
+  SGML 1986
+  
+  CSS: apply per
+    tag name <h1>
+    class name .pageFrame
+    element ID #pageHead
+    tage name & class div.pageFrame
+    tag name & id span#custName
+    descendant relationship: "div .custName"
+      search for and ID inside of a div
+      
+      <p class="a">foo,
+        <span class="a">bar</span></p>
+      which selector will select ONLY "bar"?
+        span.a
+        p .a
+        .a span
+        > all
+    
 
 
 ###2.4 - 3-tiered Shared-Nothing Architecture and Scaling  
