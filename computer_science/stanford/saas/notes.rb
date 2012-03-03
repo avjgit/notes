@@ -193,7 +193,9 @@
   Representational State Transfer
   If you can see an URI and say, what''s is going to do
   Amazon antipattern
+    Same URI does different things depending on internal state
   
+  Controllers ties models and views together via routes
   
 ###2.8 - Templates, Views and HAML  
   HAML - highly specified HTML. HTML on a diet
@@ -207,7 +209,8 @@
   RJS - remote Javascript
 
   Helper methods
-  
+
+  Are Haml with erb
 
 ###Summary and Reflections: SaaS Architecture  
 
