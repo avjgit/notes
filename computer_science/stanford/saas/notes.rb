@@ -336,9 +336,59 @@
 
 
 ###3.5 - Ruby Metaprogramming  
+  acce.deposit 100 #dollars
+  acce.deposit 20.euros #euroes
+  
+  class Numeric #extend
+    def euros
+      self * 1.299
+    end
+  end
+  
+  acce.deposit 1.euro
+  
+  class Numeric
+    def method_missing(method_id)
+      if method_id.to_s == 'euro'
+        self.send('euros')
+      else
+        super
+      end
+    end
+  end
 
 
+  
+  acce.deposit 1000.yen
+  acce.deposit 3000.rupees
 
+  class Numeric
+    @@currencies = {'yen' => .013, 'euro' => 1.192, 'rupee' => .019}
+    def method_missing(method_id)
+      singular_currency = method_id.to_s.remove_s_from_end
+      if @@currencies.has_key? singular_currency
+        self = @@currencies(singular_currency)
+      else
+        super
+      end      
+    end
+  end  
+  
+  generate new code at runtime
+  "reopen" any class at any time and add stuff to it
+  
+  Suppose we want to handle
+  5.euros.in(:rupees)
+  What mechanism would be most appropriate?
+  
+    Change Numeric.method_missing (class method) to detect calls to 'in' with appropriate arguments 
+    Change Numeric#method_missing (instance method) to detect calls to 'in' with appropriate arguments 
+    > Define the instance method Numeric#in 
+    Define the class method Numeric.in
+  
+  
+  
+  
 ###3.6 - Ruby Blocks, Iterators, Functional Idioms   
 
 
