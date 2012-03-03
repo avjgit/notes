@@ -90,7 +90,8 @@
 
 
 ###1.8, 1.9, 1.12 - Cloud Computing, Fallacies and Pitfalls  
-
+  lot of common computers is cheaper then big one
+  ... and common known stuff like adding people to late project makes it later
 
 
 # Chapter Two - SaaS Architecture

@@ -66,9 +66,9 @@ Homework 5: In this homework you will add more advanced features to a SaaS app, 
 * 1.3 - Development Processes: Waterfall vs. Agile  
 * 1.4 - Assurance  
 * 1.5 - Productivity  
-1.6 - Software as a Service  
-1.7 - Service-Oriented Architecture  
-1.8, 1.9, 1.12 - Cloud Computing, Fallacies and Pitfalls  
+* 1.6 - Software as a Service  
+* 1.7 - Service-Oriented Architecture  
+* 1.8, 1.9, 1.12 - Cloud Computing, Fallacies and Pitfalls  
 
 
 ### Chapter Two - SaaS Architecture
