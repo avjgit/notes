@@ -221,9 +221,53 @@
 
 
 ###3.1 - Ruby 101  
+  interpreted
+  oop
+    everything is an object
+  dynamically typed: objects typed, variables - not
+  dynamic
+    modify code at runtime (metaprogramming)
+    ask objects about themselves (reflection)
+  
+  
+  conventions
+    ClassNames
+    method_names
+    var_names ("snake case")
+    bool_methods?
+    changing_methods!
+    CONSTANTS
+    $SUPER_GLOBALS
+    :symbols__mmutable_string
+      to_s
+      to_sym
+      :rails == "rails" # => false
+    
+    
+    vars must be asisgned before use
+    class instances are nil until assignement
+    
+    array - can contain different types
+    
+    hash
+      w = {'a' => 1, :b => [2, 3]}
+      basically, hash are arrays where keys should be anyghing, not necessary integers
+      
+    everyghing, except fixnums, is passed by reference
 
+    a = 41; "the answer is #{a+1}"
 
-
+    rx = {:fox => /^arm/, 'fox' => [%r{AN(DO)$}, /an(do)/i]}
+    Which expression will evaluate to non-nil?
+    "armando" =~ rx{:fox}
+     
+    rx[:fox][1] =~ "ARMANDO"
+     
+    > rx['fox'][1] =~ "ARMANDO"
+     
+    "armando" =~ rx['fox', 1]
+ 
+ 
 ###3.2, 3.3 - Ruby Objects and Methods  
 
 
