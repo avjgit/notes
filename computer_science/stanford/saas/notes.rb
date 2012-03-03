@@ -86,7 +86,9 @@ levels:
 
 
 # Service Oriented Architecture (§1.7)  
-
+  SOA: architecture, where all components are designed to be a service
+  amazon usecase
+    subsystems independent, as if in separate datacenters
 
 
 
