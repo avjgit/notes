@@ -19,7 +19,8 @@
 # palindrome?("Abracadabra")  # => false (nil is also ok)
 
 def palindrome?(string)
-  puts 'hello'
+  string.downcase!.gsub!(/[^a-z]/, '')	#unify case & remove non-letters
+  l = string.length						#get string length
+  string[0..l/2].reverse ==				#compare first half to second
+  string[l/2..l]
 end
-
-palindrome?('sadf')
