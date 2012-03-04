@@ -24,12 +24,18 @@ print url
 # Return Statement - Question
 def get_next_target(page):
 	start_link = page.find('<a href=')
+	
 	quote_start = page.find('"', start_link)
 	quote_end   = page.find('"', quote_start+1)
+	
 	url = page[quote_start+1 : quote_end]
 	return url, end_quote
 # Dave Sebastian And Junior
+	cool car
 # Using Procedures
+def rest_of_string(s):
+	return s[1:]
+print rest_of_string('audacity')	
 # Inc Procedure - Question
 # Sum Procedure - Question
 # Sum Procedure With A Return Statement - Question
