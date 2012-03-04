@@ -63,11 +63,12 @@ def bigger(a, b):
     return b
 # Is Friend - Question
 def is_friend(name):
-    if name[0] == 'D':
-        is_friend = True
-    else:
-        is_friend = False
-    return is_friend
+    # if name[0] == 'D':
+    #     is_friend = True
+    # else:
+    #     is_friend = False
+    # return is_friend
+    return name[0] == 'D'
 # More Friends - Question
 # Or
 # Biggest - Question
