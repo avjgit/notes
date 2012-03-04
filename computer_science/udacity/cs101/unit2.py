@@ -24,12 +24,15 @@ print url
 # Return Statement - Question
 def get_next_target(page):
 	start_link = page.find('<a href=')
-	
+
+    if start_link < 0:
+        return None, 0
+        	
 	quote_start = page.find('"', start_link)
 	quote_end   = page.find('"', quote_start+1)
 	
 	url = page[quote_start+1 : quote_end]
-	return url, end_quote
+	return url, quote_end
 # Dave Sebastian And Junior
 	cool car
 # Using Procedures
@@ -146,5 +149,8 @@ while True:
 	a, b = 3, 4
 	a, b = get_next_target(page)
 # Multiple Assignment - Question
+	s, t = t, s # swaps valuess
 # No Links - Question
+print get_next_target('good')
+print get_next_target('Not "good" at all')
 # Print All Links - Question
