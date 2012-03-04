@@ -51,6 +51,9 @@ def sum3(a, b, c):
 def abbaize(s1, s2):
 	return s1 + s2*2 + s1
 # Find Second - Question
+def find_second(search, target):
+    first = search.find(target)
+    return search.find(target, first+1)
 # Equality Comparisons - Question
 # If Statements - Question
 # Is Friend - Question
