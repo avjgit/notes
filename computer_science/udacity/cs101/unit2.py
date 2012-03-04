@@ -100,16 +100,33 @@ def biggest(a, b, c):
 	    
 # While Loops - Question
 i = 0
-while i < 10:
+while i < 10:	#will run 0 to 9
 	print i
 	i += 1
 
 k = 0
-while k != 10:
+while k != 10: #will run 1 to 10
 	k += 1
 	print 1
 # While Loops 2 - Question
+i = 1
+while i != 10:	#will run forever
+	i = i + 2
+	print i
 # Print Numbers - Question
+# Define a procedure, print_numbers, that takes
+# as input a positive whole number, and prints 
+# out all the whole numbers from 1 to the input
+# number.
+
+# Make sure your procedure prints "upwards", so
+# from 1 up to the input number.
+
+def print_numbers(upto):
+    i = 1
+    while i <= upto:
+        print i
+        i += 1
 # Factorial - Question
 # Break - Question
 # Multiple Assignment
