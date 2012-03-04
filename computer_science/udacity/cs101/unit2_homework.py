@@ -70,4 +70,8 @@ def median(a, b, c):
 # out a countdown from that number to 1, 
 # followed by Blastoff! 
 
-def countdown():
+def countdown(count):
+	while count > 1:
+		print count
+		count = count - 1
+	print "Blastoff!"
