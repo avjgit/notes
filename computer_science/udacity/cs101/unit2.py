@@ -162,3 +162,4 @@ def print_all_links(page):
 			page = page[endpos:]
 		else:
 			break
+			

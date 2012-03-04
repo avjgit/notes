@@ -13,6 +13,7 @@
 def udacify(input):
     return 'U' + input
 
+# 3/7
 # Define a procedure, median, that takes three
 # numbers as its inputs, and outputs the median
 # of the three numbers.
@@ -29,4 +30,44 @@ def biggest(a,b,c):
     return bigger(a,bigger(b,c))
 
 def median(a, b, c):
-    
+    # if a >= b:
+    #     if c >= a:
+    #         median = a
+    #     else:
+    #         if b >= c:
+    #             median = b
+    #         else:
+    #             median = c
+    # else:
+    #     if b >= c:
+    #         if c >= a:
+    #             median = c
+    #         else:
+    #             median = a
+    #     else:
+    #         median = b
+    if a == biggest(a, b, c):
+        if b >= c:
+            median = b
+        else:
+            median = c
+    else:
+        if b == biggest(a, b, c):
+            if a >= c:
+                median = a
+            else:
+                median = c
+        else:
+            if a >= b:
+                median = a
+            else:
+                median = b
+    return median
+
+# 4/7
+# Define a procedure, countdown, that takes a
+# positive whole number as its input, and prints 
+# out a countdown from that number to 1, 
+# followed by Blastoff! 
+
+def countdown():
