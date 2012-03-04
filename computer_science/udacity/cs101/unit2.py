@@ -143,6 +143,8 @@ while True:
 		break
 	do_code	
 # Multiple Assignment
+	a, b = 3, 4
+	a, b = get_next_target(page)
 # Multiple Assignment - Question
 # No Links - Question
 # Print All Links - Question
