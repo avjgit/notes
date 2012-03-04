@@ -45,6 +45,8 @@ def sum(a, b):
 def square(x):
     return x*x
 # Sum Of Three - Question
+def sum3(a, b, c):
+    return a+b+c
 # Abbaize - Question
 # Find Second - Question
 # Equality Comparisons - Question
