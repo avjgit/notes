@@ -67,9 +67,17 @@ def is_friend(name):
     #     is_friend = True
     # else:
     #     is_friend = False
-    # return is_friend
-    return name[0] == 'D'
+    return is_friend
 # More Friends - Question
+def is_friend(name):
+    if name[0] == 'D':
+        is_friend = True
+    else:
+        if name[0] == 'N':
+            is_friend = True
+        else:
+            is_friend = False
+    return is_friend
 # Or
 # Biggest - Question
 # While Loops - Question
