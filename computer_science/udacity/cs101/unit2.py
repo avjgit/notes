@@ -27,7 +27,7 @@ def get_next_target(page):
 
     if start_link < 0:
         return None, 0
-        	
+
 	quote_start = page.find('"', start_link)
 	quote_end   = page.find('"', quote_start+1)
 	
@@ -154,3 +154,11 @@ while True:
 print get_next_target('good')
 print get_next_target('Not "good" at all')
 # Print All Links - Question
+def print_all_links(page):
+	while True:
+		url, endpos = get_next_target(page)
+		if url:
+			print url
+			page = page[endpos:]
+		else:
+			break
