@@ -129,8 +129,16 @@ while n != 1:
 
 # Make sure your procedure has a return statement.
 
-def find_last():    
-
+def find_last(string, search):
+    index_prev = -1
+    index = -1
+    while True:
+        index = string.find(search, index+1)
+        if index < 0:
+            break
+        index_prev = index
+    return index_prev
+    
 # 7/7
 #Define a procedure,
 #print_multiplication_table,
