@@ -93,6 +93,11 @@ def biggest(a, b, c):
         else:
             biggest = c
     return biggest
+
+def biggest(a, b, c):
+	# built-in max(a, b, c)
+	return bigger(bigger(a, b), c)
+	    
 # While Loops - Question
 # While Loops 2 - Question
 # Print Numbers - Question
