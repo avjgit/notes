@@ -76,6 +76,48 @@ def countdown(count):
 		count = count - 1
 	print "Blastoff!"
 
+# 5/7
+
+  always finishes
+  sometimes funs foerever
+  unknown
+
+# Loop 1
+n = any positive integer
+i = 0
+while i <= n:
+    i = i+1
+
+> always finishes
+  sometimes funs foerever
+  unknown
+
+# Loop 2
+n = any positive integer
+i = 1
+while True:
+    i = i*2
+    n = n+1
+    if i > n:
+        break
+
+> always finishes
+  sometimes funs foerever
+  unknown
+
+# Loop 3
+n = any positive integer
+while n != 1:
+    if n % 2 == 0: # n is even
+        n = n/2
+    else:
+        n = 3*n + 1
+
+
+> always finishes
+  sometimes funs foerever
+  unknown
+
 # 6/7
 # Define a procedure, find_last, that takes as input
 # two strings, a search string and a target string,
@@ -105,4 +147,14 @@ def find_last():
 #2 * 1 = 2
 #2 * 2 = 4
 
+def print_mult(i, j):
+    print str(i) + ' * ' + str(j) + ' = ' + str(i*j)
+
 def print_multiplication_table(n):
+    i = 1
+    while i <= n:
+        j = 1
+        while j <= n:
+            print_mult(i, j)
+            j += 1
+        i += 1
