@@ -64,6 +64,13 @@ def median(a, b, c):
                 median = b
     return median
 
+print median(1, 2, 3)
+print median(1, 3, 2)
+print median(2, 1, 3)
+print median(2, 3, 1)
+print median(3, 2, 1)
+print median(3, 1, 2)
+
 # 4/7
 # Define a procedure, countdown, that takes a
 # positive whole number as its input, and prints 
@@ -138,7 +145,7 @@ def find_last(string, search):
             break
         index_prev = index
     return index_prev
-    
+
 # 7/7
 #Define a procedure,
 #print_multiplication_table,
