@@ -48,6 +48,8 @@ def square(x):
 def sum3(a, b, c):
     return a+b+c
 # Abbaize - Question
+def abbaize(s1, s2):
+	return s1 + s2*2 + s1
 # Find Second - Question
 # Equality Comparisons - Question
 # If Statements - Question
