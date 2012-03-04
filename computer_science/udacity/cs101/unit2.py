@@ -52,8 +52,9 @@ def abbaize(s1, s2):
 	return s1 + s2*2 + s1
 # Find Second - Question
 def find_second(search, target):
-    first = search.find(target)
-    return search.find(target, first+1)
+    first  = search.find(target)
+    second = search.find(target, first+1)
+    return second
 # Equality Comparisons - Question
 # If Statements - Question
 # Is Friend - Question
