@@ -60,7 +60,13 @@ s.find(t, i) = ?
 
 # page = contents of a web page
 page ='<div id="top_bin"><div id="top_content" class="width960"><div class="udacity float-left"><a href="http://www.xkcd.com">'
+
 tag = '<a href="'
 start_link = page.find(tag) 
 end_link = page.find('">', start_link)
 url = page[start_link+len(tag):end_link]
+
+start_link = page.find('<a href=')
+quote_start = page.find('"', start_link)
+quote_end   = page.find('"', quote_start)
+url = page[quote_start+1 : quote_end]
