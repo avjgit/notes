@@ -99,6 +99,15 @@ def biggest(a, b, c):
 	return bigger(bigger(a, b), c)
 	    
 # While Loops - Question
+i = 0
+while i < 10:
+	print i
+	i += 1
+
+k = 0
+while k != 10:
+	k += 1
+	print 1
 # While Loops 2 - Question
 # Print Numbers - Question
 # Factorial - Question
