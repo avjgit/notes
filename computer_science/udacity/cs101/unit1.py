@@ -69,4 +69,4 @@ url = page[start_link+len(tag):end_link]
 start_link = page.find('<a href=')
 quote_start = page.find('"', start_link)
 quote_end   = page.find('"', quote_start)
-url = page[quote_start+1 : quote_end]
+url = page[quote_start+1 : quote_end]	
