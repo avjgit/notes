@@ -42,6 +42,8 @@ print rest_of_string('audacity')
 def sum(a, b):
 	return a+b
 # Square - Question
+def square(x):
+    return x*x
 # Sum Of Three - Question
 # Abbaize - Question
 # Find Second - Question
