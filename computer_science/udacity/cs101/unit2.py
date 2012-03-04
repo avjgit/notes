@@ -135,6 +135,13 @@ def factorial(n):
         n = n-1
     return factorial
 # Break - Question
+while condition:
+	do_code
+
+while True:
+	if condition:
+		break
+	do_code	
 # Multiple Assignment
 # Multiple Assignment - Question
 # No Links - Question
