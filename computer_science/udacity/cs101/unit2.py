@@ -57,6 +57,10 @@ def find_second(search, target):
     return second
 # Equality Comparisons - Question
 # If Statements - Question
+def bigger(a, b):
+    if a > b:
+        return a
+    return b
 # Is Friend - Question
 # More Friends - Question
 # Or
