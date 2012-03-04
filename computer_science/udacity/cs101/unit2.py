@@ -39,6 +39,8 @@ print rest_of_string('audacity')
 # Inc Procedure - Question
 # Sum Procedure - Question
 # Sum Procedure With A Return Statement - Question
+def sum(a, b):
+	return a+b
 # Square - Question
 # Sum Of Three - Question
 # Abbaize - Question
