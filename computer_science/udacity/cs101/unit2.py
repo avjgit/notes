@@ -22,6 +22,12 @@ print url
 # Procedure Code - Question
 # Output - Question
 # Return Statement - Question
+def get_next_target(page):
+	start_link = page.find('<a href=')
+	quote_start = page.find('"', start_link)
+	quote_end   = page.find('"', quote_start+1)
+	url = page[quote_start+1 : quote_end]
+	return url, end_quote
 # Dave Sebastian And Junior
 # Using Procedures
 # Inc Procedure - Question
