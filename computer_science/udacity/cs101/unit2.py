@@ -79,7 +79,20 @@ def is_friend(name):
             is_friend = False
     return is_friend
 # Or
+	return True of asdf #=> True
 # Biggest - Question
+def biggest(a, b, c):
+    if a > b:
+        if a > c:
+            biggest = a
+        else:
+            biggest = c
+    else:
+        if b > c:
+            biggest = b
+        else:
+            biggest = c
+    return biggest
 # While Loops - Question
 # While Loops 2 - Question
 # Print Numbers - Question
