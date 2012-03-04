@@ -98,6 +98,7 @@ x = 3.14159
 #INCORRECT
 # ok, without any loops, just with strings and serching:)
 # idea: let's convert x to string and take part after coma
+x += 1
 s = str(x)
 decimal_start = s.find('.') + 1
 # and check the very first digit after coma is it in range 5..9
@@ -106,11 +107,11 @@ decimal_start = s.find('.') + 1
 # and, if no 5..9 as first digit after coma found, then round down
 # to be able to solve with techniques learned in this unit
 
-x = x + 1 + s[decimal_start].find('5')
-x = x + 1 + s[decimal_start].find('6')
-x = x + 1 + s[decimal_start].find('7')
-x = x + 1 + s[decimal_start].find('8')
-x = x + 1 + s[decimal_start].find('9')
+# x = x + 1 + s[decimal_start].find('5')
+# x = x + 1 + s[decimal_start].find('6')
+# x = x + 1 + s[decimal_start].find('7')
+# x = x + 1 + s[decimal_start].find('8')
+# x = x + 1 + s[decimal_start].find('9')
 
 # and now, let's just take part before coma
 s = str(x)
