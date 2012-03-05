@@ -113,3 +113,12 @@ print update(10.,8.,13., 2.)
 #23 motion update
 m_new = m + u
 sigma_new = sigma + other_sigma
+
+# Write a program that will predict your new mean
+# and variance given the mean and variance of your 
+# prior belief and the mean and variance of your 
+# motion. 
+def predict(mean1, var1, mean2, var2):
+    new_mean =
+    new_var =
+    return [new_mean, new_var]
