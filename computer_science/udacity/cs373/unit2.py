@@ -150,5 +150,8 @@ sig = 10000
 #and the variance in a list [mu, sig]. 
 
 # Insert code here
+for i in range(len(measurements)):
+    mu, sig = update(mu, sig, measurements[i], measurement_sig)
+    mu, sig = predict(mu, sig, motion[i], motion_sig)
 
 print [mu, sig]
