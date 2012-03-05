@@ -7,14 +7,17 @@
 # should still return true for all other flavors and for all non-JellyBean desserts).Here is the framework (you may define additional helper methods):
 
 class Dessert
+    attr :name, true
+    attr :calories, true
     def initialize(name, calories)
-    # YOUR CODE HERE
+        @name = name
+        @calories = calories    
     end
     def healthy?
-    # YOUR CODE HERE
+        return @calories < 200 ? true : false 
     end
     def delicious?
-    # YOUR CODE HERE
+        true
     end
     end
     class JellyBean < Dessert
@@ -25,3 +28,12 @@ class Dessert
     # YOUR CODE HERE
     end
 end
+
+# tests
+# d1 = Dessert.new('d1', 100)
+# d2 = Dessert.new('d2', 200)
+# puts d1.delicious?
+# puts d2.delicious?
+# puts d1.healthy?
+# puts d2.healthy?
+
