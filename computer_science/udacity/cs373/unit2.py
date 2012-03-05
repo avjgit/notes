@@ -52,3 +52,6 @@ print(n)
 # Gaussian can be defined per:
 #     mean Monte
 #     variance G^2
+
+#10
+# sigma^2 - larger for larger distribution
