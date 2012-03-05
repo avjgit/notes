@@ -8,7 +8,7 @@ def f(n):
     return (n-1) / 5 * 4
 
 def f6(n):
-    for i in range(1,7):
+    for i in range(6):
         n = f(n)
     return n
 
