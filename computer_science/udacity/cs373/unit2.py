@@ -34,3 +34,16 @@ while not found:
     found = is_int(f6(float(n)))
 
 print(n)    
+
+#8
+# Kalman filter
+#     continuous
+#     uni-modal
+
+# Monte Carlo localization
+#     discrete
+#     multi-modal
+
+# Particle filters
+#     continuous
+#     multi-modal
