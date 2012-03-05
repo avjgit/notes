@@ -42,9 +42,9 @@ end
 # puts d1.healthy?
 # puts d2.healthy?
 
-j1 = JellyBean.new('j1', 100, 'vanilla')
-j2 = JellyBean.new('j2', 200, 'black licorice')
-puts j1.healthy?
-puts j2.healthy?
-puts j1.delicious?
-puts j2.delicious?
+# j1 = JellyBean.new('j1', 100, 'vanilla')
+# j2 = JellyBean.new('j2', 200, 'black licorice')
+# puts j1.healthy?
+# puts j2.healthy?
+# puts j1.delicious?
+# puts j2.delicious?
