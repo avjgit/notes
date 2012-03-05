@@ -54,4 +54,9 @@ print(n)
 #     variance G^2
 
 #10
-# sigma^2 - larger for larger distribution
+# sigma^2 
+    # - larger for larger distribution
+    # - smaller for certain distribution
+
+
+
