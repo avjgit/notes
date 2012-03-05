@@ -4,7 +4,12 @@
 #coconuts, n, as an argument and returns the
 #number of coconuts after one is given to
 #the monkey and one fifth are taken away.
-def asdf(n):
-    return (n-1) * 4./5
+def f(n):
+    return (n-1) / 5 * 4
 
-print(asdf(96.))
+def f6(n):
+    for i in range(1,7):
+        n = f(n)
+    return n
+
+print(f6(96.))
