@@ -155,3 +155,9 @@ for i in range(len(measurements)):
     mu, sig = predict(mu, sig, motion[i], motion_sig)
 
 print [mu, sig]
+
+
+#28 velocity
+start 1, velocity 0 = prediction 1/0
+start 1, velocity 1 = prediction 1/1
+start 1, velocity 2 = prediction 3/2
