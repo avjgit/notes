@@ -86,6 +86,6 @@ print f(10.,4.,10.) #Change the 8. to something else!
 
 
 #14
-                convolution     product
-measurement                     X
-motion          X
+                convolution     product     Bayes rule      Total probability
+measurement                     X           X
+motion          X                                           X
