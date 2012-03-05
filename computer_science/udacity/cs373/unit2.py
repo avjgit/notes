@@ -27,10 +27,10 @@ def is_int(n):
 #     n = f6(float(i))
 #     if is_int(n):
 #         break
-# print(n)
 n = 0
 found = False
 while not found:
     n += 1
     found = is_int(f6(float(n)))
+
 print(n)    
