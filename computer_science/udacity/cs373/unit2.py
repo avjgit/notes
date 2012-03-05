@@ -47,3 +47,8 @@ print(n)
 # Particle filters
 #     continuous
 #     multi-modal
+
+#9
+# Gaussian can be defined per:
+#     mean Monte
+#     variance G^2
