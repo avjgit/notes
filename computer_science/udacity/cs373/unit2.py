@@ -20,14 +20,11 @@ def is_int(n):
 #Write a program that will find the initial number
 #of coconuts.    
 # Enter code here.    
-def find_coconuts():
-    i = 0
-    n = 0
-    while True:
-        i += 1
-        n = f6(i)
-        if is_int(n):
-            break
-    print(n)
-
-find_coconuts()
+i = 0
+n = 0
+while True:
+    i += 1
+    n = f6(i)
+    if is_int(n):
+        break
+print(n)
