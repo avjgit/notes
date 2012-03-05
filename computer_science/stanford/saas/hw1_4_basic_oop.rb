@@ -19,13 +19,18 @@ class Dessert
     def delicious?
         true
     end
-    end
-    class JellyBean < Dessert
+end
+class JellyBean < Dessert
+    attr :flavor
     def initialize(name, calories, flavor)
-    # YOUR CODE HERE
+        super(name, calories)
+        @flavor = flavor
     end
     def delicious?
-    # YOUR CODE HERE
+        if @flavor == 'black licorice'
+            return false
+        end
+        super
     end
 end
 
@@ -37,3 +42,9 @@ end
 # puts d1.healthy?
 # puts d2.healthy?
 
+j1 = JellyBean.new('j1', 100, 'vanilla')
+j2 = JellyBean.new('j2', 200, 'black licorice')
+puts j1.healthy?
+puts j2.healthy?
+puts j1.delicious?
+puts j2.delicious?
