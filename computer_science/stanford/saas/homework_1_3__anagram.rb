@@ -15,4 +15,10 @@
 #  letters, keeping in mind that upper vs lowercase doesn't matter
 def combine_anagrams(words)
 #  <YOUR CODE HERE>
-en
+end
+
+def is_anagram(word1, word2)
+
+end
+
+# tests
