@@ -58,5 +58,16 @@ print(n)
     # - larger for larger distribution
     # - smaller for certain distribution
 
-
-
+#12
+f(x) = 1/sqr(2*Pi*sigma^2) * e^(-1/2 * (x-M)^2/ sigma^2)
+if
+    m = 10
+    sigma = 2
+    x = 8
+f(x) = 1/sqr(2*3*4) * e^(-1/2 * (8-10)^2/ 4)
+f(x) = 1/sqr(24)    * e^(-1/2 * (-2)^2  / 4)
+f(x) = 1/5          * e^(-1/2 *      4  / 4)
+f(x) = 0.2          * e^(-1/2 *           1)
+f(x) = 0.2          * e^ -1/2
+f(x) = 0.2          * .6
+f(x) = 1.2
