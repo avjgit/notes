@@ -17,6 +17,38 @@
 class WrongNumberOfPlayersError < StandardError ; end
 class NoSuchStrategyError < StandardError ; end
 def rps_game_winner(game)
-raise WrongNumberOfPlayersError unless game.length == 2
-# your code here
+
+    raise WrongNumberOfPlayersError unless game.length == 2
+
+    correctStrategies = [:R, :P, :S]
+
+    game.each do |player|
+        raise NoSuchStrategyError unless correctStrategies.include?(player[1].upcase.to_sym)
+    end
+
+    strategy1 = game[0][1].to_sym
+    strategy2 = game[1][1].to_sym
+
+    winner = game[0]
+
+    case strategy1
+    when :R
+        if strategy2 == :P
+            winner = game[1]
+        end
+    when :P
+        if strategy2 == :S
+            winner = game[1]
+        end
+    when :S
+        if strategy2 == :R
+            winner = game[1]
+        end
+    end
+
+    winner
 end
+
+#tests
+# puts rps_game_winner([ [ "Armando", "P" ], [ "Dave", "S" ]] )
+# puts rps_game_winner([ [ "Armando", "R" ], [ "Dave", "P" ]] )
