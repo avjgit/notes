@@ -163,3 +163,36 @@ start 1, velocity 1 = prediction 1/1
 start 1, velocity 2 = prediction 3/2
 
 #32 - todo
+#31
+# new location = old location + velocity
+# x'           = x            + x_with_a_dot
+
+# new velocity = old velocity
+
+state: state transition matrix F
+measurement: do not care about velocity; take just location
+
+
+-------------------- predition step: 
+x = estimate
+F = state transition matrix
+u = motion vector
+x'' = F*x + u
+
+P = uncertainity convariance
+P'' = F*P*F_transposed
+-------------------- measurement update step: 
+Z = measurement
+y "error" = Z - H*x = measurement update
+R = measurement noise
+S = H*P*H_transposed + R
+K = kalman gain = P * H_transposed * S^-1
+
+updating estimate
+x'' = x + (Ky)
+updating uncertainity
+P = (I - K*H) * P
+
+I = identity matrix
+
+transpose = to horizontal vector
