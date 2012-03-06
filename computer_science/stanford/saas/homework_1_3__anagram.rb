@@ -14,12 +14,37 @@
 # HINT: you can quickly tell if two words are anagrams by sorting their
 #  letters, keeping in mind that upper vs lowercase doesn't matter
 def combine_anagrams(words)
-#  <YOUR CODE HERE>
+    anagrams = []
+    while not words.empty?
+        w = words[0]
+        words.delete(w)
+        anagram_el = []
+        anagram_el << w
+        
+        words.each do |word|
+            if is_anagram(w, word)
+                anagram_el << word
+            end
+        end
+
+        anagram_el.each do |word|
+            words.delete(word)
+        end
+        
+        anagrams << anagram_el
+    end
+    anagrams
 end
 
 def is_anagram(word1, word2)
-    puts word1.lowercase
+    word1.downcase!
+    word2.downcase!
+    return word1.chars.sort.join == word2.chars.sort.join ? true : false
 end
 
 # tests
-is_anagram('Cars', 'racs')
+# puts is_anagram('Cars', 'racs')
+# puts combine_anagrams(['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream'])
+# array = ['abba', 'baab']
+# array.delete('abba')
+# puts array
