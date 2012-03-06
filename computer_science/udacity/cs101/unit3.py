@@ -2,6 +2,18 @@
 # 02 /44 Stooges - Question
 stooges = ['Moe', 'Larry', 'Curly']
 # 03 /44 Days In A Month - Question
+#Given the variable,
+
+days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]
+
+#define a procedure, how_many_days,
+#that takes as input a number
+#representing a month, and outputs
+#the number of days in that month.
+
+#how_many_days(1) => 31
+#how_many_days(9) => 30
+
 # 04 /44 Nested Lists
 # 05 /44 Countries - Question
 # 06 /44 Relative Size - Question
