@@ -16,8 +16,8 @@
 def combine_anagrams(words)
     anagrams = []
     while not words.empty?
-        w = words[0]
-        words.delete(w)
+        w = words.pop
+        
         anagram_el = []
         anagram_el << w
         
@@ -45,7 +45,7 @@ end
 # tests
 # puts is_anagram('Cars', 'racs')
 # puts combine_anagrams(['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream'])
-# array = ['abba', 'baab']
-# array.delete('abba')
+# array = ['abba', 'abba', 'baab']
+# array.pop
 # puts array
-puts combine_anagrams(['a', 'B', 'c'])
+# puts combine_anagrams(['a', 'B', 'c'])
