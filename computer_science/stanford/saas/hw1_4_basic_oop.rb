@@ -21,7 +21,12 @@ class Dessert
     end
 end
 class JellyBean < Dessert
-    attr :flavor
+    def flavor
+        @flavor
+    end
+    def flavor=(val)
+        @flavor = val
+    end
     def initialize(name, calories, flavor)
         super(name, calories)
         @flavor = flavor

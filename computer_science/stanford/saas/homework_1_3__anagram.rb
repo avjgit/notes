@@ -18,7 +18,8 @@ def combine_anagrams(words)
 end
 
 def is_anagram(word1, word2)
-
+    puts word1.lowercase
 end
 
 # tests
+is_anagram('Cars', 'racs')
