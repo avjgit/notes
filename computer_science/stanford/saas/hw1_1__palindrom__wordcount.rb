@@ -19,7 +19,8 @@
 # palindrome?("Abracadabra")  # => false (nil is also ok)
 
 def palindrome?(string)
-  string.downcase!.gsub!(/[^a-z]/, '')	#unify case & remove non-letters
+  string.downcase!
+  string.gsub!(/[^a-z]/, '')	#unify case & remove non-letters
   l = string.length						#get string length
   string[0..l/2].reverse ==				#compare first half to second
   string[l/2..l]
@@ -41,5 +42,6 @@ def count_words(string)
 	# array.delete_if {|word| ~= /\p{Punctuation}/}
 	array.delete_if {|word| word == ","}
 end
-
-puts count_words("a man, a plan, a canal -- Panama")
+#tests
+# puts count_words("a man, a plan, a canal -- Panama")
+puts palindrome?('baabaab')
