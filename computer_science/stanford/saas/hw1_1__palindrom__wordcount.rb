@@ -21,9 +21,10 @@
 def palindrome?(string)
   string.downcase!
   string.gsub!(/[^a-z]/, '')	#unify case & remove non-letters
-  l = string.length						#get string length
-  string[0..l/2].reverse ==				#compare first half to second
-  string[l/2..l]
+  half = string.length/2			#get string length
+  part1 = string[0..half-1].reverse
+  part2 = string[-half..-1]
+  part1 ==	part2			#compare first half to second
 end
 
 # (b) Given a string of input, return a hash whose keys are words in the string and 
@@ -38,10 +39,14 @@ end
 def count_words(string)
 
 	array = string.split(/\b/)
-	# array.delete(/\p{Punctuation}/)
+	array.delete(/\p{Punctuation}/)
 	# array.delete_if {|word| ~= /\p{Punctuation}/}
 	array.delete_if {|word| word == ","}
 end
 #tests
 # puts count_words("a man, a plan, a canal -- Panama")
-puts palindrome?('baabaab')
+# puts palindrome?('baabaab')
+# puts count_words("A man, a plan, a canal -- Panama")
+# puts palindrome?("Never odd or even.")
+# puts palindrome?("abqba")
+# puts palindrome?("abba")
