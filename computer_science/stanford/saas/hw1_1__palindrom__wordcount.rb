@@ -37,16 +37,29 @@ end
 # 'plan' => 1}
 # count_words "Doo bee doo bee doo"  # => {'doo' => 3, 'bee' => 2}
 def count_words(string)
-
-	array = string.split(/\b/)
-	array.delete(/\p{Punctuation}/)
+    string.downcase!
+    # string.gsub(/[^a-z ]/, '').gsub(/ /, '-')
+    string.gsub!(/[^a-z ]/, '')
+    string.gsub!(/  /, ' ')
+	array = string.split(/ /)
+    h = Hash.new()
+    array.each do |base|
+        count = 0
+        array.each do |word|
+            if base == word
+                count += 1
+            end
+        end
+        h[base] = count
+    end
+    h
+    # array.delete(/\p{Punctuation}/)
 	# array.delete_if {|word| ~= /\p{Punctuation}/}
-	array.delete_if {|word| word == ","}
+	# array.delete_if {|word| word == ","}
 end
 #tests
 # puts count_words("a man, a plan, a canal -- Panama")
 # puts palindrome?('baabaab')
-# puts count_words("A man, a plan, a canal -- Panama")
 # puts palindrome?("Never odd or even.")
 # puts palindrome?("abqba")
 # puts palindrome?("abba")

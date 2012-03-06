@@ -74,3 +74,24 @@ end
 # and returns the winner (for the above example, it should return [“Richard”, 
 # “R”]).  You can assume that the array is well formed (that is, there are 2^n players, 
 # and each one participates in exactly one match per round)
+def rps_tournament_winner(tournament)
+    # puts 'tournament is now '
+    # puts tournament
+    if tournament[0][0].class == String 
+       puts rps_game_winner(tournament) 
+    else
+        rps_tournament_winner(tournament[0])
+    end
+end
+
+#tests
+rps_tournament_winner [
+[
+[ ["Armando", "P"], ["Dave", "S"] ],
+[ ["Richard", "R"],  ["Michael", "S"] ],
+],
+[ 
+[ ["Allen", "S"], ["Omer", "P"] ],
+[ ["David E.", "R"], ["Richard X.", "P"] ]
+]
+]
