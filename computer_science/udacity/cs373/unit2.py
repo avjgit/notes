@@ -169,30 +169,31 @@ start 1, velocity 2 = prediction 3/2
 
 # new velocity = old velocity
 
-state: state transition matrix F
-measurement: do not care about velocity; take just location
+# state: state transition matrix F
+# measurement: do not care about velocity; take just location
 
 
--------------------- predition step: 
-x = estimate
-F = state transition matrix
-u = motion vector
-x'' = F*x + u
+# -------------------- predition step: 
+# x = estimate                  initial state 
+# P = uncertainity convariance  initial uncertainty
+# u = motion vector             external motion
+# F = state transition matrix   next state function
+# H
+# R = measurement noise         measurement uncertainty
+# I = identity matrix
 
-P = uncertainity convariance
-P'' = F*P*F_transposed
--------------------- measurement update step: 
-Z = measurement
-y "error" = Z - H*x = measurement update
-R = measurement noise
-S = H*P*H_transposed + R
-K = kalman gain = P * H_transposed * S^-1
+# x'' = F*x + u
+# P'' = F*P*F_transposed
+# -------------------- measurement update step: 
+# Z = measurement
+# y "error" = Z - H*x = measurement update
+# S = H*P*H_transposed + R
+# K = kalman gain = P * H_transposed * S^-1
 
-updating estimate
-x'' = x + (Ky)
-updating uncertainity
-P = (I - K*H) * P
+# updating estimate
+# x'' = x + (Ky)
+# updating uncertainity
+# P = (I - K*H) * P
 
-I = identity matrix
 
-transpose = to horizontal vector
+# transpose = to horizontal vector
