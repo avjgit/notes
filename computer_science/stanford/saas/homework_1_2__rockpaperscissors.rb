@@ -87,8 +87,8 @@ end
 #tests
 rps_tournament_winner [
 [
-[ ["Armando", "P"], ["Dave", "S"] ],
-[ ["Richard", "R"],  ["Michael", "S"] ],
+    [ ["Richard", "R"],  ["Michael", "P"] ],
+    [ ["Armando", "P"], ["Dave", "P"] ]
 ],
 [ 
 [ ["Allen", "S"], ["Omer", "P"] ],
