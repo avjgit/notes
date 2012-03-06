@@ -37,9 +37,9 @@ def combine_anagrams(words)
 end
 
 def is_anagram(word1, word2)
-    word1.downcase!
-    word2.downcase!
-    return word1.chars.sort.join == word2.chars.sort.join ? true : false
+    w1 = word1.downcase
+    w2 = word2.downcase
+    return w1.chars.sort.join == w2.chars.sort.join ? true : false
 end
 
 # tests
@@ -48,3 +48,4 @@ end
 # array = ['abba', 'baab']
 # array.delete('abba')
 # puts array
+puts combine_anagrams(['a', 'B', 'c'])
