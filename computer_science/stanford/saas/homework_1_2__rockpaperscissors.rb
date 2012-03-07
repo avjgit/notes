@@ -78,22 +78,9 @@ def rps_tournament_winner(tournament)
     if tournament[0][0].class == String 
        return rps_game_winner(tournament)        
     else
-        puts 'ok, will pass this: '
-        # print tournament[0]
-        # rps_game_winner(
-        #     rps_tournament_winner(tournament[0]),
-        #     rps_tournament_winner(tournament[1])
-        # )
-        # tournament.each do |tour|
-        #     rps_tournament_winner(tour)
-        # end
-        winner1 = []
-        winner2 = []
-        winner1 = rps_tournament_winner(tournament[0])
-        winner2 = rps_tournament_winner(tournament[1])
         winners = []
-        winners << winner1
-        winners << winner2
+        winners << rps_tournament_winner(tournament[0])
+        winners << rps_tournament_winner(tournament[1])
         rps_tournament_winner(winners)
     end
 end
@@ -109,3 +96,14 @@ puts rps_tournament_winner [
         [ ["David E.", "R"], ["Richard X.", "P"] ]
     ]
 ]
+
+# a = [
+#         [ ["Richard", "R"],  ["Michael", "S"] ],
+#         [ ["Armando", "P"], ["Dave", "S"] ]
+#     ]
+# b = [ ["Richard", "R"],  ["Michael", "S"] ]
+# c = [ ["Armando", "P"], ["Dave", "S"] ]
+# b += c
+# print a    
+# puts
+# print b
