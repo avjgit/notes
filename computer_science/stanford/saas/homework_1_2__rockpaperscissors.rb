@@ -75,23 +75,37 @@ end
 # “R”]).  You can assume that the array is well formed (that is, there are 2^n players, 
 # and each one participates in exactly one match per round)
 def rps_tournament_winner(tournament)
-    # puts 'tournament is now '
-    # puts tournament
     if tournament[0][0].class == String 
-       puts rps_game_winner(tournament) 
+       return rps_game_winner(tournament)        
     else
-        rps_tournament_winner(tournament[0])
+        puts 'ok, will pass this: '
+        # print tournament[0]
+        # rps_game_winner(
+        #     rps_tournament_winner(tournament[0]),
+        #     rps_tournament_winner(tournament[1])
+        # )
+        # tournament.each do |tour|
+        #     rps_tournament_winner(tour)
+        # end
+        winner1 = []
+        winner2 = []
+        winner1 = rps_tournament_winner(tournament[0])
+        winner2 = rps_tournament_winner(tournament[1])
+        winners = []
+        winners << winner1
+        winners << winner2
+        rps_tournament_winner(winners)
     end
 end
 
 #tests
-rps_tournament_winner [
-[
-    [ ["Richard", "R"],  ["Michael", "P"] ],
-    [ ["Armando", "P"], ["Dave", "P"] ]
-],
-[ 
-[ ["Allen", "S"], ["Omer", "P"] ],
-[ ["David E.", "R"], ["Richard X.", "P"] ]
-]
+puts rps_tournament_winner [
+    [
+        [ ["Richard", "R"],  ["Michael", "S"] ],
+        [ ["Armando", "P"], ["Dave", "S"] ]
+    ],
+    [ 
+        [ ["Allen", "S"], ["Omer", "P"] ],
+        [ ["David E.", "R"], ["Richard X.", "P"] ]
+    ]
 ]
