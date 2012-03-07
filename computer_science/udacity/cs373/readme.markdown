@@ -19,12 +19,12 @@ Programming a self-driving car
 Exam testing your knowledge
   
 ### UNIT1  
-* Introduction  
-* Localization  
-* Total Probability  
-* Uniform Probability Quiz - Question  
-* Uniform Distribution - Question  
-* Generalized Uniform Distribution - Question  
+Introduction  
+Localization  
+Total Probability  
+Uniform Probability Quiz - Question  
+Uniform Distribution - Question  
+Generalized Uniform Distribution - Question  
 Probability After Sense - Question  
 Compute Sum - Question  
 Normalize Distribution - Question  
