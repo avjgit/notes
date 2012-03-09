@@ -100,7 +100,19 @@ latency - time to receive a value
 # 21 /44 Hard Drives - Question
 # 22 /44 Loops On Lists - Question
 # 23 /44 For Loops
+for name in list:
+    block
 # 24 /44 Sum List - Question
+#Define a procedure, sum_list,
+#that takes as its input a
+#List of numbers, and produces
+#as its output the sum of all
+#the elements in the input list.
+
+#For example,
+#sum_list([1,7,4]) => 12
+
+
 # 25 /44 Measure Udacity - Question
 # 26 /44 Find Element - Question
 # 27 /44 Index - Question
