@@ -61,9 +61,28 @@ stooges = ['Moe','Larry','Curly']
 stooges[2] = 'Shemp'
 
 # 10 /44 Yello Mutation
+# p = ['a']
+# q = p
+# now, q referes to same object
+# p[0] = 'b'
+# print q[0] will print 'b' as well
+
 # 11 /44 Aliasing
 # 12 /44 Secret Agent Man - Question
 # 13 /44 Replace Spy - Question
+#Define a procedure, replace_spy,
+#that takes as its input a list of
+#three numbers, and modifies the
+#value of the third element in the
+#input list to be one more than its
+#previous value.
+
+spy = [0,0,7]
+
+#replace_spy(spy)
+#print spy => [0,0,8]
+
+
 # 14 /44 List Operations
 # 15 /44 List Addition And Length
 # 16 /44 Len Quiz - Question
