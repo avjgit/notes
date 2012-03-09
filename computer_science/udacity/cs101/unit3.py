@@ -126,12 +126,17 @@ def sum_list(list):
 #list that start with the letter 'U'
 #(uppercase).
 
-#For example,
 
-#measure_udacity(['Dave','Sebastian','Katy']) => 0
+def measure_udacity(list):
+    udacity = 0
+    for name in list:
+        if name[0] == 'U':
+            udacity += 1
+    return udacity
 
-#measure_udacity(['Umika','Umberto']) => 2
+measure_udacity(['Dave','Sebastian','Katy'])
 
+measure_udacity(['Umika','Umberto'])
 
 
 # 26 /44 Find Element - Question
