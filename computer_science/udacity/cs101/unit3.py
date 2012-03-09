@@ -117,8 +117,23 @@ def sum_list(list):
     for element in list:
         sum += element
     return sum
-    
+
 # 25 /44 Measure Udacity - Question
+#Define a procedure, measure_udacity,
+#that takes its input a list of Strings,
+#and outputs a number that is a count
+#of the number of elements in the input
+#list that start with the letter 'U'
+#(uppercase).
+
+#For example,
+
+#measure_udacity(['Dave','Sebastian','Katy']) => 0
+
+#measure_udacity(['Umika','Umberto']) => 2
+
+
+
 # 26 /44 Find Element - Question
 # 27 /44 Index - Question
 # 28 /44 Guest Speaker
