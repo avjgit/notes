@@ -17,6 +17,22 @@ def how_many_days(month):
     return days_in_month[month-1]
 # 04 /44 Nested Lists
 # 05 /44 Countries - Question
+#Given the variable countries defined as:
+
+
+#             Name      Capital  Populations (millions)
+countries = [['China','Beijing',1350],
+             ['India','Delhi',1210],
+             ['Romania','Bucharest',21],
+             ['United States','Washington',307]]
+
+#Write code to print out the capital of India
+#by accessing the array.
+print countries[1][1]
+
+
+
+
 # 06 /44 Relative Size - Question
 # 07 /44 Mutation
 # 08 /44 A List Of Strings
