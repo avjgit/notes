@@ -34,9 +34,31 @@ print countries[1][1]
 
 
 # 06 /44 Relative Size - Question
+#What multiple of Romania's population is the population
+#of China? Please print your result.
+print countries[0][2]/ countries[2][2]
+
 # 07 /44 Mutation
+# Lists can be changed; with strings, new instances are created
+
 # 08 /44 A List Of Strings
 # 09 /44 Different Stooges - Question
+#We defined:
+
+stooges = ['Moe','Larry','Curly']
+
+#but in some Stooges films, Curly was
+#replaced by Shemp.
+
+#Write one line of code that changes
+#the value of stooges to be:
+
+['Moe','Larry','Shemp']
+
+#but does not create a new List
+#object.
+
+
 # 10 /44 Yello Mutation
 # 11 /44 Aliasing
 # 12 /44 Secret Agent Man - Question
