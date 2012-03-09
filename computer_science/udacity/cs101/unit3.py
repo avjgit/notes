@@ -95,6 +95,7 @@ len(<list>)
 # 17 /44 Append Quiz - Question
 # 18 /44 How Computers Store Data
 # 19 /44 Dram
+latency - time to receive a value
 # 20 /44 Memory Hierarchy - Question
 # 21 /44 Hard Drives - Question
 # 22 /44 Loops On Lists - Question
