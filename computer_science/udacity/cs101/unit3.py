@@ -112,7 +112,12 @@ for name in list:
 #For example,
 #sum_list([1,7,4]) => 12
 
-
+def sum_list(list):
+    sum = 0
+    for element in list:
+        sum += element
+    return sum
+    
 # 25 /44 Measure Udacity - Question
 # 26 /44 Find Element - Question
 # 27 /44 Index - Question
