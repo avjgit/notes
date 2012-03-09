@@ -81,10 +81,16 @@ spy = [0,0,7]
 
 #replace_spy(spy)
 #print spy => [0,0,8]
-
+def replace_spy(spy):
+    spy[2] = spy[2]+1
+print spy
+# passed by reference!
 
 # 14 /44 List Operations
+<list>.append(<element>) #mutates list
 # 15 /44 List Addition And Length
+<list> + <list> # produces new list
+len(<list>)
 # 16 /44 Len Quiz - Question
 # 17 /44 Append Quiz - Question
 # 18 /44 How Computers Store Data
