@@ -1,7 +1,7 @@
 # 1 Field Trip
 # 2 State Space - Question
-class 1 - Histogram Filters - discrete
-class 2 - Kalman Filters    - continuous
+class 1 - Histogram Filters - discrete,     multimodal, eponential
+class 2 - Kalman Filters    - continuous,   unimodal,   quadratic
 class 3 - Particle Filters
 # 3 Belief Modality - Question
 # 4 Efficiency - Question
