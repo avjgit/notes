@@ -250,3 +250,29 @@ incorrect = [[1,2,3,4],
 
 def check_sudoku():
     
+def check_sudoku(sudoku):
+    correct = True
+    
+    i = 0
+    while i < len(sudoku):
+        column = []
+        for row in sudoku:
+            if row[i] in column:
+                correct = False
+            else:
+                column.append(row[i])
+        i += 1
+                    
+    for row in sudoku:
+        row_used = []
+        while row:
+            cell = row.pop()
+            if cell in row_used:
+                correct = False
+            else:
+                row_used.append(cell)
+                
+    return correct
+        
+print check_sudoku(correct)    
+print check_sudoku(incorrect)    
