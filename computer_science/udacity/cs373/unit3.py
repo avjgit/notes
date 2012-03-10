@@ -184,7 +184,7 @@ print len(p)
 
 w = []
 for i in range(N):
-    w.append(p[i].measurement_prob(p[i].sense()))
+    w.append(p[i].measurement_prob(Z))
 
 # 10 Add Noise - Question
 # 11 Robot World
