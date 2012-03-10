@@ -6,6 +6,17 @@ N=1     = 3/4 ^ 1 = .75
 N=4     = 3/4 ^ 4 = .3164
 N=10    = 3/4 ^ 10= .0563
 # 2
+5 3
+3 1
+50% moves horizontally
+50% moves vertically
+never diagonally
+never stays
+What amount of particles
+after 1 step:
+A __    B __    C __    D __
+after inifite steps:
+A __    B __    C __    D __
 # 3
 # 4
 # 5
