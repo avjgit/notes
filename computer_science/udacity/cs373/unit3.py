@@ -202,6 +202,25 @@ mismatch between
 # 17 Never Sampled 2 - Question
 # 18 Never Sampled 3 - Question
 # 19 New Particle - Question
+
+# In this exercise, try to write a program that
+# will resample particles according to their weights.
+# Particles with higher weights should be sampled
+# more frequently (in proportion to their weight).
+p_prob = []
+for i in range(N):
+    for j in range(int(w[i]*100)):
+        p_prob.append(p[i])
+
+p3 = []
+for i in range(N):
+    random_i = random.random * N
+    p3.append(p[random_i])
+
+
+
+
+
 # 20 Resampling Wheel - Question
 # 21 Orientation 1 - Question
 # 22 Orientation 2 - Question
