@@ -193,6 +193,11 @@ def find_element(_list, target):
         return _list.index(target)
     else:
         return -1
+def find_element(_list, target):
+    if target not in _list:
+        return -1
+    return _list.index(target)
+        
 
 
 # 28 /44 Guest Speaker
