@@ -160,7 +160,13 @@ def find_element(list, target):
         if word == target:
             return i
     return -1
-
+    
+def find_element(_list, target):
+    i = 0
+    while i < len(_list):
+        if _list[i] == list(target):
+            return i
+    return -1
 
 # 27 /44 Index - Question
 # 28 /44 Guest Speaker
