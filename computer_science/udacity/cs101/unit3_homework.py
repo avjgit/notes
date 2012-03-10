@@ -247,9 +247,6 @@ incorrect = [[1,2,3,4],
              [3,1,2,3],
              [4,4,4,4]]
 
-
-def check_sudoku():
-    
 def check_sudoku(sudoku):
     correct = True
     
