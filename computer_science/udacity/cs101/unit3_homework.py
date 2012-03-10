@@ -19,3 +19,22 @@ def product_list(numbers):
     for n in numbers:
         mult = mult * n
     return mult
+
+#4 
+#Define a procedure, greatest,
+#that takes as input a list
+#of positive numbers, and
+#returns the greatest number
+#in that list. If the input
+#list is empty, the output
+#should be 0.
+
+#greatest([4,23,1]) => 23
+#greatest([]) => 0
+
+def greatest(numbers):
+    greatest = 0
+    for n in numbers:
+        if n > greatest:
+            greatest = n
+    return greatest
