@@ -168,7 +168,35 @@ def get_all_links(page):
     return links
 
 
-def crawl_web(seed,max_pages):
+# def crawl_web(seed,max_pages):
+#     tocrawl = [seed]
+#     crawled = []
+#     while tocrawl:
+#         page = tocrawl.pop()
+#         if len(crawled) < max_pages:
+#             if page not in crawled:
+#                 union(tocrawl, get_all_links(get_page(page)))
+#                 crawled.append(page)
+#     return crawled
+    
+#TWO GOLD STARS#
+
+#Modify the crawl_web procedure
+#to take a second parameter,
+#max_depth, that limits the
+#minimum number of consecutive
+#links that would need to be followed
+#from the seed page to reach this
+#page. For example, if max_depth
+#is 0, the only page that should
+#be crawled is the seed page.
+#If max_depth is 1, the pages
+#that should be crawled are the
+#seed page and every page that links
+#to it directly. If max_depth is 2,
+#the crawl should also include all pages
+#that are linked to by these pages.
+def crawl_web(seed,max_depth):
     tocrawl = [seed]
     crawled = []
     while tocrawl:
@@ -177,5 +205,4 @@ def crawl_web(seed,max_pages):
             union(tocrawl, get_all_links(get_page(page)))
             crawled.append(page)
     return crawled
-    
     
