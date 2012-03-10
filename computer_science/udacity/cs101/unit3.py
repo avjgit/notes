@@ -188,7 +188,11 @@ def find_element(_list, target):
 #find_element([1,2,3],3) => 2
 
 #find_element(['alpha','beta'],'gamma') => -1
-
+def find_element(_list, target):
+    if target in _list:
+        return _list.index(target)
+    else:
+        return -1
 
 
 # 28 /44 Guest Speaker
