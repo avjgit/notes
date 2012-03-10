@@ -72,6 +72,16 @@ usa_univs = [ ['California Institute of Technology',2175,37704],
 #>>> print total_enrollment(usa_univs)
 #(77285,3058581079L)
 
-def total_enrollment():
+def total_enrollment(universities):
+    total_students = 0
+    total_tuition  = 0
+    
+    for u in universities:
+        students = u[1]
+        tuition  = u[2]
+        total_students += students
+        total_tuition  += students * tuition
+    
+    return total_students, total_tuition
     
     
