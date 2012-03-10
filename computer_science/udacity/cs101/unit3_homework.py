@@ -199,10 +199,13 @@ def get_all_links(page):
 def crawl_web(seed,max_depth):
     tocrawl = [seed]
     crawled = []
+    depth = 0
     while tocrawl:
         page = tocrawl.pop()
         if page not in crawled:
-            union(tocrawl, get_all_links(get_page(page)))
+            if depth < max_depth:
+                union(tocrawl, get_all_links(get_page(page)))
+                depth += 1
             crawled.append(page)
     return crawled
     
