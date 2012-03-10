@@ -14,9 +14,9 @@ never diagonally
 never stays
 What amount of particles
 after 1 step:
-A __    B __    C __    D __
+A  1    B  1    C  1    D  1
 after inifite steps:
-A __    B __    C __    D __
+A  1    B  1    C  1    D  1
 # 3
 # 4
 # 5
