@@ -162,22 +162,41 @@ p = []
 
 for i in range(N):
     x = robot()
-    x = x.move(0.1, 5)    
-    p.append(x);
+    x.set_noise(0.05, 0.05, 5.0)
+    p.append(x)
+
+p2 = []
+for i in range(N):
+    p2.append(p[i].move(0.1, 5.0))
+p = p2
 
 # Now we want to simulate robot
 # motion with our particles.
 # Each particle should turn by 0.1
 # and then move by 5. 
-s    
+    
 print len(p)
 
+
+# Now we want to give weight to our 
+# particles. This program will print a
+# list of 1000 particle weights.
+
+w = []
+for i in range(N):
+    w.append(p[i].measurement_prob(p[i].sense()))
 
 # 10 Add Noise - Question
 # 11 Robot World
 # 12 Creating Particles - Question
 # 13 Robot Particles - Question
 # 14 Importance Weight - Question
+mismatch between
+    predicted measurement and
+    actual measurement
+    is
+    importance weight
+
 # 15 Resampling - Question
 # 16 Never Sampled 1 - Question
 # 17 Never Sampled 2 - Question
