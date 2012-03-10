@@ -161,8 +161,15 @@ N = 1000
 p = []
 
 for i in range(N):
-    p.append(robot());
-    
+    x = robot()
+    x = x.move(0.1, 5)    
+    p.append(x);
+
+# Now we want to simulate robot
+# motion with our particles.
+# Each particle should turn by 0.1
+# and then move by 5. 
+s    
 print len(p)
 
 
