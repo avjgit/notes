@@ -201,6 +201,18 @@ def find_element(_list, target):
 
 # 28 /44 Guest Speaker
 # 29 /44 Union - Question
+#Define a procedure, union,
+#that takes as inputs two lists.
+#It should modify the first input
+#list to be the set union of the two
+#lists.
+
+#a = [1,2,3]
+#b = [2,4,6]
+#union(a,b)
+#a => [1,2,3,4,6]
+#b => [2,4,6]
+
 # 30 /44 Pop
 # 31 /44 Pop Quiz - Question
 # 32 /44 Collecting Links
