@@ -217,6 +217,8 @@ def union(a, b):
         if e not in a:
             a.append(e)
 # 30 /44 Pop
+# <list>.pop() - mutetes the list by removing and returning it's last element
+
 # 31 /44 Pop Quiz - Question
 # 32 /44 Collecting Links
 # 33 /44 Get All Links
