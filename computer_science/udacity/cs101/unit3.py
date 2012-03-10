@@ -191,8 +191,7 @@ def find_element(_list, target):
 def find_element(_list, target):
     if target in _list:
         return _list.index(target)
-    else:
-        return -1
+    return -1
 def find_element(_list, target):
     if target not in _list:
         return -1
