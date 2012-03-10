@@ -148,6 +148,23 @@ print myrobot.sense()
 myrobot = myrobot.move(-pi/2, 10.)
 print myrobot.sense()
 
+# Now we want to create particles,
+# p[i] = robot(). In this assignment, write
+# code that will assign 1000 such particles
+# to a list.
+#
+# Your program should print out the length
+# of your list (don't cheat by making an
+# arbitrary list of 1000 elements!)
+
+N = 1000
+p = []
+
+#enter code here
+
+print len(p)
+
+
 # 10 Add Noise - Question
 # 11 Robot World
 # 12 Creating Particles - Question
