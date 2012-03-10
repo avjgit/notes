@@ -160,8 +160,9 @@ print myrobot.sense()
 N = 1000
 p = []
 
-#enter code here
-
+for i in range(N):
+    p.append(robot());
+    
 print len(p)
 
 
