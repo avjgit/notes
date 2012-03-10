@@ -278,5 +278,7 @@ def crawl_web(seed):
     while tocrawl:
         page = tocrawl.pop()
         if page not in crawled:
+            crawled.append(page)
+            tocrawl.append(get_all_linke(page))
     return crawled
 # 44 /44 Conclusion
