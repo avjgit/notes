@@ -153,7 +153,13 @@ measure_udacity(['Umika','Umberto'])
 #find_element([1,2,3],3) => 2
 
 #find_element(['alpha','beta'],'gamma') => -1
-
+def find_element(list, target):
+    i = -1
+    for word in list:
+        i += 1
+        if word == target:
+            return i
+    return -1
 
 
 # 27 /44 Index - Question
