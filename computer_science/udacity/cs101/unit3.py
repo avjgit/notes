@@ -212,7 +212,10 @@ def find_element(_list, target):
 #union(a,b)
 #a => [1,2,3,4,6]
 #b => [2,4,6]
-
+def union(a, b):
+    for e in b:
+        if e not in a:
+            a.append(e)
 # 30 /44 Pop
 # 31 /44 Pop Quiz - Question
 # 32 /44 Collecting Links
