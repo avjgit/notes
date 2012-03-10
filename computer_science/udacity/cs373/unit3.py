@@ -214,7 +214,7 @@ for i in range(N):
 
 p3 = []
 for i in range(N):
-    random_i = random.random * N
+    random_i = int(random.random() * N)
     p3.append(p[random_i])
 
 
