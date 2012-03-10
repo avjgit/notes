@@ -170,6 +170,27 @@ def find_element(_list, target):
     return -1
 
 # 27 /44 Index - Question
+# list.index(value)
+# doesn't return -1 - returns error
+
+
+# <value> in <list> #true/ false
+#Define a procedure, find_element,
+#using index that takes as its
+#inputs a List and a value of any
+#type, and outputs the index of
+#the first element in the input
+#list that matches the value.
+
+#If there is no matching element,
+#output -1.
+
+#find_element([1,2,3],3) => 2
+
+#find_element(['alpha','beta'],'gamma') => -1
+
+
+
 # 28 /44 Guest Speaker
 # 29 /44 Union - Question
 # 30 /44 Pop
