@@ -14,3 +14,8 @@ print p # [1,2,3]
 
 #product_list([9]) => 9
 #product_list([1,2,3,4]) => 24
+def product_list(numbers):
+    mult = 1
+    for n in numbers:
+        mult = mult * n
+    return mult
