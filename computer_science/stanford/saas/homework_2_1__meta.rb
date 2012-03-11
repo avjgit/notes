@@ -83,8 +83,8 @@ module Enumerable
     end
 end
 
-puts [1, 2, 3, 3, 2, 1].palindrome?
-puts [1, 2, 3, 4, 2, 1].palindrome?
+# puts [1, 2, 3, 3, 2, 1].palindrome?
+# puts [1, 2, 3, 4, 2, 1].palindrome?
 
 # (1..2).map {|x| puts x}
 
