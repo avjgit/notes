@@ -67,9 +67,27 @@ end
 # Although hashes are considered Enumerables, your solution does not need to make sense for
 # hashes (though it should not error).
 module Enumerable
-    def dosomething
-        puts 'works'
+    def palindrome?
+      # self.downcase!
+      # self.gsub!(/[^a-z]/, '')    #unify case & remove non-letters
+
+      # half = self.length/2            #get self length
+      # part1 = self[0..half-1].reverse
+      # part2 = self[-half..-1]
+      # part1 ==  part2           #compare first half to second
+
+      storage = []
+      self.map {|x| storage << x}
+      storage.reverse == self
+
     end
 end
 
-puts [1, 2, 3, 4].dosomething
+puts [1, 2, 3, 3, 2, 1].palindrome?
+puts [1, 2, 3, 4, 2, 1].palindrome?
+
+# (1..2).map {|x| puts x}
+
+# a = [1, 2, 3]
+# puts a
+# puts a.reverse
