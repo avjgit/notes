@@ -50,11 +50,15 @@ end
 # b
 # b) Adapt your solution from HW 1 "palindromes" question so that instead of writing palindrome?
 # ("foo") you can write "foo".palindrome? HINT: this should require fewer than 5 lines of code.
-def palindrome?(string)
-  string.downcase!
-  string.gsub!(/[^a-z]/, '')    #unify case & remove non-letters
-  half = string.length/2            #get string length
-  part1 = string[0..half-1].reverse
-  part2 = string[-half..-1]
-  part1 ==  part2           #compare first half to second
+class String
+    def palindrome?
+      self.downcase!
+      self.gsub!(/[^a-z]/, '')    #unify case & remove non-letters
+      half = self.length/2            #get self length
+      part1 = self[0..half-1].reverse
+      part2 = self[-half..-1]
+      part1 ==  part2           #compare first half to second
+    end
 end
+
+puts 'aabaa'.palindrome?
