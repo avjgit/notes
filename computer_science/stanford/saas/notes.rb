@@ -405,3 +405,22 @@
   
   Mechanize - Ruby lib, scriptable browser
 
+# 3.7 - Mix-ins and Duck Typing   
+  # module - collection of class & instance methods that are actually a class
+  # you can''t instantiate it
+  Math::sin
+
+  class A < B; include MyModule
+  A.foo will search A, then MyModule, then B
+
+  to be able to sort class, "<=>" ("spaceship operator") method should be defined
+  Composiiton over Inheritance?
+# 3.8 - yield()   
+# 3.9 - Rails: from Zero to CRUD   
+# 3.10 - Databases and Migrations     
+# 3.11 - ActiveRecord Basics   
+# 3.12 - Controllers and Views   
+# 3.13 - Debugging   
+# 3.14 - Forms   
+# 3.15 - Redirection, Flash, and the Session   
+# 3.16, 3.17, 3.18 - Finishing CRUD + Fallacies, pitfalls and perspectives on SaaS-on-Rails   
