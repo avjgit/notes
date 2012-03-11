@@ -30,21 +30,22 @@ class Numeric
     end
   end
   # first, convert everything to dollars
-  def in (#dollars
-    )
-    self / @@currencies['dollar']
+  def in (currency)
+    @dollars = self * @@currencies['dollar']
+    
+
+    singular_currency = currency.to_s.gsub( /s$/, '')
+    if @@currencies.has_key?(singular_currency)
+      @dollars / @@currencies[singular_currency]
+    else
+      super
+    end
+
   end
 end
 
-
-
-puts 5.lats
-puts 10.dollar
-puts 11.dollars.in
-puts 10.yen.in
-puts 10.euro.in
-puts 10.euros.in
+puts 10.euro.in(:dollars)
+puts 10.dollars.in(:euro)
 # puts 12.lats.in
-
 # currencies = {'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019, 'dollar' => 1.0, 'lat' => 2.0}
 # puts currencies['yen']
