@@ -414,6 +414,18 @@
   A.foo will search A, then MyModule, then B
 
   to be able to sort class, "<=>" ("spaceship operator") method should be defined
+
+  class Account
+  include Comparable
+  def <=>(other)
+    self.balance <=> other.balance
+  end
+  end
+
+
+Modules are about behaviour,
+Classes are about implementation
+
   Composiiton over Inheritance?
 # 3.8 - yield()   
 
@@ -428,6 +440,42 @@ mylist.select do |x| ; x.even? ; end
   (filter (lambda (x) (even? x)) mylist)
   )
 mylist.select {|x| x.even?}.map {|x| x+2}
+
+
+"lambda" is unnamed procedure
+in Ruby, implmemented as do..end
+
+instead of:
+# in some other library 
+def before_stuff 
+  ...before code... 
+end 
+def after_stuff 
+  ...after code... 
+end 
+# in your code 
+def do_everything 
+  before_stuff() 
+  my_custom_stuff() 
+  after_stuff() 
+end
+
+can be done with:
+# in some other library 
+def around_stuff 
+  ...before code... 
+  yield 
+  ...after code... 
+end
+# in your code 
+def do_everything 
+  around_stuff do 
+    my_custom_stuff() 
+  end 
+end 
+
+
+
 
 # 3.9 - Rails: from Zero to CRUD   
 # 3.10 - Databases and Migrations     
