@@ -33,9 +33,9 @@ end
 # bar = ['bar']
 # puts bar.inspect
 
-c = CartesianProduct.new([:a,:b], [4,5])
+# c = CartesianProduct.new([:a,:b], [4,5])
 
-c.each { |elt| puts elt.inspect }
+# c.each { |elt| puts elt.inspect }
 # puts c.inspect
 
 # [:a, 4]
