@@ -47,7 +47,6 @@ end
 # currencies = {'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019, 'dollar' => 1.0, 'lat' => 2.0}
 # puts currencies['yen']
 
-# b
 # b) Adapt your solution from HW 1 "palindromes" question so that instead of writing palindrome?
 # ("foo") you can write "foo".palindrome? HINT: this should require fewer than 5 lines of code.
 class String
@@ -61,10 +60,16 @@ class String
     end
 end
 
-#c
 # c) Adapt your palindrome solution so that it works on Enumerables. That is:
 # [1,2,3,2,1].palindrome? # => true
 # (It's not necessary for the collection's elements to be palindromes themselves--only that the
 # top-level collection be a palindrome.) HINT: this should require fewer than 5 lines of code.
 # Although hashes are considered Enumerables, your solution does not need to make sense for
 # hashes (though it should not error).
+module Enumerable
+    def dosomething
+        puts 'works'
+    end
+end
+
+puts [1, 2, 3, 4].dosomething
