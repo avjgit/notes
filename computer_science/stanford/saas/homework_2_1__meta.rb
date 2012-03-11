@@ -29,12 +29,22 @@ class Numeric
       super
     end
   end
-  def in
-    self * 10
+  # first, convert everything to dollars
+  def in (#dollars
+    )
+    self / @@currencies['dollar']
   end
 end
+
+
 
 puts 5.lats
 puts 10.dollar
 puts 11.dollars.in
-puts 12.lats.in
+puts 10.yen.in
+puts 10.euro.in
+puts 10.euros.in
+# puts 12.lats.in
+
+# currencies = {'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019, 'dollar' => 1.0, 'lat' => 2.0}
+# puts currencies['yen']
