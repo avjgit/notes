@@ -24,11 +24,6 @@ class Numeric
   end
 end
 
-class Numeric
-    # def lats ; self * 2 ; end
-    # def dollar ; self ; end
-end
-
 puts 5.lats
 puts 10.dollar
 puts 11.dollars
