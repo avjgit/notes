@@ -480,6 +480,20 @@ end
 # 3.9 - Rails: from Zero to CRUD   
 # 3.10 - Databases and Migrations     
 # 3.11 - ActiveRecord Basics   
+class Movie < ActiveRecord::Base
+end
+# 3 ways to create ActiveRecord objects
+# (the constructor checks to see what arguments it got)
+movie = Movie.new
+movie.title = 'The Help'
+movie.rating = 'PG-13'
+ 
+movie = Movie.new do |m|
+  m.title = 'The Help'
+  m.rating = 'PG-13'
+end
+ 
+movie = Movie.new(:title => 'The Help', :rating => 'PG-13')
 # 3.12 - Controllers and Views   
 # 3.13 - Debugging   
 # 3.14 - Forms   
