@@ -22,7 +22,11 @@ class CartesianProduct
   
   # your code here
   def each 
-    @a.each {|x| yield x}
+    @a.each do |x| 
+        @b.each do |y|
+            yield [x, y]
+        end
+    end
   end
 end
  
