@@ -23,3 +23,9 @@ class Numeric
     end
   end
 end
+
+class Numeric
+    def lats ; self * 2 ; end
+end
+
+puts 5.lats
