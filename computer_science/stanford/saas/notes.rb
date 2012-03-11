@@ -501,4 +501,7 @@ route: HTTP method + URI
 # 3.13 - Debugging   
 # 3.14 - Forms   
 # 3.15 - Redirection, Flash, and the Session   
+idiom: redirect user to more useful page
+  if create successful: list of movies
+  if no: new movie form
 # 3.16, 3.17, 3.18 - Finishing CRUD + Fallacies, pitfalls and perspectives on SaaS-on-Rails   
