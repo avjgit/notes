@@ -494,7 +494,10 @@ movie = Movie.new do |m|
 end
  
 movie = Movie.new(:title => 'The Help', :rating => 'PG-13')
+
+method with "!" returns exception, without "!" - just nil
 # 3.12 - Controllers and Views   
+route: HTTP method + URI
 # 3.13 - Debugging   
 # 3.14 - Forms   
 # 3.15 - Redirection, Flash, and the Session   
