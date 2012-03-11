@@ -15,17 +15,31 @@
 # To start you off, here is a code skeleton and some examples showing possible correct results.
 class CartesianProduct
   include Enumerable
+
+  def initialize(a, b)
+    @a, @b = a, b
+  end
+  
   # your code here
+  def each 
+    @foo.each {|x| yield x}
+  end
 end
  
+# bar = ['bar']
+# puts bar.inspect
+
 c = CartesianProduct.new([:a,:b], [4,5])
-c.each { |elt| puts elt.inspect }
+
+# c.each { |elt| puts elt.inspect }
+puts c.inspect
+
 # [:a, 4]
 # [:a, 5]
 # [:b, 4]
 # [:b, 5]
  
-c = CartesianProduct.new([:a,:b], [])
-c.each { |elt| puts elt.inspect }
+# c = CartesianProduct.new([:a,:b], [])
+# c.each { |elt| puts elt.inspect }
 # (nothing printed since Cartesian product
 # of anything with an empty collection is empty)
