@@ -1,5 +1,6 @@
 # 1. open classes, metaprogramming, duck typing
-# description:
+
+
 # a) [ELLS ex. 3.11] Extend the currency-conversion example from lecture so that you can write
 # 5.dollars.in(:euros)
 # 10.euros.in(:rupees)
@@ -11,11 +12,6 @@
 # 1.dollar.in(:rupees) and 10.rupees.in(:euro) should work.
 # You can use the code shown in lecture as a starting point if you wish; it is at http://pastebin.com/
 # agjb5qBF
-# lef todo:
-# a) [ELLS ex. 3.11] Extend the currency-conversion example from lecture so that you can write
-# 5.dollars.in(:euros)
-# 10.euros.in(:rupees)
-# etc.
 
 class Numeric
   @@currencies = {'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019, 'dollar' => 1.0, 'lat' => 2.0}
@@ -45,8 +41,20 @@ class Numeric
   end
 end
 
-puts 10.euro.in(:dollars)
-puts 10.dollars.in(:euro)
+# puts 10.euro.in(:dollars)
+# puts 10.dollars.in(:euro)
 # puts 12.lats.in
 # currencies = {'yen' => 0.013, 'euro' => 1.292, 'rupee' => 0.019, 'dollar' => 1.0, 'lat' => 2.0}
 # puts currencies['yen']
+
+# b
+# b) Adapt your solution from HW 1 "palindromes" question so that instead of writing palindrome?
+# ("foo") you can write "foo".palindrome? HINT: this should require fewer than 5 lines of code.
+def palindrome?(string)
+  string.downcase!
+  string.gsub!(/[^a-z]/, '')    #unify case & remove non-letters
+  half = string.length/2            #get string length
+  part1 = string[0..half-1].reverse
+  part2 = string[-half..-1]
+  part1 ==  part2           #compare first half to second
+end
