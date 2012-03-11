@@ -60,5 +60,3 @@ class String
       part1 ==  part2           #compare first half to second
     end
 end
-
-puts 'aabaa'.palindrome?
