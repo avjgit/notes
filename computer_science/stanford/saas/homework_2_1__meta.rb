@@ -77,8 +77,9 @@ module Enumerable
       # part1 ==  part2           #compare first half to second
 
       storage = []
-      self.map {|x| storage << x}
-      storage.reverse == self
+      self_array = self.to_a
+      self_array.map {|x| storage << x}
+      storage.reverse == self_array
 
     end
 end
