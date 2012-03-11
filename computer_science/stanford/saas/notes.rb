@@ -416,6 +416,19 @@
   to be able to sort class, "<=>" ("spaceship operator") method should be defined
   Composiiton over Inheritance?
 # 3.8 - yield()   
+
+(map (lambda (x) (+ x 2) mylist)
+mylist.map {|x| x+2}
+
+(filter (lambda (x) (even? x)) mylist)
+mylist.select do |x| ; x.even? ; end
+
+(map 
+  (lambda (x) (+ x 2) mylist)
+  (filter (lambda (x) (even? x)) mylist)
+  )
+mylist.select {|x| x.even?}.map {|x| x+2}
+
 # 3.9 - Rails: from Zero to CRUD   
 # 3.10 - Databases and Migrations     
 # 3.11 - ActiveRecord Basics   
