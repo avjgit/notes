@@ -22,7 +22,7 @@ class CartesianProduct
   
   # your code here
   def each 
-    @foo.each {|x| yield x}
+    @a.each {|x| yield x}
   end
 end
  
@@ -31,8 +31,8 @@ end
 
 c = CartesianProduct.new([:a,:b], [4,5])
 
-# c.each { |elt| puts elt.inspect }
-puts c.inspect
+c.each { |elt| puts elt.inspect }
+# puts c.inspect
 
 # [:a, 4]
 # [:a, 5]
