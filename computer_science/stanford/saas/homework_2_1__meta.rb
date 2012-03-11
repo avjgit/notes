@@ -33,7 +33,8 @@ class Numeric
   def in (currency)
     @dollars = self * @@currencies['dollar']
     
-
+    # then convert dollars to currency needed
+    # todo: how to get rid of repetition?
     singular_currency = currency.to_s.gsub( /s$/, '')
     if @@currencies.has_key?(singular_currency)
       @dollars / @@currencies[singular_currency]
