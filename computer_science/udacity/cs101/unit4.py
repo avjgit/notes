@@ -33,15 +33,7 @@ def add_to_index(index,keyword,url):
         if row[0] == keyword:
             row[1].append(url)
             return index
-            
-    urls = []
-    urls.append(url)
-    
-    row = []
-    row.append(keyword)
-    row.append(urls)
-    
-    index.append(row)
+    index.append([keyword, [url]])
 
 # 04/ 21 Lookup - Question
 # 05/ 21 Building The Web Index
