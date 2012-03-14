@@ -5,6 +5,32 @@
     [keyword, [url1, url2, ..]]
 ]
 # 03/ 21 Add To Index - Question
+#Define a procedure, add_to_index,
+#that takes 3 inputs:
+
+# - an index: [[<keyword>,[<url>,...]],...]
+# - a keyword: String
+# - a url: String
+
+#If the keyword is already
+#in the index, add the url
+#to the list of urls associated
+#with that keyword.
+
+#If the keyword is not in the index,
+#add an entry to the index: [keyword,[url]]
+
+index = []
+
+
+#add_to_index(index,'udacity','http://udacity.com')
+#add_to_index(index,'computing','http://acm.org')
+#add_to_index(index,'udacity','http://npr.org')
+#print index => [['udacity', ['http://udacity.com', 'http://npr.org']], ['computing', ['http://acm.org']]]
+
+def add_to_index(index,keyword,url): 
+
+
 # 04/ 21 Lookup - Question
 # 05/ 21 Building The Web Index
 # 06/ 21 Add Page To Index - Question
