@@ -1,6 +1,9 @@
 ﻿UNIT 4
 01/ 21 Introduction
 02/ 21 Data Structures - Question
+[
+    [keyword, [url1, url2, ..]]
+]
 03/ 21 Add To Index - Question
 04/ 21 Lookup - Question
 05/ 21 Building The Web Index
