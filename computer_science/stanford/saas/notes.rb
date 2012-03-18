@@ -505,3 +505,11 @@ idiom: redirect user to more useful page
   if create successful: list of movies
   if no: new movie form
 # 3.16, 3.17, 3.18 - Finishing CRUD + Fallacies, pitfalls and perspectives on SaaS-on-Rails   
+
+# 4.1 - Introduction to Behavior-Driven Design and User Stories       
+# 4.2 - SMART User Stories   
+# 4.3 - 4.4 - Introducing and Running Cucumber and Capybara   
+# 4.5 - Lo-Fi UI Sketches and Storyboards   
+# 4.6 - Enhancing Rotten Potatoes Again   
+# 4.7 - Explicit vs. Implicit and Imperative vs. Declarative Scenarios   
+# 4.8 - 4.9 - Fallacies & Pitfalls, BDD Pros & Cons
