@@ -54,9 +54,15 @@ index = [['udacity', ['http://udacity.com', 'http://npr.org']], ['computing', ['
 
 
 def lookup(index,keyword):
+    for record in index:
+        if record[0] == keyword:
+            return record[1]
+    return []
 
 
 # 05/ 21 Building The Web Index
+string.split
+
 # 06/ 21 Add Page To Index - Question
 # 07/ 21 Finishing The Web Crawler - Question
 # 08/ 21 Startup
