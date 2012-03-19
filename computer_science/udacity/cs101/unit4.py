@@ -90,7 +90,9 @@ def add_to_index(index,keyword,url):
     index.append([keyword,[url]])
 
 def add_page_to_index(index,url,content):
-
+    tags = content.split()
+    for tag in tags:
+        add_to_index(index, tag, url)
 
 
 # 07/ 21 Finishing The Web Crawler - Question
