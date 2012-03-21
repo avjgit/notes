@@ -99,14 +99,19 @@ def add_page_to_index(index,url,content):
 # 08/ 21 Startup
 # 09/ 21 The Internet
 # 10/ 21 Networks - Question
+hm.. network is chain > 2 nodes, where some nodes does not have direct connect
 # 11/ 21 Smoke Signals
 # 12/ 21 Latency - Question
+latency = time message need to get from source to destination (milliseconds)
 # 13/ 21 Bandwidth
+amount of information that can be transmitted per unit time = megabits per second, Mbps
 # 14/ 21 Bits - Question
 # 15/ 21 Buckets Of Bits
 # 16/ 21 What Is Your Bandwidth - Question
 # 17/ 21 Traceroute
+cmd: tracert udacity.com
 # 18/ 21 Traveling Data - Question
+dedicated vacuum is a solution
 # 19/ 21 Making A Network
 # 20/ 21 Protocols
 # 21/ 21 Conclusion
