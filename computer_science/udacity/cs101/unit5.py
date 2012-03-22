@@ -38,6 +38,21 @@ print(time_execution('spin_loop(1000000)'))
 # 17/ 34 Equivalent Expressions - Question
 # 18/ 34 Bad Hash - Question
 # 19/ 34 Better Hash Functions - Question
+#Define a function, hash_string,
+#that takes as inputs a keyword
+#(string) and a number of buckets,
+#and outputs a number representing
+#the bucket for that keyword.
+
+#print hash_string('a',12) => 1
+#print hash_string('b',12) => 2
+#print hash_string('a',13) => 6
+
+#print hash_string('au',12) => 10
+#print hash_string('udacity',12) => 11
+
+def hash_string(keyword,buckets):
+
 # 20/ 34 Testing Hash Functions
 # 21/ 34 Keywords And Buckets - Question
 # 22/ 34 Implementing Hash Tables - Question
