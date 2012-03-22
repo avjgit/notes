@@ -7,24 +7,27 @@
 # print(time.clock())
 # 05/ 34 Spin Loop
 # 06/ 34 Predicting Run Time - Question
-import time
-def time_execution(code):
-    start = time.clock()
-    result = eval(code)
-    stop = time.clock()
-    run_time = stop - start
-    return result, run_time
-def spin_loop(n):
-    i = 0
-    while i < n:
-        i = i+1
-print(time_execution('spin_loop(1)'))
-print(time_execution('spin_loop(10)'))
-print(time_execution('spin_loop(100)'))
-print(time_execution('spin_loop(1000)'))
-print(time_execution('spin_loop(10000)'))
-print(time_execution('spin_loop(100000)'))
-print(time_execution('spin_loop(1000000)'))
+# import time
+# def time_execution(code):
+#     start = time.clock()
+#     result = eval(code)
+#     stop = time.clock()
+#     run_time = stop - start
+#     return result, run_time
+# def spin_loop(n):
+#     i = 0
+#     while i < n:
+#         i = i+1
+# print(time_execution('spin_loop(1)'))
+# print(time_execution('spin_loop(10)'))
+# print(time_execution('spin_loop(100)'))
+# print(time_execution('spin_loop(1000)'))
+# print(time_execution('spin_loop(10000)'))
+# print(time_execution('spin_loop(100000)'))
+# print(time_execution('spin_loop(1000000)'))
+
+
+
 # 07/ 34 Make Big Index
 # 08/ 34 Index Size Vs. Time - Question
 # 09/ 34 Lookup Time - Question
@@ -52,6 +55,16 @@ print(time_execution('spin_loop(1000000)'))
 #print hash_string('udacity',12) => 11
 
 def hash_string(keyword,buckets):
+    wordsum = 0
+    for c in keyword:
+        wordsum = wordsum + ord(c)
+    return wordsum%buckets
+
+print(hash_string('a',12)) 
+print(hash_string('b',12))
+print(hash_string('a',13))
+print(hash_string('au',12))
+print(hash_string('udacity',12))
 
 # 20/ 34 Testing Hash Functions
 # 21/ 34 Keywords And Buckets - Question
