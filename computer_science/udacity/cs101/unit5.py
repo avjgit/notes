@@ -2,6 +2,9 @@
 # 02/ 34 Making Things Fast
 # 03/ 34 Measuring Speed - Question
 # 04/ 34 Stopwatch
+# eval = as "dynamic sql" - evaluates any string as Python code
+import time
+print(time.clock())
 # 05/ 34 Spin Loop
 # 06/ 34 Predicting Run Time - Question
 # 07/ 34 Make Big Index
