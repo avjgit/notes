@@ -3,28 +3,28 @@
 # 03/ 34 Measuring Speed - Question
 # 04/ 34 Stopwatch
 # eval = as "dynamic sql" - evaluates any string as Python code
-# import time
-# print(time.clock())
-# 05/ 34 Spin Loop
-# 06/ 34 Predicting Run Time - Question
-# import time
-# def time_execution(code):
-#     start = time.clock()
-#     result = eval(code)
-#     stop = time.clock()
-#     run_time = stop - start
-#     return result, run_time
-# def spin_loop(n):
-#     i = 0
-#     while i < n:
-#         i = i+1
-# print(time_execution('spin_loop(1)'))
-# print(time_execution('spin_loop(10)'))
-# print(time_execution('spin_loop(100)'))
-# print(time_execution('spin_loop(1000)'))
-# print(time_execution('spin_loop(10000)'))
-# print(time_execution('spin_loop(100000)'))
-# print(time_execution('spin_loop(1000000)'))
+import time
+print(time.clock())
+05/ 34 Spin Loop
+06/ 34 Predicting Run Time - Question
+import time
+def time_execution(code):
+    start = time.clock()
+    result = eval(code)
+    stop = time.clock()
+    run_time = stop - start
+    return result, run_time
+def spin_loop(n):
+    i = 0
+    while i < n:
+        i = i+1
+print(time_execution('spin_loop(1)'))
+print(time_execution('spin_loop(10)'))
+print(time_execution('spin_loop(100)'))
+print(time_execution('spin_loop(1000)'))
+print(time_execution('spin_loop(10000)'))
+print(time_execution('spin_loop(100000)'))
+print(time_execution('spin_loop(1000000)'))
 
 
 
@@ -77,9 +77,11 @@ print(hash_string('udacity',12))
 #nbuckets empty buckets.
 
 def make_hashtable(nbuckets):
+    hash = []
+    for bucket in range(0,nbuckets):
+        hash.append([])
 
 
-    
 # 24/ 34 The Hard Way - Question
 # 25/ 34 Finding Buckets - Question
 # 26/ 34 Adding Keywords - Question
