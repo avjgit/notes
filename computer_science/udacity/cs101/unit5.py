@@ -70,6 +70,16 @@ print(hash_string('udacity',12))
 # 21/ 34 Keywords And Buckets - Question
 # 22/ 34 Implementing Hash Tables - Question
 # 23/ 34 Empty Hash Table - Question
+#Creating an Empty Hash Table
+#Define a procedure, make_hashtable,
+#that takes as input a number, nbuckets,
+#and outputs an empty hash table with
+#nbuckets empty buckets.
+
+def make_hashtable(nbuckets):
+
+
+    
 # 24/ 34 The Hard Way - Question
 # 25/ 34 Finding Buckets - Question
 # 26/ 34 Adding Keywords - Question
