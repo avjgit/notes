@@ -140,7 +140,9 @@ def hashtable_update(htable,key,value):
 # 29/ 34 Dictionaries
 # Isn't the list just a special case of dictionary (where keys are ints)?
 # 30/ 34 Using Dictionaries
+elements = { 'hydrogen': 1, 'helium': 2, 'carbon': 6}
 # 31/ 34 Population - Question
+population = {'Mumbai': 12.5}
 # 32/ 34 A Noble Gase
 # 33/ 34 Modifying The Search Engine - Question
 # 34/ 34 Changing Lookup - Question
