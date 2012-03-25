@@ -138,6 +138,7 @@ def hashtable_update(htable,key,value):
     bucket.append([key, value])
 
 # 29/ 34 Dictionaries
+# Isn't the list just a special case of dictionary (where keys are ints)?
 # 30/ 34 Using Dictionaries
 # 31/ 34 Population - Question
 # 32/ 34 A Noble Gase
