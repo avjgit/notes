@@ -245,6 +245,9 @@ expression.  Your procedure should return the value of code, but should only
 evaluate code if it has not been previously evaluated.
  
 def cached_execution(cache,code):
+    if code not in cache:
+        cache[code] = eval(code)
+    return cache[code]
  
  
  
