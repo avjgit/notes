@@ -153,3 +153,11 @@ elements['H'] = {'name': 'Hydrogen', 'number': 1,
 print elements['H']['weight']
 # 33/ 34 Modifying The Search Engine - Question
 # 34/ 34 Changing Lookup - Question
+#Change the lookup procedure
+#to now work with dictionaries.
+
+def lookup(index, keyword):
+    if keyword in index:
+        return index[keyword]
+    else:
+        return None
