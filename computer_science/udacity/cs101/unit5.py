@@ -133,9 +133,9 @@ def hashtable_update(htable,key,value):
     bucket = hashtable_get_bucket(htable,key)
     for entry in bucket:
         if entry[0] == key:
-            entry[1].append(value)
+            entry[1] = value
             return
-    bucket.append([key, [value]])
+    bucket.append([key, value])
 
 # 29/ 34 Dictionaries
 # 30/ 34 Using Dictionaries
