@@ -157,7 +157,16 @@ print involved(courses, 'Dorina') => {'jan2044': ['cs001']}
 
  
 def involved(courses, person):
-
+    res = {}
+    for h in courses:
+        cs = []
+        for c in courses[h]:
+            for p in courses[h][c]:
+                if courses[h][c][p] == person:
+                    cs.append(c)
+        if len(cs) > 0:
+            res[h] = cs
+    return res
  
 5.6: Refactoring
 6. In video 28. Update, it was suggested that some of the duplicate code in
