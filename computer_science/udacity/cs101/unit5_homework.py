@@ -133,6 +133,12 @@ print when_offered(courses, 'bio893') => []
  
  
 def when_offered(courses,course):
+    res = []
+    for h in courses:
+        for c in courses[h]:
+            if c == course:
+                res.append(h)
+    return res
 
  
 5.5: Involved
