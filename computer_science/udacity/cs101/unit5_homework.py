@@ -47,7 +47,7 @@ The time to lookup a keyword in the hash table is always less than the time it w
 Dictionaries of Dictionaries (of Dictionaries)
  
 The next several questions concern the data structure below for keeping
-track of Udacity's courses (where all of the values are strings):
+track of Udacitys courses (where all of the values are strings):
  
 { <hexamester>, { <class>: { <property>: <value>, ... },
                   ... },
@@ -118,7 +118,10 @@ print is_offered(courses, 'cs003', 'apr2012') => False
 For example, is_offered(courses, 'cs101', 'dec2011') can produce an error.)
  
 def is_offered(courses, course, hexamester):
-
+    for c in courses[hexamester]:
+        if c == course:
+            return True
+    return False
 5.4: When Offered
 Define a procedure, when_offered(courses, course), that takes as a courses data
 structure and a string representing a class, and returns a list of strings
