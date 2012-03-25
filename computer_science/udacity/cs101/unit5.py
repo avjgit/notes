@@ -92,7 +92,7 @@ def make_hashtable(nbuckets):
 #hash_string(keyword,nbuckets) => index of bucket
 
 def hashtable_get_bucket(htable,keyword):
-    
+    return htable[hash_string(keyword, len(htable))]
 
 
 def hash_string(keyword,buckets):
