@@ -1,7 +1,7 @@
-CS 101 – Homework 5
-5.1: Growth
-For which of these procedures does the worst-case running time scale linearly in the number of elements in the input list p? (You may assume that the elements in the list are all small numbers)
-sum_list
+# 5.1: Growth
+# For which of these procedures does the worst-case running time scale linearly in the number of elements in the input list p?
+# (You may assume that the elements in the list are all small numbers)
+> sum_list
 def sum_list(p):
     sum = 0
     for e in p:
@@ -16,7 +16,7 @@ def has_duplicate_element(p):
            if i != j and p[i] == p[j]:
                return True
    return False
-mystery
+> mystery
 def mystery(p):
    i = 0
    while True:
