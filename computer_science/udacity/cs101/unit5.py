@@ -108,6 +108,9 @@ def make_hashtable(nbuckets):
     return table
 
 # 26/ 34 Adding Keywords - Question
+def hashtable_add(htable,key,value):
+    hashtable_get_bucket(htable,keyword).append([key, [value]])
+
 # 27/ 34 Lookup - Question
 # 28/ 34 Update - Question
 # 29/ 34 Dictionaries
