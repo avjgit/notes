@@ -112,6 +112,22 @@ def hashtable_add(htable,key,value):
     hashtable_get_bucket(htable,keyword).append([key, [value]])
 
 # 27/ 34 Lookup - Question
+#Define a procedure,
+
+#hashtable_lookup(htable,key)
+
+#that takes two inputs, a hashtable
+#and a key (string),
+#and outputs the value associated
+#with that key.
+
+def hashtable_lookup(htable,key):
+    bucket = hashtable_get_bucket(htable,key)
+    for i in bucket:
+        if i[0] == key:
+            return i[1]
+        else:
+            return 'None'
 # 28/ 34 Update - Question
 # 29/ 34 Dictionaries
 # 30/ 34 Using Dictionaries
