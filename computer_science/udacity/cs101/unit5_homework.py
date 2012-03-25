@@ -241,7 +241,7 @@ computed values.
 Define a procedure, cached_execution(cache, code), that takes in two inputs: a
 cache, which is a Dictionary that maps strings representing Python expressions
 to their previously computed values, and code, a string that is a Python
-expression.  Your procedure should return the value of code, but should only
+expression.  Your procedure should return the value ofO code, but should only
 evaluate code if it has not been previously evaluated.
  
 def cached_execution(cache,code):
