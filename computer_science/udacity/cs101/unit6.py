@@ -35,8 +35,7 @@ def factorial(n):
 #if they do match, is middle palindrome?
 
 def is_palindrome(s):
-    L = len(s)
-    return (L == 0) or (s[0] == s[L-1] and is_palindrome(s[1:L-1]))
+    return (s == '') or (s[0] == s[-1] and is_palindrome(s[1:-2]))
 
     
 print is_palindrome('')
