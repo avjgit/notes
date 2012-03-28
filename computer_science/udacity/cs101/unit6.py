@@ -11,7 +11,9 @@
 #outputs the number of ways to arrange the input number of itmes.
 
 def factorial(n):
-
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
 
 
 
@@ -25,6 +27,29 @@ def factorial(n):
 
 
 # 10 Palindromes - Question
+#Define a procedure is_palindrome, that takes as input a string, and returns a
+#Boolean indicating if the input string is a palindrome.
+
+#Base Case: '' => True
+#Recursive Case: if first and last characters don't match => False
+#if they do match, is middle palindrome?
+
+def is_palindrome(s):
+    L = len(s)
+    if L > 0:
+        return s[0] == s[L-1] and is_palindrome(s[1:L-1])
+    else:
+        return True
+
+    
+print is_palindrome('')
+#>>> True
+print is_palindrome('abab')
+#>>> False
+print is_palindrome('abba')
+#>>> True
+
+
 # 11 Recursive Vs Iterative
 # 12 Bunnies - Question
 # 13 Divide And Be Conquered
