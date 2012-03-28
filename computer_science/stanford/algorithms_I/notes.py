@@ -2,6 +2,7 @@ I. INTRODUCTION
 Introduction : Why Study Algorithms ? (19 min)     
 About the Course (17 min)     
 Merge Sort: Motivation and Example (9 min)     
+    better than Selection, Insertion, Bubble
 Merge Sort: Pseudocode (13 min)     
 Merge Sort: Analysis (9 min)     
 Guiding Principles for Analysis of Algorithms (15 min)     
