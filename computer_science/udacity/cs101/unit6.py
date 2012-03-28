@@ -36,10 +36,7 @@ def factorial(n):
 
 def is_palindrome(s):
     L = len(s)
-    if L > 0:
-        return s[0] == s[L-1] and is_palindrome(s[1:L-1])
-    else:
-        return True
+    return (L == 0) or (s[0] == s[L-1] and is_palindrome(s[1:L-1]))
 
     
 print is_palindrome('')
