@@ -7,6 +7,23 @@
 # 07 Ancestors - Question
 # 08 Recursive Procedures
 # 09 Recursive Factorial - Question
+#Define a procedure, factorial, that takes a natural number as its input, and
+#outputs the number of ways to arrange the input number of itmes.
+
+def factorial(n):
+
+
+
+
+
+#print factorial(0)
+#>>> 1
+#print factorial(5)
+#>>> 120
+#print factorial(10)
+#>>> 3628800
+
+
 # 10 Palindromes - Question
 # 11 Recursive Vs Iterative
 # 12 Bunnies - Question
