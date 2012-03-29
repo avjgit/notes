@@ -48,6 +48,29 @@ print is_palindrome('abba')
 
 # 11 Recursive Vs Iterative
 # 12 Bunnies - Question
+#Define a procedure, fibonacci, that takes a natural number as its input, and
+#returns the value of that fibonacci number.
+
+#Two Base Cases:
+#    fibonacci(0) => 0
+#    fibonacci(1) => 1
+
+#Recursive Case:
+#    n > 1 : fibonacci(n) => fibonacci(n-1) + fibonacci(n-2)
+
+def fibonacci(n):
+    if n < 2:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+
+print fibonacci(0)
+#>>> 0
+print fibonacci(1)
+#>>> 1
+print fibonacci(15)
+#>>> 610
+
 # 13 Divide And Be Conquered
 # 14 Counting Calls - Question
 # 15 Faster Fibonacci - Question
