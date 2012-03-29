@@ -74,6 +74,24 @@ print fibonacci(15)
 # 13 Divide And Be Conquered
 # 14 Counting Calls - Question
 # 15 Faster Fibonacci - Question
+#Define a faster fibonacci procedure that will enable us to computer
+#fibonacci(36).
+
+def fibonacci(n):
+    f_2 = 1
+    f_1 = 1
+    for i in range(2,n+1):
+        sum = f_1 + f_2
+        f_2 = f_1
+        f_1 = sum
+    return sum
+            
+            
+
+
+print fibonacci(36)
+#>>> 14930352
+
 # 16 Ranking Web Pages
 # 17 Popularity
 # 18 Good Definitions - Question
