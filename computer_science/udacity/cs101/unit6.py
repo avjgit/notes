@@ -78,7 +78,7 @@ print fibonacci(15)
 #fibonacci(36).
 
 def fibonacci(n):
-    f_2 = 1
+    f_2 = 0
     f_1 = 1
     for i in range(2,n+1):
         sum = f_1 + f_2
