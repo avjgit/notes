@@ -74,6 +74,9 @@ print fibonacci(15)
 # 13 Divide And Be Conquered
 # 14 Counting Calls - Question
 # 15 Faster Fibonacci - Question
+
+Recoursion is very expensive
+
 #Define a faster fibonacci procedure that will enable us to computer
 #fibonacci(36).
 
@@ -85,7 +88,14 @@ def fibonacci(n):
         f_2 = f_1
         f_1 = sum
     return sum
-            
+
+def fibonacci_small(n):
+    current = 0
+    next = 1
+    for i in range(0, n):
+        current, next = next, current + next
+    return current
+
             
 
 
