@@ -3,12 +3,28 @@ Introduction : Why Study Algorithms ? (19 min)
 About the Course (17 min)     
 Merge Sort: Motivation and Example (9 min)     
     better than Selection, Insertion, Bubble
-Merge Sort: Pseudocode (13 min)     
+Merge Sort: Pseudocode (13 min)
+    ok. linear time. ln(n) time
 Merge Sort: Analysis (9 min)     
 Guiding Principles for Analysis of Algorithms (15 min)     
-
+    worst case
+    averge case
+    benchmarks
+    
+    won't pay attention to constant, lower-order terms (like 4 in 4h+2)
+        1) easier
+        2) constants depend on language and compiler, and architecture
+        3) lose very little prediction power
+    
+    asymptotic analysis: focus on running time for very large inputs
+    
+    "fast" means - worst case growing slowly with input size
+    
+    
 II. ASYMPTOTIC ANALYSIS
 Big-Oh Notation (4 min)     
+    so, big O means, it is possible to multiply f(n) with some constant C,
+        and receive result > T(n)
 Basic Examples (7 min)     
 Big Omega and Theta (7 min)     
 Additional Examples [Review - Optional] (8 min)     
