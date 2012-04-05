@@ -129,7 +129,7 @@ def crawl_web(seed): # returns index, graph of inlinks
             add_page_to_index(index, page, content)
             outlinks = get_all_links(content)
             
-            #Insert Code Here
+            graph[page] = outlinks
             
             union(tocrawl, outlinks)
             crawled.append(page)
