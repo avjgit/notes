@@ -26,7 +26,12 @@ Big-Oh Notation (4 min)
     so, big O means, it is possible to multiply f(n) with some constant C,
         and receive result > T(n)
 Basic Examples (7 min)     
+    f(n**k), there exists such n, so that f is always > C* n**(k-1)
 Big Omega and Theta (7 min)     
+    T(n) = Omega(f(n)), if exists such C so C*f(n) < Tn)
+    Theta - is O and Omega
+    small o is when function is growing strictly less than other
+    Knuth 1976
 Additional Examples [Review - Optional] (8 min)     
 
 III. DIVIDE & CONQUER ALGORITHMS
