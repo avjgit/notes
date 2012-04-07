@@ -109,6 +109,13 @@ print fibonacci(36)
 # 20 Relaxation - Question
 # 21 Page Rank
 # 22 Altavista - Question
+start with 
+rank(0, url) -> 1/number_of_pages
+d = 0.8 #damping_constant
+rank(t, url) -> for p in inlinks(url):
+                    sum 
+                       rank(t-1, p)/ outlinks(p)
+                    + (1-d)/ number_of_pages
 # 23 Urank
 #Modify the crawl_web procedure so that instead of just returning the index, it
 #returns an index and a graph. The graph should be a Dictionary where the
@@ -332,15 +339,18 @@ def compute_ranks(graph):
     ranks = {}
     npages = len(graph)
     for page in graph:
-        ranks[page] = 1.0 / npages
+        ranks[page] = 1.0 / npages #initial
     
     for i in range(0, numloops):
         newranks = {}
         for page in graph:
             newrank = (1 - d) / npages
             
-            #Insert Code Here
-            
+            for inpage in graph:
+                if page in inpage[1]:
+                    newrank = newrank + rank[inpage]/ len(inpage[1])
+
+
             newranks[page] = newrank
         ranks = newranks
     return ranks
