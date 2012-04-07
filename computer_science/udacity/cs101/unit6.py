@@ -346,11 +346,11 @@ def compute_ranks(graph):
         for page in graph:
             newrank = (1 - d) / npages
             
-            for inpage in graph:
-                if page in inpage[1]:
-                    newrank = newrank + rank[inpage]/ len(inpage[1])
 
-
+            for node in graph:
+                if page in graph[node]:
+                    newrank = newrank + d*(ranks[node]/ len(graph[node]))
+            
             newranks[page] = newrank
         ranks = newranks
     return ranks
