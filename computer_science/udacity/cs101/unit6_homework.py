@@ -153,16 +153,13 @@ def deep_count(p):
 
 def lucky_search(index, ranks, keyword):
     urls = lookup(index, keyword)
-    if urls == None:
+    if not urls:
         return None
-    else:
-        max = 0
-        for url in urls:
-            rank = ranks[url]
-            if rank > max:
-                max = rank
-                best = url
-        return best
+    best = urls[0]
+    for url in urls:
+        if ranks[url] > ranks[best]:
+            best = url
+    return best
     
             
 
