@@ -556,7 +556,8 @@ print ranks
 #'http://udacity.com/cs101x/urank/index.html': 0.033333333333333326,
 #'http://udacity.com/cs101x/urank/nickel.html': 0.09743999999999997}
 
-
+# although page has less incoming links,
+# it has higher rating, because links are coming from more popular pages
 
 
 # 29 Search Engine
