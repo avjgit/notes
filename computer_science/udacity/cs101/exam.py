@@ -15,16 +15,38 @@ def unique(a, b, c):
 
 #For example,
 
-print (unique(1, 2, 3))
+# print (unique(1, 2, 3))
 #>>> True
 
-print (unique(1, 0, 1))
+# print (unique(1, 0, 1))
 #>>> False
 
-print (unique(7, 7, 7))
+# print (unique(7, 7, 7))
 #>>> False
 
 # 03 Prefix Removal
+#Prefix Removal
+
+
+#Define a procedure, remove_prefix, that takes as input a string, and returns a
+#string that is the part of the string following the first hyphen -. If the input string does
+#not contain any hyphen -, remove_prefix should return the full input string.
+
+def remove_prefix(s):
+
+
+
+#For example,
+
+#print remove_prefix('super-udacity')
+#>>> 'udacity'
+
+#print remove_prefix('counter-counter-intelligence')
+#>>> 'counter-intelligence'
+
+#print remove_prefix('antigravity')
+#>>> 'antigravity'
+
 # 04 Collatz Returns
 # 05 Cost
 # 06 List Explosion
