@@ -40,16 +40,44 @@ def remove_prefix(s):
 
 #For example,
 
-print(remove_prefix('super-udacity'))
+# print(remove_prefix('super-udacity'))
 #>>> 'udacity'
 
-print(remove_prefix('counter-counter-intelligence'))
+# print(remove_prefix('counter-counter-intelligence'))
 #>>> 'counter-intelligence'
 
-print(remove_prefix('antigravity'))
+# print(remove_prefix('antigravity'))
 #>>> 'antigravity'
 
 # 04 Collatz Returns
+#Collatz Returns!
+
+
+#Define a procedure, collatz_steps, that takes as input a positive integer, n, and returns
+#the number of steps it takes to reach 1 by following these steps:
+
+#    If n is even, divide it by 2. (You can test for evenness using n % 2 == 0.)
+#    If n is odd, replace it with 3n + 1.
+
+def collatz_steps(n):
+
+        
+
+
+#For example,
+
+#print collatz_steps(1)
+#>>> 0
+
+#print collatz_steps(2)
+#>>> 1
+
+#print collatz_steps(6)
+#>>> 8
+
+#print collatz_steps(101)
+#>>> 25
+
 # 05 Cost
 # 06 List Explosion
 # 07 Reverse Index
