@@ -72,19 +72,42 @@ def collatz_steps(n):
 
 #For example,
 
-print(collatz_steps(1))
+# print(collatz_steps(1))
 #>>> 0
 
-print(collatz_steps(2))
+# print(collatz_steps(2))
 #>>> 1
 
-print(collatz_steps(6))
+# print(collatz_steps(6))
 #>>> 8
 
-print(collatz_steps(101))
+# print(collatz_steps(101))
 #>>> 25
 
 # 05 Cost
+Check each of the following procedures whose running time scales linearly with the number of elements in the input p in the worst case. You may assume all the elements in p are fairly small numbers. You should also assume that all multiplication operations take constant time regardless of the size of the input (even though this could not be true in practice).
+def product(p):
+    result = 1
+    for e in p:
+        result = result * e
+    return result
+def find_match(p, target):
+    for x in p:
+        for y in p:
+            if x * y == target:
+                return True
+    return False
+def tricky_loop(p):
+    while True:
+        if len(p) == 0:
+            break
+        else:
+            if p[-1] == 0:
+                p.pop() # assume pop is a constant time operation
+            else:
+                p[-1] = 0
+    return 101
+    
 # 06 List Explosion
 # 07 Reverse Index
 # 08 Same Structure
