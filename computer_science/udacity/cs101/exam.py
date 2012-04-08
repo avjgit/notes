@@ -33,18 +33,20 @@ def unique(a, b, c):
 #not contain any hyphen -, remove_prefix should return the full input string.
 
 def remove_prefix(s):
+    hyphen = s.find("-")
+    return s[hyphen+1:]
 
 
 
 #For example,
 
-#print remove_prefix('super-udacity')
+print(remove_prefix('super-udacity'))
 #>>> 'udacity'
 
-#print remove_prefix('counter-counter-intelligence')
+print(remove_prefix('counter-counter-intelligence'))
 #>>> 'counter-intelligence'
 
-#print remove_prefix('antigravity')
+print(remove_prefix('antigravity'))
 #>>> 'antigravity'
 
 # 04 Collatz Returns
