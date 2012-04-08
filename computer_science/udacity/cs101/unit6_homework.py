@@ -33,14 +33,14 @@ def rabbits(n):
     return rabbits(n-1) + rabbits(n-2) - rabbits(n-5)
 
 
-print(rabbits(10))
+# print(rabbits(10))
 # print(rabbits(10))
 #>>> 35
 
-s = ""
-for i in range(1,12):
-   s = s + str(rabbits(i)) + " "
-print(s)
+# s = ""
+# for i in range(1,12):
+   # s = s + str(rabbits(i)) + " "
+# print(s)
 # >>> 1 1 2 3 5 7 11 16 24 35 52 
 
     
@@ -66,27 +66,29 @@ print(s)
 #For credit, your procedure must not use: while, for, or import math. 
 
 def hexes_to_udaciousness(n, spread, target):
-
+    if n >= target:
+        return 0
+    return 1 + hexes_to_udaciousness(n + n*spread, spread, target)
 
 
 #0 more needed, since n already exceeds target
-#print hexes_to_udaciousness(100000, 2, 36230) 
+print(hexes_to_udaciousness(100000, 2, 36230) )
 #>>> 0
 
 #after 1 hexamester, there will be 50000 + (50000 * 2) Udacians
-#print hexes_to_udaciousness(50000, 2, 150000) 
+print(hexes_to_udaciousness(50000, 2, 150000) )
 #>>> 1 
 
 #need to match or exceed the target
-#print hexes_to_udaciousness(50000, 2, 150001)
+print(hexes_to_udaciousness(50000, 2, 150001))
 #>>> 2 
 
 #only 12 hexamesters (2 years) to world domination!
-#print hexes_to_udaciousness(20000, 2, 7 * 10 ** 9) 
+print(hexes_to_udaciousness(20000, 2, 7 * 10 ** 9) )
 #>>> 12 
 
 #more friends means faster world domination!
-#print hexes_to_udaciousness(15000, 3, 7 * 10 ** 9)
+print(hexes_to_udaciousness(15000, 3, 7 * 10 ** 9))
 #>>> 10 
 
 
