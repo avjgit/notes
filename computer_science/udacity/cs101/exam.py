@@ -123,18 +123,23 @@ def tricky_loop(p):
 #in the original order, but repeated n times.
 
 def explode_list(p,n):
+    result  = []
+    for el in p:
+        for i in range(0,n):
+            result.append(el)
+    return result
 
 
 
 #For example,
 
-#print explode_list([1, 2, 3], 2)
+print (explode_list([1, 2, 3], 2))
 #>>> [1, 1, 2, 2, 3, 3]
 
-#print explode_list([1, 0, 1], 0)
+print (explode_list([1, 0, 1], 0))
 #>>> []
 
-#print explode_list(["super"], 5)
+print (explode_list(["super"], 5))
 #>>> ["super", "super", "super", "super", "super"]
 
 # 07 Reverse Index
