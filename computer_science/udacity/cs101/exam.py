@@ -60,22 +60,28 @@ def remove_prefix(s):
 #    If n is odd, replace it with 3n + 1.
 
 def collatz_steps(n):
-
-        
+    steps = 0
+    while n > 1:
+        steps = steps + 1
+        if n%2 == 0:
+            n = n/2
+        else:
+            n = 3*n + 1
+    return steps
 
 
 #For example,
 
-#print collatz_steps(1)
+print(collatz_steps(1))
 #>>> 0
 
-#print collatz_steps(2)
+print(collatz_steps(2))
 #>>> 1
 
-#print collatz_steps(6)
+print(collatz_steps(6))
 #>>> 8
 
-#print collatz_steps(101)
+print(collatz_steps(101))
 #>>> 25
 
 # 05 Cost
