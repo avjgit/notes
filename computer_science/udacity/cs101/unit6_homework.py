@@ -152,6 +152,17 @@ def deep_count(p):
 #appear in the index, lucky_search should return None.
 
 def lucky_search(index, ranks, keyword):
+    urls = lookup(index, keyword)
+    if urls == None:
+        return None
+    else:
+        max = 0
+        for url in urls:
+            rank = ranks[url]
+            if rank > max:
+                max = rank
+                best = url
+        return best
     
             
 
@@ -361,14 +372,14 @@ def compute_ranks(graph):
 
 #Here's an example of how your procedure should work on the test site: 
 
-#index, graph = crawl_web('http://udacity.com/cs101x/urank/index.html')
-#ranks = compute_ranks(graph)
+index, graph = crawl_web('http://udacity.com/cs101x/urank/index.html')
+ranks = compute_ranks(graph)
 
-#print lucky_search(index, ranks, 'Hummus')
+print(lucky_search(index, ranks, 'Hummus'))
 #>>> http://udacity.com/cs101x/urank/kathleen.html
 
-#print lucky_search(index, ranks, 'the')
+print(lucky_search(index, ranks, 'the'))
 #>>> http://udacity.com/cs101x/urank/nickel.html
 
-#print lucky_search(index, ranks, 'babaganoush')
+print(lucky_search(index, ranks, 'babaganoush'))
 #>>> None
