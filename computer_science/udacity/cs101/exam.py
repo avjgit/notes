@@ -169,10 +169,10 @@ winners_by_year = {
 
 wins_by_country = reverse_index(winners_by_year)
 
-print (wins_by_country['Brazil'])
+# print (wins_by_country['Brazil'])
 #>>> [1958, 2002, 1970, 1994, 1962]
 
-print (wins_by_country['England'])
+# print (wins_by_country['England'])
 #>>> [1966]
 
 # 08 Same Structure
@@ -195,24 +195,25 @@ def is_list(p):
 
 
 def same_structure(a,b):
+    return True
 
 
 
 #Here are some examples:
 
-#print same_structure(3, 7)
+print(same_structure(3, 7))
 #>>> True
 
-#print same_structure([1, 0, 1], [2, 1, 2])
+print(same_structure([1, 0, 1], [2, 1, 2]))
 #>>> True
 
-#print same_structure([1, [0], 1], [2, 5, 3])
+print(same_structure([1, [0], 1], [2, 5, 3]))
 #>>> False
 
-#print same_structure([1, [2, [3, [4, 5]]]], ['a', ['b', ['c', ['d', 'e']]]])
+print(same_structure([1, [2, [3, [4, 5]]]], ['a', ['b', ['c', ['d', 'e']]]]))
 #>>> True
 
-#print same_structure([1, [2, [3, [4, 5]]]], ['a', ['b', ['c', ['de']]]])
+print(same_structure([1, [2, [3, [4, 5]]]], ['a', ['b', ['c', ['de']]]]))
 #>>> False
 
 # 09 Reachability
