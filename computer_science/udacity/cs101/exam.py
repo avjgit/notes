@@ -133,13 +133,13 @@ def explode_list(p,n):
 
 #For example,
 
-print (explode_list([1, 2, 3], 2))
+# print (explode_list([1, 2, 3], 2))
 #>>> [1, 1, 2, 2, 3, 3]
 
-print (explode_list([1, 0, 1], 0))
+# print (explode_list([1, 0, 1], 0))
 #>>> []
 
-print (explode_list(["super"], 5))
+# print (explode_list(["super"], 5))
 #>>> ["super", "super", "super", "super", "super"]
 
 # 07 Reverse Index
@@ -149,8 +149,14 @@ print (explode_list(["super"], 5))
 #input dictionary that match this value (in any order).
 
 def reverse_index(dict):
-
-
+    reverse = {}
+    for hash in dict:
+        key = dict[hash]
+        if key in reverse:
+            reverse[key].append(hash)
+        else:
+            reverse[key] = [hash]
+    return reverse
 
 #For example,
 
@@ -163,10 +169,10 @@ winners_by_year = {
 
 wins_by_country = reverse_index(winners_by_year)
 
-#print wins_by_country['Brazil']
+print (wins_by_country['Brazil'])
 #>>> [1958, 2002, 1970, 1994, 1962]
 
-#print wins_by_country['England'] 
+print (wins_by_country['England'])
 #>>> [1966]
 
 # 08 Same Structure
