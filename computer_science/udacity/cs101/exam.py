@@ -1,4 +1,9 @@
 # 01 Grammars
+How many different strings can the following grammar generate, starting from Word?
+Word → udacious
+Word → super Word
+:: I think, infinitely many
+
 # 02 Procedures And If
 # 03 Prefix Removal
 # 04 Collatz Returns
