@@ -85,29 +85,35 @@ def collatz_steps(n):
 #>>> 25
 
 # 05 Cost
-Check each of the following procedures whose running time scales linearly with the number of elements in the input p in the worst case. You may assume all the elements in p are fairly small numbers. You should also assume that all multiplication operations take constant time regardless of the size of the input (even though this could not be true in practice).
+# Check each of the following procedures whose running time scales linearly with the number of elements in the input p in the worst case. 
+# You may assume all the elements in p are fairly small numbers. 
+# You should also assume that all multiplication operations take constant time regardless of the size of the input 
+# (even though this could not be true in practice).
+# let's take p = 4. 
 def product(p):
     result = 1
     for e in p:
         result = result * e
     return result
+# It runs for 1, 2, 3, 4. Linearly.
 def find_match(p, target):
     for x in p:
         for y in p:
             if x * y == target:
                 return True
     return False
+# It runs for 1, 1, 2, 3, 4, 2, 1, 2, 3, 4, 3, 1.... square.
 def tricky_loop(p):
-    while True:
-        if len(p) == 0:
+    while True: #while true, yes, but...
+        if len(p) == 0: # .. it runs until there are no elements in a loop
             break
         else:
-            if p[-1] == 0:
+            if p[-1] == 0: # let's assume worst case = it's not 0; then..
                 p.pop() # assume pop is a constant time operation
             else:
-                p[-1] = 0
-    return 101
-    
+                p[-1] = 0 # .. in the next steps it makes it zero
+    return 101 # so, total length looks like 2p.. so, linearly
+
 # 06 List Explosion
 # 07 Reverse Index
 # 08 Same Structure
