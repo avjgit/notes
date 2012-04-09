@@ -195,7 +195,16 @@ def is_list(p):
 
 
 def same_structure(a,b):
-    return True
+    if not is_list(a) and not is_list(b):
+        return True
+    if is_list(a) and is_list(b):
+        if len(a) == len(b):
+            for i in range(0,len(a)):
+                if not same_structure(a[i], b[i]):
+                    return False
+            return True
+    return False
+
 
 
 
