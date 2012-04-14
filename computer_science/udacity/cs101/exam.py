@@ -238,7 +238,15 @@ def same_structure(a,b):
 
 
 def reachable(graph, node):
-    return True
+    nodes = []
+    if node not in nodes:
+        nodes.append(node)
+        if node in graph:
+            leaves = graph[node]
+            for leave in leaves:
+                nodes.extend(reachable(graph, leave))
+                # nodes.extend(leave)
+    return nodes
 
 
 
@@ -248,13 +256,16 @@ def reachable(graph, node):
 
 graph = {'a': ['b', 'c'], 'b': ['a', 'c'], 'c': ['b', 'd'], 'd': ['a'], 'e': ['a']}
 
-#print reachable(graph, 'a')
+print (reachable(graph, 'a'))
 #>>> ['a', 'c', 'd', 'b']
 
-#print reachable(graph, 'd')
+print (reachable(graph, 'a'))
+#>>> ['a', 'c', 'd', 'b']
+
+print (reachable(graph, 'd'))
 #>>> ['d', 'a', 'c', 'b']
 
-#print reachable(graph, 'e')
+print (reachable(graph, 'e'))
 #>>> ['e', 'a', 'c', 'd', 'b']
 
 # 10 Spelling Correction
