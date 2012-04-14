@@ -21,7 +21,7 @@
 * [Coursera](https://www.coursera.org)'s Model Thinking
 * [Coursera](https://www.coursera.org)'s Natural Language Processing
 * [Coursera](https://www.coursera.org)'s Probabilistic Graphical Models
-* [Coursera](https://www.coursera.org)'s Software as a Service
+* [Coursera](https://www.coursera.org)'s Software as a Service/ with Ruby on Rails
 
 # Puzzles  
 
