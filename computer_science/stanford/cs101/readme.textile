@@ -1,3 +1,0 @@
-h1. "Computer Science 101 by Stanford University, Spring 2012":http://www.cs101-class.org/
-
-

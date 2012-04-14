@@ -1,0 +1,4 @@
+﻿# Logic
+In this course, you will learn how to formalize information and reason systematically to produce logical conclusions. We will also examine logic technology and its applications - in mathematics, science, engineering, business, law, and so forth.  
+
+Michael Genesereth is an associate professor in the Computer Science Department at Stanford University. He received his Sc.B. in Physics from M.I.T. and his Ph.D. in Applied Mathematics from Harvard University. He is best known for his research on Computational Logic and its many applications. He has been teaching Logic to Stanford students and others for more than 20 years. He is the current director of the Logic Group at Stanford and founder and research director of CodeX (The Stanford Center for Legal Informatics).  

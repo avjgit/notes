@@ -1,0 +1,8 @@
+﻿# Computer Vision
+In this course, we will study the concepts and algorithms behind some of the remarkable successes of computer vision - capabilities such as face detection, handwritten digit recognition, reconstructing three-dimensional models of cities and more.  
+
+Jitendra Malik is Arthur J. Chick Professor of Electrical Engineering and Computer Science at UC Berkeley, where he has been on the faculty since 1986. He is also on the faculty of the department of Bioengineering, and in the Cognitive Science and Vision Science groups.
+
+Professor Malik's research group has worked on many different topics in computer vision, computational modeling of human vision, computer graphics and the analysis of biological images, resulting in more than 150 research papers and 30 PhD dissertations. Several well-known concepts and algorithms arose in this research, such as anisotropic diffusion, normalized cuts, high dynamic range imaging, and shape contexts. According to Google Scholar, six of his papers have received more than a thousand citations each, and he is one of ISI's Highly Cited Researchers in Engineering.
+
+Professor Malik received the gold medal for the best graduating student in Electrical Engineering in 1980 as well as the Distinguished Alumnus Award in 2008 from IIT Kanpur. He received his PhD degree from Stanford University in 1985, a Presidential Young Investigator Award in 1989, and at UC Berkeley he was selected for the Diane S. McEntyre Award for Excellence in Teaching in 2000 and a Miller Research Professorship in 2001. He is a Fellow of the ACM and IEEE, and a member of the National Academy of Engineering.  

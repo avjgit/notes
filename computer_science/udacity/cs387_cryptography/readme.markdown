@@ -1,5 +1,10 @@
 ﻿# CS387 - APPLIED CRYPTOGRAPHY
+
 Description: Cryptography is about “secret writing”. In this class, we will introduce the mathematical foundations of cryptography and build programs to perform encryption. We will see how to use cryptography to solve important problem such as how to authenticate users, secure websites, and do computation without exposing up your data. We will also look at the things that can go wrong when cryptography is misused or implemented badly.
+
+
+David Evans is a Professor of Computer Science at the University of Virginia where he teaches computer science and leads research in computer security. He is the author of an introductory computer science textbook and has won Virginia's highest award for university faculty. He has PhD, SM, and SB degrees from MIT.  
+
 ### WEEK 1:Symmetric Encryption
 Sending messages when two people share a secret
 ### WEEK 2:Authentication

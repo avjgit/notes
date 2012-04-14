@@ -15,6 +15,13 @@
 * [Udacity](http://www.udacity.com/)'s CS 262: Programming Languages: Building a Browser
 * [Udacity](http://www.udacity.com/)'s CS 373: Programming a Robotic Car
 * [Udacity](http://www.udacity.com/)'s CS 387: Applied Cryptography
+
+# Puzzles  
+
+# Miscellaneous  
+* [Redis (key-value store)](http://redis.io/)  
+
+# --  
 * [Coursera](https://www.coursera.org)'s Cryptography
 * [Coursera](https://www.coursera.org)'s Design and Analysis of Algorithms I
 * [Coursera](https://www.coursera.org)'s Game Theory
@@ -23,12 +30,6 @@
 * [Coursera](https://www.coursera.org)'s Probabilistic Graphical Models
 * [Coursera](https://www.coursera.org)'s Software as a Service/ with Ruby on Rails
 
-# Puzzles  
-
-# Miscellaneous  
-* [Redis (key-value store)](http://redis.io/)  
-
-# --  
 * [Algorithms](http://www.lektorium.tv/course/?id=22823) by St.Petersburg University: ..
 * [Probability](http://www.khanacademy.org/#probability) by KhanAcademy.org
 * [Coursera](https://www.coursera.org)'s Computer Security

@@ -1,0 +1,8 @@
+﻿# Machine learning
+In this class, you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself.  
+
+Professor Andrew Ng is Director of the Stanford Artificial Intelligence Lab, the main AI research organization at Stanford, with 20 professors and about 150 students/post docs. At Stanford, he teaches Machine Learning, which with a typical enrollment of 350 Stanford students, is among the most popular classes on campus. His research is primarily on machine learning, artificial intelligence, and robotics, and most universities doing robotics research now do so using a software platform (ROS) from his group.
+
+In 2008, together with SCPD he started SEE (Stanford Engineering Everywhere), which was Stanford's first attempt at free, online distributed education. Since then, over 200,000 people have viewed his machine learning lectures on YouTube, and over 1,000,000 people have viewed his and other SEE classes' videos.
+
+Ng is the author or co-author of over 100 published papers in machine learning, and his work in learning, robotics and computer vision has been featured in a series of press releases and reviews. In 2008, Ng was featured in Technology Review's TR35, a list of "35 remarkable innovators under the age of 35". In 2009, Ng also received the IJCAI Computers and Thought award, one of the highest honors in AI.  
