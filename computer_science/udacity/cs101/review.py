@@ -41,8 +41,7 @@
     #hash_string(keyword,nbuckets) => index of bucket
 
     def hashtable_get_bucket(htable,keyword):
-        return hash_string(keyword, htable.length())
-
+        return htable[hash_string(keyword, len(htable))]
 
     def hash_string(keyword,buckets):
         out = 0
