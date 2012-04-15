@@ -29,8 +29,9 @@
 
     def make_hashtable(nbuckets):
         hash = []
-        for bucket in range(0,nbuckets+1):
+        for bucket in range(0,nbuckets):
             hash.append([])
+        return hash
 # hw      5 
 # unit    6 
 # hw      6 
