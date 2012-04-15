@@ -32,6 +32,30 @@
         for bucket in range(0,nbuckets):
             hash.append([])
         return hash
+
+    #Define a procedure, hashtable_get_bucket,
+    #that takes two inputs - a hashtable, and
+    #a keyword, and outputs the bucket where the
+    #keyword could occur.
+
+    #hash_string(keyword,nbuckets) => index of bucket
+
+    def hashtable_get_bucket(htable,keyword):
+        return hash_string(keyword, htable.length())
+
+
+    def hash_string(keyword,buckets):
+        out = 0
+        for s in keyword:
+            out = (out + ord(s)) % buckets
+        return out
+
+    def make_hashtable(nbuckets):
+        table = []
+        for unused in range(0,nbuckets):
+            table.append([])
+        return table
+
 # hw      5 
 # unit    6 
 # hw      6 
