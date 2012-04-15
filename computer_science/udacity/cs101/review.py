@@ -148,19 +148,25 @@
 
 #Here are the original procedures:
 
-def hashtable_update(htable, key, value):
-    bucket = hashtable_get_bucket(htable, key)
+def bucket_find(bucket, key):
     for entry in bucket:
         if entry[0] == key:
-            entry[1] = value
-            return
-    bucket.append([key, value])
+            return entry
+    return None
+
+def hashtable_update(htable, key, value):
+    bucket = hashtable_get_bucket(htable, key)
+    entry = bucket_find(bucket, key)
+    if entry:
+        entry[1] = value
+    else:
+        bucket.append([key, value])
 
 def hashtable_lookup(htable, key):
     bucket = hashtable_get_bucket(htable, key)
-    for entry in bucket:
-        if entry[0] == key:
-            return entry[1]
+    entry = bucket_find(bucket, key)
+    if entry:
+        return entry[1]
     return None
 
 
