@@ -15,11 +15,22 @@
             n = n / 2
         else:
             n = 3 * n  +  1
-# unit    3 
-# hw      3 
-# unit    4 
-# hw      4 
-# unit    5 
+# unit    3 88
+# hw      3 88
+# unit    4 90
+# hw      4 --
+
+# unit    5 68
+    #Creating an Empty Hash Table
+    #Define a procedure, make_hashtable,
+    #that takes as input a number, nbuckets,
+    #and outputs an empty hash table with
+    #nbuckets empty buckets.
+
+    def make_hashtable(nbuckets):
+        hash = []
+        for bucket in range(0,nbuckets+1):
+            hash.append([])
 # hw      5 
 # unit    6 
 # hw      6 
