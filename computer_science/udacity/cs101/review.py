@@ -133,9 +133,9 @@
 # hw      5 71
     Suppose we have a hash table implemented as described in Unit 5 using the hash_string function. Which of the following are true statements?
     Statement 1
-    The number of string comparisons done to lookup a keyword that is not a key in the hash table may be less than the number needed to lookup a keyword that is a key in the hash table.
+    > The number of string comparisons done to lookup a keyword that is not a key in the hash table may be less than the number needed to lookup a keyword that is a key in the hash table.
     Statement 2
-    We should expect the time to lookup most keywords in the hash table will decrease as we increase the number of buckets.
+    > We should expect the time to lookup most keywords in the hash table will decrease as we increase the number of buckets.
     Statement 3
     It is always better to have more buckets in a hash table.
     Statement 4
