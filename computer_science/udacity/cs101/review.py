@@ -2,7 +2,7 @@
 # hw      1 
     given any string s, which of following 
     has always same value as s?
-    a ('a' + s) [1:]
+    > a ('a' + s) [1:] #yes, of course (facepalm)
     > b s + ''
     c s[0] + s[1:] # fails for empty?
     d s[0:] #looks like ok..
