@@ -130,7 +130,17 @@
             table.append([])
         return table
 
-# hw      5 
+# hw      5 71
+    Suppose we have a hash table implemented as described in Unit 5 using the hash_string function. Which of the following are true statements?
+    Statement 1
+    The number of string comparisons done to lookup a keyword that is not a key in the hash table may be less than the number needed to lookup a keyword that is a key in the hash table.
+    Statement 2
+    We should expect the time to lookup most keywords in the hash table will decrease as we increase the number of buckets.
+    Statement 3
+    It is always better to have more buckets in a hash table.
+    Statement 4
+    The time to lookup a keyword in the hash table is always less than the time it would take in a linear time list (as used in Unit 4).
+
 # unit    6 
 # hw      6 
 # unit    7 
