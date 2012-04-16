@@ -2115,3 +2115,4 @@ human.setHumanName('Boris');
 // check to see that your method works by printing
 // human.name to the console
 console.log(human.name);
+
