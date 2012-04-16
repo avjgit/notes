@@ -2116,3 +2116,9 @@ human.setHumanName('Boris');
 // human.name to the console
 console.log(human.name);
 
+// 07	Loops in JavaScript
+// 08	Building Blackjack
+// 09	Review of OOP
+// 10	Array and Loops in JavaScript
+// 11	Recursion in JavaScript
+// 12	Build Blackjack Final
