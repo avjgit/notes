@@ -2117,6 +2117,31 @@ human.setHumanName('Boris');
 console.log(human.name);
 
 // 07	Loops in JavaScript
+var add = function(number1, number2, number3) {
+    // add up the numbers
+    var sum = number1 + number2 + number3;
+    
+    // return the sum!
+    return sum;
+};
+
+ // call add twice here, assigning the return values
+ // to new variables sum1 and sum2
+var sum1 = add(1, 2, 3);
+var sum2 = add(10, 10, -20);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 08	Building Blackjack
 // 09	Review of OOP
 // 10	Array and Loops in JavaScript
