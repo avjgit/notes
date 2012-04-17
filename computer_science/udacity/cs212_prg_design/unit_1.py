@@ -117,10 +117,20 @@ def test():
     # full house.
     #
     # For example, calling hand_rank on sf should output (8, 10)
-    assert hand_rank(sf) = (8, 10)
-    assert hand_rank(fk) = (7, 9, 7)
-    assert hand_rank(fh) = (6, 10, 7)
+    assert hand_rank(sf) = (10, 9, 8, 7, 6)
+    assert hand_rank(fk) = (9, 9, 9, 9, 7)
+    assert hand_rank(fh) = (10, 10, 10, 7, 7)
     
+    # Modify the test() function to include three new test cases.
+    # These should assert that card_ranks gives the appropriate
+    # output for the given straight flush, four of a kind, and
+    # full house.
+    #
+    # For example, calling card_ranks on sf should output  
+    # [10, 9, 8, 7, 6]
+    assert card_ranks(sf)
+    assert card_ranks(fk)
+    assert card_ranks(fh)
 print test()   
 
 tuple(7, 9, 5) # like immutable set 
