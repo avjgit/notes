@@ -76,17 +76,17 @@ def hand_rank(hand):
     elif kind(3, ranks) and kind(2, ranks):        # full house
         return (6, kind(3, ranks), kind(2, ranks))
     elif flush(hand):                              # flush
-        return (5, hand)
+        return (5, ranks)
     elif straight(ranks):                          # straight
         return (4, max(ranks))
     elif kind(3, ranks):                           # 3 of a kind
-        return (3, kind(3, ranks), hand)
+        return (3, kind(3, ranks), ranks)
     elif two_pair(ranks):                          # 2 pair
-        return (2, max(two_pair(ranks)), min(two_pari(ranks)) hand)
+        return (2, two_pair(ranks), ranks)
     elif kind(2, ranks):                           # kind
-        return (1, kind(2, ranks), hand)
+        return (1, kind(2, ranks), ranks)
     else:                                          # high card
-        return (0, hand)
+        return (0, ranks)
 
 
 def test():
