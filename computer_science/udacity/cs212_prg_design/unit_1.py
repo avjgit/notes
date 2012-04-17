@@ -50,5 +50,12 @@ def test():
     # fh playing against fh returns fh.
     assert poker([fk, fh]) == fk
     assert poker([fh, fh]) == fh
+
+
+    # Add 2 new assert statements here. The first 
+    # should assert that when poker is called with a
+    # single hand, it returns that hand. The second 
+    # should check for the case of 100 hands.
+    
     
 print test()   
