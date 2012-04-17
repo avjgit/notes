@@ -58,6 +58,16 @@ def test():
     # should check for the case of 100 hands.
     assert poker([fk]) == fk
     assert poker([fk] * 100) == fk
+
+    # Modify the test() function to include three new test cases.
+    # These should assert that hand_rank gives the appropriate
+    # output for the given straight flush, four of a kind, and
+    # full house.
+    #
+    # For example, calling hand_rank on sf should output (8, 10)
+    assert hand_rank(sf) = (8, 10)
+    assert hand_rank(fk) = (7, 9, 7)
+    assert hand_rank(fh) = (6, T, 7)
     
 print test()   
 
