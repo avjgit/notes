@@ -161,18 +161,12 @@ print card_ranks(['AC', '3D', '4S', 'KH']) #should output [14, 13, 4, 3]
 
 def straight(ranks):
     "Return True if the ordered ranks form a 5-card straight."
-    for i in range(0, len(ranks)):
-        if ranks[i] != ranks[0] + i:
-            return False
-    return True
+    return (max(ranks) - min(ranks) == 4) and len(set(ranks)) == 5
 
 def flush(hand):
     "Return True if all the cards have the same suit."
-    suite = hand[0]
-    for r, s in hand:
-        if s != suite:
-            return False
-    return True
+    suits = [s for r, s in hand]
+    return len(set(suits)) == 1
     
 def test():
     "Test cases for the functions in poker program."
