@@ -148,15 +148,15 @@ def card_ranks(cards):
     "Return a list of the ranks, sorted with higher first."
     ranks = [r for r,s in cards]
     for i in len(ranks):
-        if rank == 'T':
+        if ranks[i] == 'T':
             ranks[i] = 10
-        elif rank == -'J':
+        elif ranks[i] == -'J':
             ranks[i] = 11
-        elif rank == 'Q':
+        elif ranks[i] == 'Q':
             ranks[i] = 12
-        elif rank == 'K':
+        elif ranks[i] == 'K':
             ranks[i] = 13
-        else rank == 'A':
+        else ranks[i] == 'A':
             ranks[i] = 14
     ranks.sort(reverse=True)
     return ranks
