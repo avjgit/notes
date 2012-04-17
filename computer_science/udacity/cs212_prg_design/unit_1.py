@@ -57,26 +57,37 @@ def poker(hands):
 #                  and 2 fours would cause this function
 #                  to return (4, 2).
 def hand_rank(hand):
+
+# (ranking, cardid)
+# "straight flush, jack high" - (8, 11)
+# "four aces, and a queen" - (7, 14, 12)
+# "full house, eights over kings" - (6, 8, 13)
+# "flush, 10-8" (5, [10, 8, 7, 5, 3])
+# "straight, jach high" (4, 11)
+# "three sevens" (3, 7, [7, 7, 7, 5, 2])
+# "two pairs, jacks and threes" (2, 11, 3, [13, 11, 11, 3, 3])
+# "pair of twoos, jack high" (1, 2, [11, 6, 3, 2, 2])
+# "nothing" (0, [7, 5, 4, 3, 2])
     ranks = card_ranks(hand)
     if straight(ranks) and flush(hand):            # straight flush
         return (8, max(ranks))
     elif kind(4, ranks):                           # 4 of a kind
         return (7, kind(4, ranks), kind(1, ranks))
     elif kind(3, ranks) and kind(2, ranks):        # full house
-        return # your code here
+        return (6, kind(3, ranks), kind(2, ranks))
     elif flush(hand):                              # flush
-        return # your code here
+        return (5, hand)
     elif straight(ranks):                          # straight
-        return # your code here
+        return (4, max(ranks))
     elif kind(3, ranks):                           # 3 of a kind
-        return # your code here
+        return (3, kind(3, ranks), hand)
     elif two_pair(ranks):                          # 2 pair
-        return # your code here
+        return (2, max(two_pair(ranks)), min(two_pari(ranks)) hand)
     elif kind(2, ranks):                           # kind
-        return # your code here
+        return (1, kind(2, ranks), hand)
     else:                                          # high card
-        return # your code here
-    
+        return (0, hand)
+
 
 def test():
     "Test cases for the functions in poker program"
@@ -114,14 +125,3 @@ print test()
 
 tuple(7, 9, 5) # like immutable set 
 (7, 9, 5) > (7, 3, 2) #valid comparison
-
-(ranking, cardid)
-"straight flush, jack high" - (8, 11)
-"four aces, and a queen" - (7, 14, 12)
-"full house, eights over kings" - (6, 8, 13)
-"flush, 10-8" (5, [10, 8, 7, 5, 3])
-"straight, jach high" (4, 11)
-"three sevens" (3, 7, [7, 7, 7, 5, 2])
-"two pairs, jacks and threes" (2, 11, 3, [13, 11, 11, 3, 3])
-"pair of twoos, jack high" (1, 2, [11, 6, 3, 2, 2])
-"nothing" (0, [7, 5, 4, 3, 2])
