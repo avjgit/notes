@@ -117,9 +117,9 @@ def test():
     # full house.
     #
     # For example, calling hand_rank on sf should output (8, 10)
-    assert card_ranks(sf) = (10, 9, 8, 7, 6)
-    assert card_ranks(fk) = (9, 9, 9, 9, 7)
-    assert card_ranks(fh) = (10, 10, 10, 7, 7)
+    assert card_ranks(sf) == [10, 9, 8, 7, 6]
+    assert card_ranks(fk) == [9, 9, 9, 9, 7]
+    assert card_ranks(fh) == [10, 10, 10, 7, 7]
     
     # Modify the test() function to include three new test cases.
     # These should assert that card_ranks gives the appropriate
