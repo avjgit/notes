@@ -24,7 +24,10 @@ combinations:
 
 def poker(hands):
     "Return the best hand: poker([hand,...]) => hand"
-    return max(#enter your code here. Your return should call max())
+    hand_ranks = {}
+    for hand in hands:
+        hand_ranks[hand] = hand_rank(hand)
+    return max(hands)
 
 def hand_rank(hand):
     return None # we will be changing this later.    
