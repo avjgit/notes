@@ -163,16 +163,16 @@ def straight(ranks):
     "Return True if the ordered ranks form a 5-card straight."
     for i in range(0, len(ranks)):
         if ranks[i] != ranks[0] + i:
-            return false
-    return true
+            return False
+    return True
 
 def flush(hand):
     "Return True if all the cards have the same suit."
     suite = hand[0]
     for r, s in hand:
         if s != suite:
-            return false
-    return true
+            return False
+    return True
     
 def test():
     "Test cases for the functions in poker program."
