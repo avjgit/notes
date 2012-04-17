@@ -60,3 +60,17 @@ def test():
     assert poker([fk] * 100) == fk
     
 print test()   
+
+tuple(7, 9, 5) # like immutable set 
+(7, 9, 5) > (7, 3, 2) #valid comparison
+
+(ranking, cardid)
+"straight flush, jack high" - (8, 11)
+"four aces, and a queen" - (7, 14, 12)
+"full house, eights over kings" - (6, 8, 13)
+"flush, 10-8" (5, [10, 8, 7, 5, 3])
+"straight, jach high" (4, 11)
+"three sevens" (3, 7, [7, 7, 7, 5, 2])
+"two pairs, jacks and threes" (2, 11, 3, [13, 11, 11, 3, 3])
+"pair of twoos, jack high" (1, 2, [11, 6, 3, 2, 2])
+"nothing" (0, [7, 5, 4, 3, 2])
