@@ -147,17 +147,18 @@ tuple(7, 9, 5) # like immutable set
 def card_ranks(cards):
     "Return a list of the ranks, sorted with higher first."
     ranks = [r for r,s in cards]
-    for i in len(ranks):
+    for i in range(0, len(ranks)):
         if ranks[i] == 'T':
             ranks[i] = 10
-        elif ranks[i] == -'J':
+        elif ranks[i] == 'J':
             ranks[i] = 11
         elif ranks[i] == 'Q':
             ranks[i] = 12
         elif ranks[i] == 'K':
             ranks[i] = 13
-        else ranks[i] == 'A':
+        elif ranks[i] == 'A':
             ranks[i] = 14
+        ranks[i] = int(ranks[i])
     ranks.sort(reverse=True)
     return ranks
 
