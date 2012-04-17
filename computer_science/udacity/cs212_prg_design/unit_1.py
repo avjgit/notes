@@ -56,6 +56,7 @@ def test():
     # should assert that when poker is called with a
     # single hand, it returns that hand. The second 
     # should check for the case of 100 hands.
-    
+    assert poker([fk]) == fk
+    assert poker([fk] * 100) == fk
     
 print test()   
