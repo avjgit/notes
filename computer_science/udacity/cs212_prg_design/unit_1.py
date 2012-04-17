@@ -48,5 +48,7 @@ def test():
     # should check that when fk plays fh, fk 
     # is the winner. The second should confirm that
     # fh playing against fh returns fh.
+    assert poker([fk, fh]) == fk
+    assert poker([fh, fh]) == fh
     
 print test()   
