@@ -167,6 +167,15 @@ def flush(hand):
     "Return True if all the cards have the same suit."
     suits = [s for r, s in hand]
     return len(set(suits)) == 1
+
+def two_pair(ranks):
+    """If there are two pair, return the two ranks as a
+    tuple: (highest, lowest); otherwise return None."""
+    pairs = ()
+    for r in ranks:
+        if ranks.count(r) == 2: pairs.append(r)
+    if len(pairs) == 2: return pairs
+    return None
     
 def kind(n, ranks):
     """Return the first rank that this hand has exactly n of.
