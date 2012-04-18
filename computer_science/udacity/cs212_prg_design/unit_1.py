@@ -171,11 +171,8 @@ def flush(hand):
 def kind(n, ranks):
     """Return the first rank that this hand has exactly n of.
     Return None if there is no n-of-a-kind in the hand."""
-    d = {}
-    for dr in set(ranks):
-        d[dr] = ranks.count(dr)
-        if d.count(dr) == n:
-            return dr
+    for r in ranks:
+        if ranks.count(r) == n: return dr
     return None
     
 def test():
