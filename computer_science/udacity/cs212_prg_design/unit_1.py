@@ -171,11 +171,12 @@ def flush(hand):
 def two_pair(ranks):
     """If there are two pair, return the two ranks as a
     tuple: (highest, lowest); otherwise return None."""
-    pairs = ()
-    for r in ranks:
-        if ranks.count(r) == 2: pairs.append(r)
-    if len(pairs) == 2: return pairs
-    return None
+    pair = kind(2, ranks)
+    low_pair = kind(2, list(reversed(ranks)))
+    if pair and pair != low_pair:
+        return (pair, low_pair)
+    else:
+        return None
     
 def kind(n, ranks):
     """Return the first rank that this hand has exactly n of.
